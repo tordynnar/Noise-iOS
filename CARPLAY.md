@@ -1,12 +1,34 @@
 # CarPlay Development Guide
 
+## Entitlement Requirement
+
+The `com.apple.developer.carplay-messaging` entitlement is required for Noise to appear on the CarPlay home screen. This is a **restricted entitlement** — Apple must approve it.
+
+### Current Status
+
+- The entitlement is declared in `Signal/Signal.entitlements` and `Signal/Signal-AppStore.entitlements`
+- The scene lifecycle migration is complete and the code is ready
+- **Blocking**: Apple must grant the CarPlay entitlement to the provisioning profile before the app will appear in CarPlay
+
+### How to Get the Entitlement
+
+1. Apply at [developer.apple.com/carplay](https://developer.apple.com/carplay/) (select the **Messaging** category)
+2. Once approved, Apple adds `com.apple.developer.carplay-messaging` to your provisioning profile
+3. Build with that provisioning profile (Automatic Signing with the approved team)
+
+### Simulator Limitation
+
+Xcode's "Sign to Run Locally" (used for simulator builds) **does not embed** the CarPlay entitlement into the binary, even though it's declared in the `.entitlements` file. This means the Noise icon will not appear on the CarPlay dashboard in the simulator until you build with a provisioning profile that includes the entitlement.
+
+The CarPlay display itself can still be enabled for testing other CarPlay-capable apps.
+
 ## Testing in the Simulator
 
 ### Enable CarPlay Display
 
 In the Simulator app: **I/O > External Displays > CarPlay**
 
-This opens a CarPlay window alongside the phone simulator. Noise will appear as "Messages" in CarPlay (standard for apps using the `com.apple.developer.carplay-messaging` entitlement).
+This opens a CarPlay window alongside the phone simulator.
 
 ### Disable CarPlay Display
 
@@ -75,5 +97,6 @@ Both are registered in `Signal/Signal-Info.plist` under `UIApplicationSceneManif
 
 ### Prerequisites
 
-- `com.apple.developer.carplay-messaging` entitlement (already in entitlements files)
-- Apple CarPlay entitlement approval (via the CarPlay developer portal) for App Store distribution
+- `com.apple.developer.carplay-messaging` entitlement approved by Apple (see [Entitlement Requirement](#entitlement-requirement) above)
+- Provisioning profile that includes the CarPlay entitlement
+- Build with Automatic Signing using the approved team (not "Sign to Run Locally")
