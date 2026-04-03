@@ -15,6 +15,7 @@
 		BB028D0FA4C24D5960921AE7 /* NoiseSummarizeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA028D0FA4C24D5960921AE7 /* NoiseSummarizeIntent.swift */; };
 		BB29639AEA4580504D886EEE /* NoiseShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA29639AEA4580504D886EEE /* NoiseShortcuts.swift */; };
 		CC0000000000000000000001 /* NoiseCarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000011 /* NoiseCarPlaySceneDelegate.swift */; };
+		CC0000000000000000000004 /* NoiseWindowSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000014 /* NoiseWindowSceneDelegate.swift */; };
 		CC0000000000000000000002 /* CarPlayConversationListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000012 /* CarPlayConversationListController.swift */; };
 		CC0000000000000000000003 /* CarPlayMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000013 /* CarPlayMessageController.swift */; };
 		DD0000000000000000000001 /* SpotlightIndexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0000000000000000000011 /* SpotlightIndexManager.swift */; };
@@ -4175,6 +4176,7 @@
 		AA028D0FA4C24D5960921AE7 /* NoiseSummarizeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseSummarizeIntent.swift; sourceTree = "<group>"; };
 		AA29639AEA4580504D886EEE /* NoiseShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseShortcuts.swift; sourceTree = "<group>"; };
 		CC0000000000000000000011 /* NoiseCarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseCarPlaySceneDelegate.swift; sourceTree = "<group>"; };
+		CC0000000000000000000014 /* NoiseWindowSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseWindowSceneDelegate.swift; sourceTree = "<group>"; };
 		CC0000000000000000000012 /* CarPlayConversationListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayConversationListController.swift; sourceTree = "<group>"; };
 		CC0000000000000000000013 /* CarPlayMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayMessageController.swift; sourceTree = "<group>"; };
 		DD0000000000000000000011 /* SpotlightIndexManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightIndexManager.swift; sourceTree = "<group>"; };
@@ -9791,6 +9793,7 @@
 				349C3636233D198300D52012 /* LaunchJobs.swift */,
 				4542DF53208D40AC007B4E76 /* LoadingViewController.swift */,
 				5033D46829D7951F007FEADA /* MainAppContext.swift */,
+				CC0000000000000000000014 /* NoiseWindowSceneDelegate.swift */,
 				880D902F2481E617003D2B14 /* SignalApp.swift */,
 			);
 			path = AppLaunch;
@@ -18629,6 +18632,7 @@
 				BB57925CC54678510DAD3517 /* NoiseSearchMessagesIntent.swift in Sources */,
 				BB028D0FA4C24D5960921AE7 /* NoiseSummarizeIntent.swift in Sources */,
 				BB29639AEA4580504D886EEE /* NoiseShortcuts.swift in Sources */,
+				CC0000000000000000000004 /* NoiseWindowSceneDelegate.swift in Sources */,
 				CC0000000000000000000001 /* NoiseCarPlaySceneDelegate.swift in Sources */,
 				CC0000000000000000000002 /* CarPlayConversationListController.swift in Sources */,
 				CC0000000000000000000003 /* CarPlayMessageController.swift in Sources */,

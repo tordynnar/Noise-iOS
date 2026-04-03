@@ -19,9 +19,17 @@ public class OWSWindow: UIWindow {
         applyTheme()
     }
 
-    // This useless override is defined so that you can call `-init` from Swift.
     override public init(windowScene: UIWindowScene) {
-        fatalError("init(windowScene:) has not been implemented")
+        super.init(windowScene: windowScene)
+
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(themeDidChange),
+            name: .themeDidChange,
+            object: nil,
+        )
+
+        applyTheme()
     }
 
     required init?(coder: NSCoder) {

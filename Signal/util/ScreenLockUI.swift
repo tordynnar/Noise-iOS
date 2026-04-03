@@ -167,6 +167,7 @@ class ScreenLockUI {
     private func createScreenBlockingWindowWithRootWindow(_ rootWindow: UIWindow) {
         AssertIsOnMainThread()
 
+        screenBlockingWindow.windowScene = rootWindow.windowScene
         screenBlockingWindow.frame = rootWindow.bounds
         screenBlockingWindow.rootViewController = screenBlockingViewController
     }

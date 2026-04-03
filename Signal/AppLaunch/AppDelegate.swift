@@ -43,71 +43,68 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         static let appLaunchesAttemptedKey = "AppLaunchesAttempted"
     }
 
+    // MARK: - Scene Lifecycle Support
+
+    enum PendingLaunchState {
+        case testing
+        case databaseLoadError(UIViewController, any KeychainStorage)
+        case preflightError(LaunchPreflightError, LaunchContext, UIViewController)
+        case normal(LaunchContext, LoadingViewController)
+    }
+
+    var pendingLaunchState: PendingLaunchState?
+
+    /// Called by `NoiseWindowSceneDelegate` once the window scene is available.
+    func connectWindow(_ window: UIWindow) {
+        self.window = window
+
+        guard let pendingLaunchState else { return }
+        self.pendingLaunchState = nil
+
+        switch pendingLaunchState {
+        case .testing:
+            window.rootViewController = UIViewController()
+            window.makeKeyAndVisible()
+
+        case .databaseLoadError(let viewController, let keychainStorage):
+            (CurrentAppContext() as? MainAppContext)?.mainWindow = window
+            window.rootViewController = viewController
+            window.makeKeyAndVisible()
+            presentLaunchFailureActionSheet(
+                from: viewController,
+                supportTag: "LaunchFailure_DatabaseLoadFailed",
+                logDumper: .preLaunch(),
+                title: OWSLocalizedString(
+                    "APP_LAUNCH_FAILURE_COULD_NOT_LOAD_DATABASE",
+                    comment: "Error indicating that the app could not launch because the database could not be loaded.",
+                ),
+                message: OWSLocalizedString(
+                    "APP_LAUNCH_FAILURE_ALERT_MESSAGE",
+                    comment: "Default message for the 'app launch failed' alert.",
+                ),
+                actions: [
+                    .submitDebugLogsAndCrash,
+                    .wipeAppDataAndCrash(keyFetcher: GRDBKeyFetcher(keychainStorage: keychainStorage)),
+                ],
+            )
+
+        case .preflightError(let error, let launchContext, let viewController):
+            launchContext.appContext.mainWindow = window
+            window.rootViewController = viewController
+            window.makeKeyAndVisible()
+            showPreflightErrorUI(error, launchContext: launchContext, window: window, viewController: viewController)
+
+        case .normal(let launchContext, let loadingVC):
+            launchContext.appContext.mainWindow = window
+            window.rootViewController = loadingVC
+            window.makeKeyAndVisible()
+            launchApp(in: window, launchContext: launchContext, loadingViewController: loadingVC)
+        }
+    }
+
     // MARK: - Lifecycle
 
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        Logger.info("")
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        AssertIsOnMainThread()
-        if CurrentAppContext().isRunningTests {
-            return
-        }
-
-        Logger.warn("")
-
-        if didAppLaunchFail {
-            return
-        }
-
-        appReadiness.runNowOrWhenAppDidBecomeReadySync { self.handleActivation() }
-
-        // Clear all notifications whenever we become active.
-        // When opening the app from a notification,
-        // AppDelegate.didReceiveLocalNotification will always
-        // be called _before_ we become active.
-        clearAppropriateNotificationsAndRestoreBadgeCount()
-
-        // On every activation, clear old temp directories.
-        OWSFileSystem.clearOldTemporaryDirectories()
-
-        // Ensure that all windows have the correct frame.
-        AppEnvironment.shared.windowManagerRef.updateWindowFrames()
-    }
-
-    private let flushQueue = DispatchQueue(label: "org.signal.flush", qos: .utility)
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        AssertIsOnMainThread()
-
-        Logger.warn("")
-
-        if didAppLaunchFail {
-            return
-        }
-
-        appReadiness.runNowOrWhenAppDidBecomeReadySync {
-            self.refreshConnection(isAppActive: false, shouldRunCron: false)
-        }
-
-        clearAppropriateNotificationsAndRestoreBadgeCount()
-
-        let backgroundTask = OWSBackgroundTask(label: #function)
-        flushQueue.async {
-            defer { backgroundTask.end() }
-            Logger.flush()
-        }
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        Logger.info("")
-
-        if shouldKillAppWhenBackgrounded {
-            Logger.flush()
-            exit(0)
-        }
-    }
+    let flushQueue = DispatchQueue(label: "org.signal.flush", qos: .utility)
 
     func applicationDidReceiveMemoryWarning(_ application: UIApplication) {
         Logger.info("")
@@ -123,7 +120,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - App Launch
 
-    private lazy var appReadiness = AppReadinessImpl()
+    lazy var appReadiness = AppReadinessImpl()
 
     func application(
         _ application: UIApplication,
@@ -143,7 +140,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         DebugLogger.registerRingRTC(appContext: mainAppContext)
 
         if mainAppContext.isRunningTests {
-            _ = initializeWindow(mainAppContext: mainAppContext, rootViewController: UIViewController())
+            pendingLaunchState = .testing
             return true
         }
 
@@ -199,25 +196,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             didAppLaunchFail = true
             Logger.error("Couldn't launch with broken database: \(error.grdbErrorForLogging)")
             let viewController = terminalErrorViewController()
-            _ = initializeWindow(mainAppContext: mainAppContext, rootViewController: viewController)
-
-            presentLaunchFailureActionSheet(
-                from: viewController,
-                supportTag: "LaunchFailure_DatabaseLoadFailed",
-                logDumper: .preLaunch(),
-                title: OWSLocalizedString(
-                    "APP_LAUNCH_FAILURE_COULD_NOT_LOAD_DATABASE",
-                    comment: "Error indicating that the app could not launch because the database could not be loaded.",
-                ),
-                message: OWSLocalizedString(
-                    "APP_LAUNCH_FAILURE_ALERT_MESSAGE",
-                    comment: "Default message for the 'app launch failed' alert.",
-                ),
-                actions: [
-                    .submitDebugLogsAndCrash,
-                    .wipeAppDataAndCrash(keyFetcher: GRDBKeyFetcher(keychainStorage: keychainStorage)),
-                ],
-            )
+            pendingLaunchState = .databaseLoadError(viewController, keychainStorage)
             return true
         }
 
@@ -265,13 +244,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         if let preflightError {
             didAppLaunchFail = true
             let viewController = terminalErrorViewController()
-            let window = initializeWindow(mainAppContext: mainAppContext, rootViewController: viewController)
-            showPreflightErrorUI(
-                preflightError,
-                launchContext: launchContext,
-                window: window,
-                viewController: viewController,
-            )
+            pendingLaunchState = .preflightError(preflightError, launchContext, viewController)
             return true
         }
 
@@ -336,23 +309,13 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         // Show LoadingViewController until the database migrations are complete.
         let loadingViewController = LoadingViewController()
 
-        let window = initializeWindow(mainAppContext: mainAppContext, rootViewController: loadingViewController)
-        self.launchApp(in: window, launchContext: launchContext, loadingViewController: loadingViewController)
+        pendingLaunchState = .normal(launchContext, loadingViewController)
         return true
     }
 
     var window: UIWindow?
 
-    private func initializeWindow(mainAppContext: MainAppContext, rootViewController: UIViewController) -> UIWindow {
-        let window = OWSWindow()
-        self.window = window
-        mainAppContext.mainWindow = window
-        window.rootViewController = rootViewController
-        window.makeKeyAndVisible()
-        return window
-    }
-
-    private struct LaunchContext {
+    struct LaunchContext {
         let appContext: MainAppContext
         var databaseStorage: SDSDatabaseStorage
         let deviceSleepManager: DeviceSleepManagerImpl
@@ -360,7 +323,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         let launchStartedAt: CFTimeInterval
     }
 
-    private func launchApp(
+    func launchApp(
         in window: UIWindow,
         launchContext: LaunchContext,
         loadingViewController: LoadingViewController,
@@ -375,7 +338,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private lazy var screenLockUI = ScreenLockUI(appReadiness: appReadiness)
 
-    private func configureGlobalUI(in window: UIWindow) {
+    func configureGlobalUI(in window: UIWindow) {
         Theme.setupSignalAppearance()
 
         screenLockUI.setupWithRootWindow(window)
@@ -959,7 +922,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Launch Failures
 
-    private var didAppLaunchFail: Bool = false {
+    var didAppLaunchFail: Bool = false {
         didSet {
             if !didAppLaunchFail {
                 self.shouldKillAppWhenBackgrounded = false
@@ -967,9 +930,9 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-    private var shouldKillAppWhenBackgrounded: Bool = false
+    var shouldKillAppWhenBackgrounded: Bool = false
 
-    private enum LaunchPreflightError {
+    enum LaunchPreflightError {
         case unknownDatabaseVersion
         case couldNotRestoreTransferredData
         case databaseCorrupted
@@ -1330,7 +1293,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private var hasActivated = false
 
-    private func handleActivation() {
+    func handleActivation() {
         AssertIsOnMainThread()
 
         defer {
@@ -1426,7 +1389,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     /// is in the background.
     private var backgroundFetchHandle: BackgroundTaskHandle?
 
-    private func refreshConnection(isAppActive: Bool, shouldRunCron: Bool) {
+    func refreshConnection(isAppActive: Bool, shouldRunCron: Bool) {
         let chatConnectionManager = DependenciesBridge.shared.chatConnectionManager
 
         let oldActiveConnectionTokens = self.activeConnectionTokens
@@ -1503,7 +1466,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             return .portrait
         }
 
-        guard let rootViewController = self.window?.rootViewController else {
+        guard let rootViewController = CurrentAppContext().mainWindow?.rootViewController else {
             return UIDevice.current.defaultSupportedOrientations
         }
 
@@ -1630,7 +1593,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         return .notHandled
     }
 
-    private func clearAppropriateNotificationsAndRestoreBadgeCount() {
+    func clearAppropriateNotificationsAndRestoreBadgeCount() {
         AssertIsOnMainThread()
 
         appReadiness.runNowOrWhenAppDidBecomeReadySync {
@@ -1894,7 +1857,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
                 tsAccountManager: DependenciesBridge.shared.tsAccountManager,
             )
 
-            urlOpener.openUrl(parsedUrl, in: self.window!)
+            urlOpener.openUrl(parsedUrl, in: CurrentAppContext().mainWindow!)
         }
         return true
     }

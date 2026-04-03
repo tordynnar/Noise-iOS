@@ -77,6 +77,7 @@ class WindowManager {
         }
 
         let window = OWSWindow(frame: rootWindow.bounds)
+        window.windowScene = rootWindow.windowScene
         window.windowLevel = ._returnToCall
         window.isHidden = true
         window.isOpaque = true
@@ -96,6 +97,7 @@ class WindowManager {
         }
 
         let window = OWSWindow(frame: rootWindow.bounds)
+        window.windowScene = rootWindow.windowScene
         window.windowLevel = ._callView
         window.isHidden = true
         window.isOpaque = true
