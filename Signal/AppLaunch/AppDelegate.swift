@@ -801,6 +801,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
         scheduleBgAppRefresh()
         SpotlightIndexManager.shared.indexAllConversations()
+        SpotlightIndexManager.shared.startObservingDatabaseChanges()
         Self.updateApplicationShortcutItems(isRegistered: registeredState != nil)
 
         let notificationCenter = NotificationCenter.default

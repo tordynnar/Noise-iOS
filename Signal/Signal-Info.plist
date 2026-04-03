@@ -50,6 +50,8 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>0</string>
+	<key>CoreSpotlightContinuation</key>
+	<true/>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LOGS_EMAIL</key>
@@ -107,6 +109,7 @@
 		<string>INStartCallIntent</string>
 		<string>INSearchForMessagesIntent</string>
 		<string>INReadMessageIntent</string>
+		<string>CSSearchableItemActionType</string>
 	</array>
 	<key>OWSBundleIDPrefix</key>
 	<string>$(SIGNAL_BUNDLEID_PREFIX)</string>

@@ -7,19 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BBB0DA5C2F116855728F1CE5 /* NoisePersonEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB0DA5C2F116855728F1CE5 /* NoisePersonEntity.swift */; };
-		BB3CC6297F77905A209A6B62 /* NoiseConversationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CC6297F77905A209A6B62 /* NoiseConversationEntity.swift */; };
-		BB5F438C74B4A65E84AE3CEE /* NoiseSendMessageIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F438C74B4A65E84AE3CEE /* NoiseSendMessageIntent.swift */; };
-		BBF4170DCDCC3D5BEC9710FD /* NoiseReadMessagesIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4170DCDCC3D5BEC9710FD /* NoiseReadMessagesIntent.swift */; };
-		BB57925CC54678510DAD3517 /* NoiseSearchMessagesIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA57925CC54678510DAD3517 /* NoiseSearchMessagesIntent.swift */; };
-		BB028D0FA4C24D5960921AE7 /* NoiseSummarizeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA028D0FA4C24D5960921AE7 /* NoiseSummarizeIntent.swift */; };
-		BB29639AEA4580504D886EEE /* NoiseShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA29639AEA4580504D886EEE /* NoiseShortcuts.swift */; };
-		CC0000000000000000000001 /* NoiseCarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000011 /* NoiseCarPlaySceneDelegate.swift */; };
-		CC0000000000000000000004 /* NoiseWindowSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000014 /* NoiseWindowSceneDelegate.swift */; };
-		CC0000000000000000000002 /* CarPlayConversationListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000012 /* CarPlayConversationListController.swift */; };
-		CC0000000000000000000003 /* CarPlayMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000013 /* CarPlayMessageController.swift */; };
-		DD0000000000000000000001 /* SpotlightIndexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0000000000000000000011 /* SpotlightIndexManager.swift */; };
-		EE0000000000000000000001 /* CloudBackupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000011 /* CloudBackupManager.swift */; };
 		04127D912F23B3B000B4E95B /* CVCapsuleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04127D902F23B3B000B4E95B /* CVCapsuleLabel.swift */; };
 		041A5F072E05B3F900FAED05 /* BackupEnablementMegaphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A5F062E05B3F000FAED05 /* BackupEnablementMegaphone.swift */; };
 		041C24ED2DF782AF0065B685 /* OutgoingGroupUpdateMessageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BC9C6428B7C00A0077D442 /* OutgoingGroupUpdateMessageTest.swift */; };
@@ -1827,6 +1814,13 @@
 		B9F817642BA263A900EAEE23 /* SignalSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F817632BA263A900EAEE23 /* SignalSymbols.swift */; };
 		B9F9ABF72CB98844001AE92D /* UIColor+Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F9ABF62CB98844001AE92D /* UIColor+Signal.swift */; };
 		B9FF37362B9286C6005ADDB8 /* UsernameLinkScanQRCodeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FF37352B9286C6005ADDB8 /* UsernameLinkScanQRCodeSheet.swift */; };
+		BB028D0FA4C24D5960921AE7 /* NoiseSummarizeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA028D0FA4C24D5960921AE7 /* NoiseSummarizeIntent.swift */; };
+		BB29639AEA4580504D886EEE /* NoiseShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA29639AEA4580504D886EEE /* NoiseShortcuts.swift */; };
+		BB3CC6297F77905A209A6B62 /* NoiseConversationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CC6297F77905A209A6B62 /* NoiseConversationEntity.swift */; };
+		BB57925CC54678510DAD3517 /* NoiseSearchMessagesIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA57925CC54678510DAD3517 /* NoiseSearchMessagesIntent.swift */; };
+		BB5F438C74B4A65E84AE3CEE /* NoiseSendMessageIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F438C74B4A65E84AE3CEE /* NoiseSendMessageIntent.swift */; };
+		BBB0DA5C2F116855728F1CE5 /* NoisePersonEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB0DA5C2F116855728F1CE5 /* NoisePersonEntity.swift */; };
+		BBF4170DCDCC3D5BEC9710FD /* NoiseReadMessagesIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4170DCDCC3D5BEC9710FD /* NoiseReadMessagesIntent.swift */; };
 		C100E6822C33087C000C83B8 /* PaymentsFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100E6812C33087C000C83B8 /* PaymentsFormat.swift */; };
 		C10E9FAF2BB778E100A609B9 /* BackupArchiveManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10E9FAE2BB778E100A609B9 /* BackupArchiveManagerMock.swift */; };
 		C113994B2CA1B32C00D4D90C /* BackupStickerPackDownloadStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113994A2CA1B32400D4D90C /* BackupStickerPackDownloadStore.swift */; };
@@ -1938,6 +1932,10 @@
 		C1FB9B752B16498C00D51A3B /* ExternalPendingDonationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FB9B742B16498C00D51A3B /* ExternalPendingDonationStore.swift */; };
 		C1FE1F612C80CDC30031860B /* AttachmentBackupThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE1F602C80CDC30031860B /* AttachmentBackupThumbnail.swift */; };
 		C26296B4BDCEDADBDA01DDD2 /* Pods_SignalServiceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948B2FC201146EF3BA459226 /* Pods_SignalServiceKit.framework */; };
+		CC0000000000000000000001 /* NoiseCarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000011 /* NoiseCarPlaySceneDelegate.swift */; };
+		CC0000000000000000000002 /* CarPlayConversationListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000012 /* CarPlayConversationListController.swift */; };
+		CC0000000000000000000003 /* CarPlayMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000013 /* CarPlayMessageController.swift */; };
+		CC0000000000000000000004 /* NoiseWindowSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000014 /* NoiseWindowSceneDelegate.swift */; };
 		D202868116DBE0E7009068E9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AEACDB16C426DA00C364C0 /* CFNetwork.framework */; };
 		D202868216DBE0F4009068E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2179CFD16BB0B480006F3AB /* SystemConfiguration.framework */; };
 		D202868316DBE0FC009068E9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2179CFB16BB0B3A0006F3AB /* CoreTelephony.framework */; };
@@ -3357,6 +3355,7 @@
 		D9FC1C912C6FE5A50023AB87 /* BackupArchiveTSMessageEditHistoryArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FC1C902C6FE5A50023AB87 /* BackupArchiveTSMessageEditHistoryArchiver.swift */; };
 		D9FF515C2F03A2B40011982F /* DBUInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FF515B2F03A2A10011982F /* DBUInt64.swift */; };
 		D9FF515E2F03A6D30011982F /* DBUInt64Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FF515D2F03A6CD0011982F /* DBUInt64Test.swift */; };
+		DD0000000000000000000001 /* SpotlightIndexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0000000000000000000011 /* SpotlightIndexManager.swift */; };
 		E1368CBE18A1C36B00109378 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EB5ABC1884C002007CBB57 /* MessageUI.framework */; };
 		E1447D8F2CCACFFD004D8FA2 /* BackupArchiveCallLinkRecipientArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1447D8E2CCACFFA004D8FA2 /* BackupArchiveCallLinkRecipientArchiver.swift */; };
 		E14EDF6E2A71AFDF00F0FD7C /* RecipientContextMenuHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EDF6D2A71AFDF00F0FD7C /* RecipientContextMenuHelper.swift */; };
@@ -3506,6 +3505,7 @@
 		E75DD3E02810CDBD00E32C36 /* SubscriptionModelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75DD3DF2810CDBD00E32C36 /* SubscriptionModelsTest.swift */; };
 		E7D7C93F28B580AC003F043B /* Bundle+OWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7C93E28B580AC003F043B /* Bundle+OWS.swift */; };
 		EC7A9D369AF9724FEEE5B653 /* Pods_SignalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F39202F831935AAE1C5F54 /* Pods_SignalUITests.framework */; };
+		EE0000000000000000000001 /* CloudBackupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000011 /* CloudBackupManager.swift */; };
 		F02564D8274EDF4600D7B48A /* BadgeIssueSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02564D7274EDF4600D7B48A /* BadgeIssueSheet.swift */; };
 		F05F51C926A90D6B00861034 /* ContextMenuActionsAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F51C826A90D6B00861034 /* ContextMenuActionsAccessory.swift */; };
 		F090C8202762F2C5005C20FC /* EmojiReactionPickerConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F090C81F2762F2C5005C20FC /* EmojiReactionPickerConfigViewController.swift */; };
@@ -4168,19 +4168,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AAB0DA5C2F116855728F1CE5 /* NoisePersonEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoisePersonEntity.swift; sourceTree = "<group>"; };
-		AA3CC6297F77905A209A6B62 /* NoiseConversationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseConversationEntity.swift; sourceTree = "<group>"; };
-		AA5F438C74B4A65E84AE3CEE /* NoiseSendMessageIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseSendMessageIntent.swift; sourceTree = "<group>"; };
-		AAF4170DCDCC3D5BEC9710FD /* NoiseReadMessagesIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseReadMessagesIntent.swift; sourceTree = "<group>"; };
-		AA57925CC54678510DAD3517 /* NoiseSearchMessagesIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseSearchMessagesIntent.swift; sourceTree = "<group>"; };
-		AA028D0FA4C24D5960921AE7 /* NoiseSummarizeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseSummarizeIntent.swift; sourceTree = "<group>"; };
-		AA29639AEA4580504D886EEE /* NoiseShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseShortcuts.swift; sourceTree = "<group>"; };
-		CC0000000000000000000011 /* NoiseCarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseCarPlaySceneDelegate.swift; sourceTree = "<group>"; };
-		CC0000000000000000000014 /* NoiseWindowSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseWindowSceneDelegate.swift; sourceTree = "<group>"; };
-		CC0000000000000000000012 /* CarPlayConversationListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayConversationListController.swift; sourceTree = "<group>"; };
-		CC0000000000000000000013 /* CarPlayMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayMessageController.swift; sourceTree = "<group>"; };
-		DD0000000000000000000011 /* SpotlightIndexManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightIndexManager.swift; sourceTree = "<group>"; };
-		EE0000000000000000000011 /* CloudBackupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudBackupManager.swift; sourceTree = "<group>"; };
 		04127D902F23B3B000B4E95B /* CVCapsuleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCapsuleLabel.swift; sourceTree = "<group>"; };
 		041A5F062E05B3F000FAED05 /* BackupEnablementMegaphone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupEnablementMegaphone.swift; sourceTree = "<group>"; };
 		041A5F082E05D3AC00FAED05 /* BackupEnablementReminderMegaphoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupEnablementReminderMegaphoneTests.swift; sourceTree = "<group>"; };
@@ -6010,6 +5997,13 @@
 		A33E43CA8A572CA70089C4CC /* Pods-SignalServiceKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalServiceKit.debug.xcconfig"; path = "Target Support Files/Pods-SignalServiceKit/Pods-SignalServiceKit.debug.xcconfig"; sourceTree = "<group>"; };
 		A566C0C0B69138202C0367E6 /* Pods-Signal.app store release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Signal.app store release.xcconfig"; path = "Target Support Files/Pods-Signal/Pods-Signal.app store release.xcconfig"; sourceTree = "<group>"; };
 		A5E7C674248C5442007C949A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = translations/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA028D0FA4C24D5960921AE7 /* NoiseSummarizeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseSummarizeIntent.swift; sourceTree = "<group>"; };
+		AA29639AEA4580504D886EEE /* NoiseShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseShortcuts.swift; sourceTree = "<group>"; };
+		AA3CC6297F77905A209A6B62 /* NoiseConversationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseConversationEntity.swift; sourceTree = "<group>"; };
+		AA57925CC54678510DAD3517 /* NoiseSearchMessagesIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseSearchMessagesIntent.swift; sourceTree = "<group>"; };
+		AA5F438C74B4A65E84AE3CEE /* NoiseSendMessageIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseSendMessageIntent.swift; sourceTree = "<group>"; };
+		AAB0DA5C2F116855728F1CE5 /* NoisePersonEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoisePersonEntity.swift; sourceTree = "<group>"; };
+		AAF4170DCDCC3D5BEC9710FD /* NoiseReadMessagesIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseReadMessagesIntent.swift; sourceTree = "<group>"; };
 		B3F39202F831935AAE1C5F54 /* Pods_SignalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60EDE031A05A01700D73516 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B634CBB31AB10D2300C49B99 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = translations/hr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -6226,9 +6220,13 @@
 		C1FB9B742B16498C00D51A3B /* ExternalPendingDonationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalPendingDonationStore.swift; sourceTree = "<group>"; };
 		C1FE1F602C80CDC30031860B /* AttachmentBackupThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentBackupThumbnail.swift; sourceTree = "<group>"; };
 		C597942EF64D456BBE9782A2 /* Pods-SignalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalTests.debug.xcconfig"; path = "Target Support Files/Pods-SignalTests/Pods-SignalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC0000000000000000000011 /* NoiseCarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseCarPlaySceneDelegate.swift; sourceTree = "<group>"; };
+		CC0000000000000000000012 /* CarPlayConversationListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayConversationListController.swift; sourceTree = "<group>"; };
+		CC0000000000000000000013 /* CarPlayMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayMessageController.swift; sourceTree = "<group>"; };
+		CC0000000000000000000014 /* NoiseWindowSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseWindowSceneDelegate.swift; sourceTree = "<group>"; };
 		D2179CFB16BB0B3A0006F3AB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		D2179CFD16BB0B480006F3AB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D221A089169C9E5E00537ABF /* Signal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Signal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D221A089169C9E5E00537ABF /* Noise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D221A08D169C9E5E00537ABF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D221A08F169C9E5E00537ABF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D221A091169C9E5E00537ABF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -7665,6 +7663,7 @@
 		D9FC1C902C6FE5A50023AB87 /* BackupArchiveTSMessageEditHistoryArchiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupArchiveTSMessageEditHistoryArchiver.swift; sourceTree = "<group>"; };
 		D9FF515B2F03A2A10011982F /* DBUInt64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBUInt64.swift; sourceTree = "<group>"; };
 		D9FF515D2F03A6CD0011982F /* DBUInt64Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBUInt64Test.swift; sourceTree = "<group>"; };
+		DD0000000000000000000011 /* SpotlightIndexManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightIndexManager.swift; sourceTree = "<group>"; };
 		E1447D8E2CCACFFA004D8FA2 /* BackupArchiveCallLinkRecipientArchiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupArchiveCallLinkRecipientArchiver.swift; sourceTree = "<group>"; };
 		E14EDF6D2A71AFDF00F0FD7C /* RecipientContextMenuHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientContextMenuHelper.swift; sourceTree = "<group>"; };
 		E15066C22CED498600F6F9AF /* RegistrationQuickRestoreQRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationQuickRestoreQRCodeViewController.swift; sourceTree = "<group>"; };
@@ -7815,6 +7814,7 @@
 		E7D7C93E28B580AC003F043B /* Bundle+OWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+OWS.swift"; sourceTree = "<group>"; };
 		EA03B20E7D8DBBE1B07BA967 /* Pods-SignalNSE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalNSE.debug.xcconfig"; path = "Target Support Files/Pods-SignalNSE/Pods-SignalNSE.debug.xcconfig"; sourceTree = "<group>"; };
 		EC7FF00AFA51D97689DC9C2E /* Pods-SignalUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalUI.debug.xcconfig"; path = "Target Support Files/Pods-SignalUI/Pods-SignalUI.debug.xcconfig"; sourceTree = "<group>"; };
+		EE0000000000000000000011 /* CloudBackupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudBackupManager.swift; sourceTree = "<group>"; };
 		F00385FD273F6388000B5ABD /* DonationUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationUtilities.swift; sourceTree = "<group>"; };
 		F00385FE273F6388000B5ABD /* Stripe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stripe.swift; sourceTree = "<group>"; };
 		F02564D7274EDF4600D7B48A /* BadgeIssueSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeIssueSheet.swift; sourceTree = "<group>"; };
@@ -8481,46 +8481,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EE00000000000000000ICLUD /* iCloudBackup */ = {
-			isa = PBXGroup;
-			children = (
-				EE0000000000000000000011 /* CloudBackupManager.swift */,
-			);
-			path = iCloudBackup;
-			sourceTree = "<group>";
-		};
-		DD000000000000000000SPOT /* Spotlight */ = {
-			isa = PBXGroup;
-			children = (
-				DD0000000000000000000011 /* SpotlightIndexManager.swift */,
-			);
-			path = Spotlight;
-			sourceTree = "<group>";
-		};
-		CC000000000000000000CPLY /* CarPlay */ = {
-			isa = PBXGroup;
-			children = (
-				CC0000000000000000000011 /* NoiseCarPlaySceneDelegate.swift */,
-				CC0000000000000000000012 /* CarPlayConversationListController.swift */,
-				CC0000000000000000000013 /* CarPlayMessageController.swift */,
-			);
-			path = CarPlay;
-			sourceTree = "<group>";
-		};
-		AA000000000000000000AIGI /* AppIntents */ = {
-			isa = PBXGroup;
-			children = (
-				AAB0DA5C2F116855728F1CE5 /* NoisePersonEntity.swift */,
-				AA3CC6297F77905A209A6B62 /* NoiseConversationEntity.swift */,
-				AA5F438C74B4A65E84AE3CEE /* NoiseSendMessageIntent.swift */,
-				AAF4170DCDCC3D5BEC9710FD /* NoiseReadMessagesIntent.swift */,
-				AA57925CC54678510DAD3517 /* NoiseSearchMessagesIntent.swift */,
-				AA028D0FA4C24D5960921AE7 /* NoiseSummarizeIntent.swift */,
-				AA29639AEA4580504D886EEE /* NoiseShortcuts.swift */,
-			);
-			path = AppIntents;
-			sourceTree = "<group>";
-		};
 		0436E4B12E5E2DC80011E125 /* Polls */ = {
 			isa = PBXGroup;
 			children = (
@@ -11719,6 +11679,20 @@
 			path = StorageService;
 			sourceTree = "<group>";
 		};
+		AA000000000000000000AIGI /* AppIntents */ = {
+			isa = PBXGroup;
+			children = (
+				AAB0DA5C2F116855728F1CE5 /* NoisePersonEntity.swift */,
+				AA3CC6297F77905A209A6B62 /* NoiseConversationEntity.swift */,
+				AA5F438C74B4A65E84AE3CEE /* NoiseSendMessageIntent.swift */,
+				AAF4170DCDCC3D5BEC9710FD /* NoiseReadMessagesIntent.swift */,
+				AA57925CC54678510DAD3517 /* NoiseSearchMessagesIntent.swift */,
+				AA028D0FA4C24D5960921AE7 /* NoiseSummarizeIntent.swift */,
+				AA29639AEA4580504D886EEE /* NoiseShortcuts.swift */,
+			);
+			path = AppIntents;
+			sourceTree = "<group>";
+		};
 		B660F66C1C29867F00687D6E /* test */ = {
 			isa = PBXGroup;
 			children = (
@@ -12042,6 +12016,16 @@
 			path = QuickRestore;
 			sourceTree = "<group>";
 		};
+		CC000000000000000000CPLY /* CarPlay */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000000000000000000011 /* NoiseCarPlaySceneDelegate.swift */,
+				CC0000000000000000000012 /* CarPlayConversationListController.swift */,
+				CC0000000000000000000013 /* CarPlayMessageController.swift */,
+			);
+			path = CarPlay;
+			sourceTree = "<group>";
+		};
 		D221A07E169C9E5E00537ABF = {
 			isa = PBXGroup;
 			children = (
@@ -12062,7 +12046,7 @@
 		D221A08A169C9E5E00537ABF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D221A089169C9E5E00537ABF /* Signal.app */,
+				D221A089169C9E5E00537ABF /* Noise.app */,
 				342FFE8827245850000AC89F /* SignalNSE.appex */,
 				F9C5C897289451B900548EEE /* SignalServiceKit.framework */,
 				F9C5C89E289451B900548EEE /* SignalServiceKitTests.xctest */,
@@ -14247,6 +14231,14 @@
 			path = Avatars;
 			sourceTree = "<group>";
 		};
+		DD000000000000000000SPOT /* Spotlight */ = {
+			isa = PBXGroup;
+			children = (
+				DD0000000000000000000011 /* SpotlightIndexManager.swift */,
+			);
+			path = Spotlight;
+			sourceTree = "<group>";
+		};
 		E19C3D922CF6B34200F2C496 /* QRCodes */ = {
 			isa = PBXGroup;
 			children = (
@@ -14262,6 +14254,14 @@
 				E75DD3DF2810CDBD00E32C36 /* SubscriptionModelsTest.swift */,
 			);
 			path = subscriptions;
+			sourceTree = "<group>";
+		};
+		EE00000000000000000ICLUD /* iCloudBackup */ = {
+			isa = PBXGroup;
+			children = (
+				EE0000000000000000000011 /* CloudBackupManager.swift */,
+			);
+			path = iCloudBackup;
 			sourceTree = "<group>";
 		};
 		F0B872B4269CF01E00D26481 /* ContextMenus */ = {
@@ -15872,7 +15872,7 @@
 			);
 			name = Signal;
 			productName = RedPhone;
-			productReference = D221A089169C9E5E00537ABF /* Signal.app */;
+			productReference = D221A089169C9E5E00537ABF /* Noise.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D221A0A9169C9E5F00537ABF /* SignalTests */ = {
@@ -21542,6 +21542,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Signal/Signal.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9USMN72F4;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -21801,6 +21802,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Signal/Signal.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9USMN72F4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_SOURCE_FILE_NAMES[arch=*]" = Signal/test/Assets/input_video.mp4;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -22169,6 +22171,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = T9USMN72F4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_SOURCE_FILE_NAMES[arch=*]" = Signal/test/Assets/input_video.mp4;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -22208,6 +22211,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Signal/Signal-AppStore.entitlements";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9USMN72F4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_SOURCE_FILE_NAMES[arch=*]" = Signal/test/Assets/input_video.mp4;
 				GCC_OPTIMIZATION_LEVEL = 3;
