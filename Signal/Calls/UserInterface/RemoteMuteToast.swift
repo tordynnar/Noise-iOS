@@ -26,12 +26,12 @@ class RemoteMuteToast: UIView {
         tsAccountManager: DependenciesBridge.shared.tsAccountManager,
     )
 
-    private var call: GroupCall
+    private var call: Noise.GroupCall
     private var pendingNotifications = [String]()
 
     // MARK: Init
 
-    init(call: GroupCall) {
+    init(call: Noise.GroupCall) {
         self.call = call
         super.init(frame: .zero)
 

@@ -665,7 +665,7 @@ class CallsListViewController: OWSViewController, HomeTabViewController, CallSer
             switch oldValue.mode {
             case .individual:
                 break
-            case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+            case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
                 call.removeObserver(self)
             }
             reloadRow(forCall: oldValue.mode, callId: callId)
@@ -682,7 +682,7 @@ class CallsListViewController: OWSViewController, HomeTabViewController, CallSer
                 } else {
                     owsFailDebug("Can't start individual calls without callIds.")
                 }
-            case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+            case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
                 // We need to fetch the eraId asynchronously, so there's nothing to refresh.
                 call.addObserver(self, syncStateImmediately: true)
             }
@@ -691,7 +691,7 @@ class CallsListViewController: OWSViewController, HomeTabViewController, CallSer
 
     // MARK: GroupCallObserver
 
-    func groupCallPeekChanged(_ call: GroupCall) {
+    func groupCallPeekChanged(_ call: Noise.GroupCall) {
         guard self.currentCallId == nil, let eraId = call.ringRtcCall.peekInfo?.eraId else {
             // We've already set it or still don't know it.
             return
@@ -1679,7 +1679,7 @@ private extension SignalCall {
         switch mode {
         case .individual(let individualCall):
             return individualCall.callId
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             return call.ringRtcCall.peekInfo?.eraId.map { callIdFromEra($0) }
         }
     }

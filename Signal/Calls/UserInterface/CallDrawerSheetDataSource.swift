@@ -30,7 +30,7 @@ protocol CallDrawerSheetDataSource {
 
 // MARK: - Group Call data source
 
-final class GroupCallSheetDataSource<Call: GroupCall>: CallDrawerSheetDataSource, GroupCallObserver {
+final class GroupCallSheetDataSource<Call: Noise.GroupCall>: CallDrawerSheetDataSource, GroupCallObserver {
     private let ringRtcCall: SignalRingRTC.GroupCall
     private let groupCall: Call
 
@@ -179,27 +179,27 @@ final class GroupCallSheetDataSource<Call: GroupCall>: CallDrawerSheetDataSource
 
     // MARK: GroupCallObserver
 
-    func groupCallLocalDeviceStateChanged(_ call: GroupCall) {
+    func groupCallLocalDeviceStateChanged(_ call: Noise.GroupCall) {
         AssertIsOnMainThread()
         observers.elements.forEach { $0.callSheetMembershipDidChange(self) }
     }
 
-    func groupCallRemoteDeviceStatesChanged(_ call: GroupCall) {
+    func groupCallRemoteDeviceStatesChanged(_ call: Noise.GroupCall) {
         AssertIsOnMainThread()
         observers.elements.forEach { $0.callSheetMembershipDidChange(self) }
     }
 
-    func groupCallPeekChanged(_ call: GroupCall) {
+    func groupCallPeekChanged(_ call: Noise.GroupCall) {
         AssertIsOnMainThread()
         observers.elements.forEach { $0.callSheetMembershipDidChange(self) }
     }
 
-    func groupCallEnded(_ call: GroupCall, reason: CallEndReason) {
+    func groupCallEnded(_ call: Noise.GroupCall, reason: CallEndReason) {
         AssertIsOnMainThread()
         observers.elements.forEach { $0.callSheetMembershipDidChange(self) }
     }
 
-    func groupCallReceivedRaisedHands(_ call: GroupCall, raisedHands: [DemuxId]) {
+    func groupCallReceivedRaisedHands(_ call: Noise.GroupCall, raisedHands: [DemuxId]) {
         AssertIsOnMainThread()
         observers.elements.forEach { $0.callSheetRaisedHandsDidChange(self) }
     }

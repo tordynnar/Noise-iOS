@@ -328,7 +328,7 @@ extension CallControlsOverflowView {
         switch self.call.mode {
         case .individual:
             owsFailDebug("You shouldn't be able to raise your hand in a 1:1 call.")
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             if let localDemuxId = call.ringRtcCall.localDeviceState.demuxId {
                 return call.raisedHands.contains(localDemuxId)
             }

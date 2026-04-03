@@ -595,9 +595,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>A Signal csoportok %1$d vagy kevesebb taggal működnek hatékonyan. Ennél több tag esetén lassulások tapasztalhatók az üzenetek küldése és fogadása során.</string>
+			<string>A Noise csoportok %1$d vagy kevesebb taggal működnek hatékonyan. Ennél több tag esetén lassulások tapasztalhatók az üzenetek küldése és fogadása során.</string>
 			<key>other</key>
-			<string>A Signal csoportok %1$d vagy kevesebb taggal működnek hatékonyan. Ennél több tag esetén lassulások tapasztalhatók az üzenetek küldése és fogadása során.</string>
+			<string>A Noise csoportok %1$d vagy kevesebb taggal működnek hatékonyan. Ennél több tag esetén lassulások tapasztalhatók az üzenetek küldése és fogadása során.</string>
 		</dict>
 	</dict>
 	<key>GROUP_CALL_HAS_MAX_DEVICES_%d</key>
@@ -755,9 +755,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>A Signal hívni fogja %2$@, %3$@ és %1$d további ismerősödet</string>
+			<string>A Noise hívni fogja %2$@, %3$@ és %1$d további ismerősödet</string>
 			<key>other</key>
-			<string>A Signal hívni fogja %2$@, %3$@ és %1$d további ismerősödet</string>
+			<string>A Noise hívni fogja %2$@, %3$@ és %1$d további ismerősödet</string>
 		</dict>
 	</dict>
 	<key>GROUP_INVITES_SENT_ALERT_TITLE_%d</key>
@@ -1043,9 +1043,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>A(z) „%2$@” összekapcsolásának megtartásához nyissa meg a Signalt az adott eszközön %1$d napon belül.</string>
+			<string>A(z) „%2$@” összekapcsolásának megtartásához nyissa meg a Noiset az adott eszközön %1$d napon belül.</string>
 			<key>other</key>
-			<string>A(z) „%2$@” összekapcsolásának megtartásához nyissa meg a Signalt az adott eszközön %1$d napon belül.</string>
+			<string>A(z) „%2$@” összekapcsolásának megtartásához nyissa meg a Noiset az adott eszközön %1$d napon belül.</string>
 		</dict>
 	</dict>
 	<key>LINK_DEVICE_CONFIRMATION_ALERT_TRANSFER_SUBTITLE_%d</key>
@@ -1251,9 +1251,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>Minden Signal Névjegy · %1$d néző</string>
+			<string>Minden Noise Névjegy · %1$d néző</string>
 			<key>other</key>
-			<string>Minden Signal Névjegy · %1$d néző</string>
+			<string>Minden Noise Névjegy · %1$d néző</string>
 		</dict>
 	</dict>
 	<key>MY_STORY_VIEWERS_ALL_CONNECTIONS_EXCLUDING_%d</key>
@@ -1267,9 +1267,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>Minden Signal Névjegy · Kivéve %1$d</string>
+			<string>Minden Noise Névjegy · Kivéve %1$d</string>
 			<key>other</key>
-			<string>Minden Signal Névjegy · Kivéve %1$d</string>
+			<string>Minden Noise Névjegy · Kivéve %1$d</string>
 		</dict>
 	</dict>
 	<key>MY_STORY_VIEWERS_ONLY_%d</key>

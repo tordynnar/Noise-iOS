@@ -17,7 +17,7 @@ class GroupCallVideoOverflow: UICollectionView, UICollectionViewDataSource, UICo
     weak var overflowDelegate: GroupCallVideoOverflowDelegate?
 
     let call: SignalCall
-    let groupCall: GroupCall
+    let groupCall: Noise.GroupCall
     let ringRtcCall: SignalRingRTC.GroupCall
 
     class var itemHeight: CGFloat {
@@ -33,7 +33,7 @@ class GroupCallVideoOverflow: UICollectionView, UICollectionViewDataSource, UICo
         }
     }
 
-    init(call: SignalCall, groupCall: GroupCall, delegate: GroupCallVideoOverflowDelegate) {
+    init(call: SignalCall, groupCall: Noise.GroupCall, delegate: GroupCallVideoOverflowDelegate) {
         self.call = call
         self.groupCall = groupCall
         self.ringRtcCall = groupCall.ringRtcCall
@@ -238,7 +238,7 @@ class GroupCallVideoOverflow: UICollectionView, UICollectionViewDataSource, UICo
 
     // MARK: - GroupCallObserver
 
-    func groupCallRemoteDeviceStatesChanged(_ call: GroupCall) {
+    func groupCallRemoteDeviceStatesChanged(_ call: Noise.GroupCall) {
         AssertIsOnMainThread()
 
         isAnyRemoteDeviceScreenSharing = call.ringRtcCall.remoteDeviceStates.values.first { $0.sharingScreen == true } != nil
@@ -246,17 +246,17 @@ class GroupCallVideoOverflow: UICollectionView, UICollectionViewDataSource, UICo
         reloadData()
     }
 
-    func groupCallPeekChanged(_ call: GroupCall) {
+    func groupCallPeekChanged(_ call: Noise.GroupCall) {
         AssertIsOnMainThread()
         reloadData()
     }
 
-    func groupCallEnded(_ call: GroupCall, reason: CallEndReason) {
+    func groupCallEnded(_ call: Noise.GroupCall, reason: CallEndReason) {
         AssertIsOnMainThread()
         reloadData()
     }
 
-    func groupCallReceivedRaisedHands(_ call: GroupCall, raisedHands: [DemuxId]) {
+    func groupCallReceivedRaisedHands(_ call: Noise.GroupCall, raisedHands: [DemuxId]) {
         AssertIsOnMainThread()
         reloadData()
     }

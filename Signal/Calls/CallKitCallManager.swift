@@ -135,7 +135,7 @@ final class CallKitCallManager {
         switch call.mode {
         case .individual(let individualCall):
             startCallAction.isVideo = individualCall.offerMediaType == .video
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             // All group calls are video calls even if the local video is off,
             // but what we set here is how the call shows up in the system call log,
             // which controls what happens if the user starts another call from the system call log.

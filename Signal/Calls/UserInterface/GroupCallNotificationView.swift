@@ -8,7 +8,7 @@ import SignalRingRTC
 import SignalServiceKit
 
 class GroupCallNotificationView: UIView {
-    private let groupCall: GroupCall
+    private let groupCall: Noise.GroupCall
     private let ringRtcCall: SignalRingRTC.GroupCall
     private var callService: CallService { AppEnvironment.shared.callService }
 
@@ -22,7 +22,7 @@ class GroupCallNotificationView: UIView {
     private var membersPendingJoinNotification = Set<ActiveMember>()
     private var membersPendingLeaveNotification = Set<ActiveMember>()
 
-    init(groupCall: GroupCall) {
+    init(groupCall: Noise.GroupCall) {
         self.groupCall = groupCall
         self.ringRtcCall = groupCall.ringRtcCall
         super.init(frame: .zero)
@@ -133,17 +133,17 @@ class GroupCallNotificationView: UIView {
 }
 
 extension GroupCallNotificationView: GroupCallObserver {
-    func groupCallRemoteDeviceStatesChanged(_ call: GroupCall) {
+    func groupCallRemoteDeviceStatesChanged(_ call: Noise.GroupCall) {
         AssertIsOnMainThread()
         updateActiveMembers()
     }
 
-    func groupCallPeekChanged(_ call: GroupCall) {
+    func groupCallPeekChanged(_ call: Noise.GroupCall) {
         AssertIsOnMainThread()
         updateActiveMembers()
     }
 
-    func groupCallEnded(_ call: GroupCall, reason: CallEndReason) {
+    func groupCallEnded(_ call: Noise.GroupCall, reason: CallEndReason) {
         AssertIsOnMainThread()
 
         hasJoined = false

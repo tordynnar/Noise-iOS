@@ -89,12 +89,12 @@ public class CallLinkProfileKeySharingManager {
 }
 
 extension CallLinkProfileKeySharingManager: GroupCallObserver {
-    func groupCallPeekChanged(_ call: GroupCall) {
+    func groupCallPeekChanged(_ call: Noise.GroupCall) {
         sendProfileKeyToParticipants(ofCall: call)
     }
 
     @MainActor
-    func sendProfileKeyToParticipants(ofCall call: GroupCall) {
+    func sendProfileKeyToParticipants(ofCall call: Noise.GroupCall) {
         switch call.concreteType {
         case .groupThread:
             return

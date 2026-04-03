@@ -595,9 +595,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>Signal-grupper fungerer bedst med %1$d medlem eller færre. Tilføjes der flere medlemmer, vil det medføre forsinkelser i afsendelse og modtagelse af beskeder.</string>
+			<string>Noise-grupper fungerer bedst med %1$d medlem eller færre. Tilføjes der flere medlemmer, vil det medføre forsinkelser i afsendelse og modtagelse af beskeder.</string>
 			<key>other</key>
-			<string>Signal-grupper fungerer bedst med %1$d medlemmer eller færre. Tilføjes der flere medlemmer, vil det medføre forsinkelser i afsendelse og modtagelse af beskeder.</string>
+			<string>Noise-grupper fungerer bedst med %1$d medlemmer eller færre. Tilføjes der flere medlemmer, vil det medføre forsinkelser i afsendelse og modtagelse af beskeder.</string>
 		</dict>
 	</dict>
 	<key>GROUP_CALL_HAS_MAX_DEVICES_%d</key>
@@ -755,9 +755,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>Signal ringer til %2$@, %3$@ og %1$d anden</string>
+			<string>Noise ringer til %2$@, %3$@ og %1$d anden</string>
 			<key>other</key>
-			<string>Signal ringer til %2$@, %3$@ og %1$d andre</string>
+			<string>Noise ringer til %2$@, %3$@ og %1$d andre</string>
 		</dict>
 	</dict>
 	<key>GROUP_INVITES_SENT_ALERT_TITLE_%d</key>
@@ -1043,9 +1043,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>Åbn Signal indenfor én dag for at opretholde forbindelsen til enheden &quot;%2$@&quot;.</string>
+			<string>Åbn Noise indenfor én dag for at opretholde forbindelsen til enheden &quot;%2$@&quot;.</string>
 			<key>other</key>
-			<string>Åbn Signal indenfor %1$d dage for at opretholde forbindelsen til enheden &quot;%2$@&quot;.</string>
+			<string>Åbn Noise indenfor %1$d dage for at opretholde forbindelsen til enheden &quot;%2$@&quot;.</string>
 		</dict>
 	</dict>
 	<key>LINK_DEVICE_CONFIRMATION_ALERT_TRANSFER_SUBTITLE_%d</key>
@@ -1251,9 +1251,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>Alle Signal-kontakter · %1$d seer</string>
+			<string>Alle Noise-kontakter · %1$d seer</string>
 			<key>other</key>
-			<string>Alle Signal-kontakter · %1$d seere</string>
+			<string>Alle Noise-kontakter · %1$d seere</string>
 		</dict>
 	</dict>
 	<key>MY_STORY_VIEWERS_ALL_CONNECTIONS_EXCLUDING_%d</key>
@@ -1267,9 +1267,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>Alle Signal-kontakter · %1$d ekskluderet</string>
+			<string>Alle Noise-kontakter · %1$d ekskluderet</string>
 			<key>other</key>
-			<string>Alle Signal-kontakter · %1$d ekskluderet</string>
+			<string>Alle Noise-kontakter · %1$d ekskluderet</string>
 		</dict>
 	</dict>
 	<key>MY_STORY_VIEWERS_ONLY_%d</key>

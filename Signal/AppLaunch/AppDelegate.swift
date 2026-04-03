@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 //
 
+import CoreSpotlight
 import CryptoKit
 import GRDB
 import Intents
@@ -836,6 +837,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         AppVersionImpl.shared.mainAppLaunchDidComplete()
 
         scheduleBgAppRefresh()
+        SpotlightIndexManager.shared.indexAllConversations()
         Self.updateApplicationShortcutItems(isRegistered: registeredState != nil)
 
         let notificationCenter = NotificationCenter.default
@@ -1713,6 +1715,22 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
                 return false
             }
             return handleOpenUrl(webpageUrl)
+        case CSSearchableItemActionType:
+            // Handle Spotlight search result taps
+            guard let threadUniqueId = SpotlightIndexManager.threadId(from: userActivity) else {
+                return false
+            }
+            appReadiness.runNowOrWhenAppDidBecomeReadySync {
+                let tsAccountManager = DependenciesBridge.shared.tsAccountManager
+                guard tsAccountManager.registrationStateWithMaybeSneakyTransaction.isRegistered else {
+                    return
+                }
+                SignalApp.shared.presentConversationAndScrollToFirstUnreadMessage(
+                    threadUniqueId: threadUniqueId,
+                    animated: false,
+                )
+            }
+            return true
         default:
             return false
         }

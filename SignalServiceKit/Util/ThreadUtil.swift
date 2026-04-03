@@ -471,9 +471,8 @@ extension TSThread {
         context: IntentContext,
         transaction: DBReadTransaction,
     ) -> ResolvableDisplayNameBuilder<INIntent>? {
-        guard SSKPreferences.areIntentDonationsEnabled(transaction: transaction) else {
-            return nil
-        }
+        // Noise: Always donate intents for Apple Intelligence integration.
+        // (Signal's areIntentDonationsEnabled preference is bypassed.)
 
         let tsAccountManager = DependenciesBridge.shared.tsAccountManager
         guard let localIdentifiers = tsAccountManager.localIdentifiers(tx: transaction) else {
@@ -538,6 +537,9 @@ extension TSThread {
             )
         }
 
+        // Noise: Include message content in intent donation for Apple Intelligence.
+        let messageContent = message?.body
+
         return ResolvableDisplayNameBuilder(
             displayNameForAddress: senderAddress,
             transformedBy: { senderDisplayName, tx in
@@ -545,7 +547,7 @@ extension TSThread {
                 let sendMessageIntent = INSendMessageIntent(
                     recipients: [recipientPerson].compacted(),
                     outgoingMessageType: .outgoingMessageText,
-                    content: nil,
+                    content: messageContent,
                     speakableGroupName: formattedGroupThreadName.map(INSpeakableString.init(spokenPhrase:)),
                     conversationIdentifier: conversationIdentifier,
                     serviceName: nil,

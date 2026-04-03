@@ -7,6 +7,7 @@
 		<string>AttachmentValidationBackfillMigrator</string>
 		<string>BackupBGProcessingTaskRunner</string>
 		<string>MessageFetchBGRefreshTask</string>
+		<string>MessageFetchBGProcessingTask</string>
 		<string>LazyDatabaseMigratorTask</string>
 	</array>
 	<key>BuildDetails</key>
@@ -43,6 +44,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>sgnl</string>
+				<string>noise</string>
 			</array>
 		</dict>
 	</array>
@@ -51,7 +53,7 @@
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LOGS_EMAIL</key>
-	<string>support@signal.org</string>
+	<string>support@noise.app</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.social-networking</string>
 	<key>LSApplicationQueriesSchemes</key>
@@ -76,31 +78,35 @@
 		</dict>
 	</dict>
 	<key>NSAppleMusicUsageDescription</key>
-	<string>Signal needs to use Apple Music to play media attachments.</string>
+	<string>Noise needs to use Apple Music to play media attachments.</string>
 	<key>NSBonjourServices</key>
 	<array>
 		<string>_sgnl-new-device._tcp</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
-	<string>Signal uses your camera to take photos, start or join a video call and to scan QR codes.</string>
+	<string>Noise uses your camera to take photos, start or join a video call and to scan QR codes.</string>
 	<key>NSContactsUsageDescription</key>
-	<string>Signal uses your contacts to find users you know. We do not store your contacts on the server.</string>
+	<string>Noise uses your contacts to find users you know. We do not store your contacts on the server.</string>
 	<key>NSFaceIDUsageDescription</key>
-	<string>Signal uses Face ID to confirm it's you.</string>
+	<string>Noise uses Face ID to confirm it's you.</string>
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>Signal uses the local network to allow you to directly transfer your account to a new phone. It will not be used unless you explicitly choose to initiate a transfer to a new device.</string>
+	<string>Noise uses the local network to allow you to directly transfer your account to a new phone. It will not be used unless you explicitly choose to initiate a transfer to a new device.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Signal needs access to your location in order to share your current location.</string>
+	<string>Noise needs access to your location in order to share your current location.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Signal needs access to your microphone to make and receive phone calls and record voice messages.</string>
+	<string>Noise needs access to your microphone to make and receive phone calls and record voice messages.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Signal will save photos to your library.</string>
+	<string>Noise will save photos to your library.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Signal will let you choose which photos from your library to send.</string>
+	<string>Noise will let you choose which photos from your library to send.</string>
+	<key>NSSiriUsageDescription</key>
+	<string>Noise uses Siri to send and read messages hands-free.</string>
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>INSendMessageIntent</string>
 		<string>INStartCallIntent</string>
+		<string>INSearchForMessagesIntent</string>
+		<string>INReadMessageIntent</string>
 	</array>
 	<key>OWSBundleIDPrefix</key>
 	<string>$(SIGNAL_BUNDLEID_PREFIX)</string>
@@ -108,6 +114,23 @@
 	<string>$(SIGNAL_MERCHANTID)</string>
 	<key>PHPhotoLibraryPreventAutomaticLimitedAccessAlert</key>
 	<true/>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>CPTemplateApplicationSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>CarPlay</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).NoiseCarPlaySceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>

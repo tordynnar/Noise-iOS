@@ -2,10 +2,10 @@
 "AB_PERMISSION_MISSING_ACTION_NOT_NOW" = "Nie teraz";
 
 /* Footer for the 'about' help section. For non-English languages, exclude the word '501c3'. */
-"ABOUT_SECTION_FOOTER" = "© Signal Messenger\nNa licencji AGPLv3\nSignal jest organizacją non profit";
+"ABOUT_SECTION_FOOTER" = "© Noise Messenger\nNa licencji AGPLv3\nNoise jest organizacją non profit";
 
 /* Title for the 'about' help section */
-"ABOUT_SECTION_TITLE" = "O aplikacji Signal";
+"ABOUT_SECTION_TITLE" = "O aplikacji Noise";
 
 /* Label for forward button in media control panel */
 "ACCESSIBILITY_FORWARD_BUTTON_LABEL" = "Przekaż dalej";
@@ -38,7 +38,7 @@
 "ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_CONFIRM_BUTTON" = "Wyeksportuj raport";
 
 /* Users can request a report of their account data. Before they get their account export, they are warned to only share account data with trustworthy sources. This is the message on that warning. */
-"ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_MESSAGE" = "Udostępniaj dane swojego konta Signal wyłącznie zaufanym osobom i aplikacjom.";
+"ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_MESSAGE" = "Udostępniaj dane swojego konta Noise wyłącznie zaufanym osobom i aplikacjom.";
 
 /* Users can request a report of their account data. If this request fails (probably because of a network connection problem), they will see an error sheet. This is the message on that error. */
 "ACCOUNT_DATA_REPORT_ERROR_MESSAGE" = "Sprawdź połączenie z internetem i spróbuj ponownie.";
@@ -62,16 +62,16 @@
 "ACCOUNT_DATA_REPORT_EXPORT_REPORT_BUTTON" = "Wyeksportuj raport";
 
 /* Users can request a report of their account data. This text appears at the bottom of this screen, offering more information. */
-"ACCOUNT_DATA_REPORT_FOOTER" = "Raport jest generowany wyłącznie wtedy, gdy prosisz o eksport, i nie jest przechowywany przez Signal na Twoim urządzeniu.";
+"ACCOUNT_DATA_REPORT_FOOTER" = "Raport jest generowany wyłącznie wtedy, gdy prosisz o eksport, i nie jest przechowywany przez Noise na Twoim urządzeniu.";
 
 /* Users can request a report of their account data. This is the subtitle on the screen where they do this, giving them more information. */
-"ACCOUNT_DATA_REPORT_SUBTITLE" = "Wyeksportuj i pobierz raport z danymi swojego konta Signal. Raport nie zawiera wiadomości ani multimediów.";
+"ACCOUNT_DATA_REPORT_SUBTITLE" = "Wyeksportuj i pobierz raport z danymi swojego konta Noise. Raport nie zawiera wiadomości ani multimediów.";
 
 /* Users can request a report of their account data. This is the title on the screen where they do this. */
 "ACCOUNT_DATA_REPORT_TITLE" = "Dane Twojego konta";
 
 /* Label for 'invite' button in contact view. */
-"ACTION_INVITE" = "Zaproś do aplikacji Signal";
+"ACTION_INVITE" = "Zaproś do aplikacji Noise";
 
 /* Label for button that lets you send a message to a contact. */
 "ACTION_SEND_MESSAGE" = "Wyślij wiadomość";
@@ -89,7 +89,7 @@
 "ACTION_VIDEO_CALL" = "Połączenie wideo";
 
 /* Label for 'voice call' button in contact view. */
-"ACTION_VOICE_CALL" = "Połączenie Signal";
+"ACTION_VOICE_CALL" = "Połączenie Noise";
 
 /* The title for the 'add group members' view. */
 "ADD_GROUP_MEMBERS_VIEW_TITLE" = "Dodaj osoby";
@@ -209,28 +209,28 @@
 "APN_Message" = "Możesz mieć nowe wiadomości";
 
 /* Shown in place of the text input box in a conversation when the app has expired and the user is no longer allowed to send messages. The embedded value is 'Update now' (translated via APP_EXPIRED_BOTTOM_UPDATE), and it will be formatted as a tappable link. */
-"APP_EXPIRED_BOTTOM" = "Ta wersja aplikacji Signal wygasła. Aby wysyłać i otrzymywać wiadomości, %1$@.";
+"APP_EXPIRED_BOTTOM" = "Ta wersja aplikacji Noise wygasła. Aby wysyłać i otrzymywać wiadomości, %1$@.";
 
 /* Shown in place of the text input box in a conversation when the app has expired and the user is no longer allowed to send messages. This value is a tappable link embedded in a larger sentence. */
 "APP_EXPIRED_BOTTOM_UPDATE" = "zaktualizuj aplikację";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Nie udało się uruchomić aplikacji Signal. Abyśmy mogli rozwiązać ten problem, wyślij dziennik debugowania na adres support@signal.org.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Nie udało się uruchomić aplikacji Noise. Abyśmy mogli rozwiązać ten problem, wyślij dziennik debugowania na adres support@noise.app.";
 
 /* Button to try launching the app even though the last launch failed */
-"APP_LAUNCH_FAILURE_CONTINUE" = "Mimo to otwórz Signal";
+"APP_LAUNCH_FAILURE_CONTINUE" = "Mimo to otwórz Noise";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Wyślij dzienniki debugowania na adres support@signal.org, abyśmy mogli rozwiązać ten problem.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Wyślij dzienniki debugowania na adres support@noise.app, abyśmy mogli rozwiązać ten problem.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Nie udało się otworzyć aplikacji Signal";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Nie udało się otworzyć aplikacji Noise";
 
 /* Error indicating that the app could not launch because the database could not be loaded. */
 "APP_LAUNCH_FAILURE_COULD_NOT_LOAD_DATABASE" = "Nie udało się wczytać bazy danych";
 
 /* Message for an action sheet explaining that Signal can't launch because the database is corrupted. */
-"APP_LAUNCH_FAILURE_DATABASE_CORRUPTED_MESSAGE" = "Nie można uruchomić aplikacji Signal z powodu uszkodzenia bazy danych. Nie wpływa to na bezpieczeństwo Twojego konta ani Twoich wiadomości.";
+"APP_LAUNCH_FAILURE_DATABASE_CORRUPTED_MESSAGE" = "Nie można uruchomić aplikacji Noise z powodu uszkodzenia bazy danych. Nie wpływa to na bezpieczeństwo Twojego konta ani Twoich wiadomości.";
 
 /* Title for an action sheet explaining that Signal can't launch because the database is corrupted. */
 "APP_LAUNCH_FAILURE_DATABASE_CORRUPTED_TITLE" = "Uszkodzona baza danych";
@@ -239,25 +239,25 @@
 "APP_LAUNCH_FAILURE_DATABASE_RECOVERY_ACTION_TITLE" = "Napraw";
 
 /* Error indicating that the app could not launch without reverting unknown database migrations. */
-"APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_MESSAGE" = "Zaktualizuj Signal do najnowszej wersji.";
+"APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_MESSAGE" = "Zaktualizuj Noise do najnowszej wersji.";
 
 /* Error indicating that the app could not launch without reverting unknown database migrations. */
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Nieznana wersja bazy danych.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Wystąpił problem z uruchomieniem aplikacji Signal. Abyśmy mogli rozwiązać ten problem, wyślij dziennik debugowania na adres support@signal.org.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Wystąpił problem z uruchomieniem aplikacji Noise. Abyśmy mogli rozwiązać ten problem, wyślij dziennik debugowania na adres support@noise.app.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Nie udało się otworzyć aplikacji Signal";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Nie udało się otworzyć aplikacji Noise";
 
 /* Error description indicating that the app crashed because there was low storage space available on the device. */
-"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "Nie można otworzyć aplikacji Signal, ponieważ na urządzeniu jest za mało miejsca. Aby korzystać z aplikacji Signal, przejdź do ustawień pamięci urządzenia i zwolnij miejsce.";
+"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "Nie można otworzyć aplikacji Noise, ponieważ na urządzeniu jest za mało miejsca. Aby korzystać z aplikacji Noise, przejdź do ustawień pamięci urządzenia i zwolnij miejsce.";
 
 /* Error title indicating that the app crashed because there was low storage space available on the device. */
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Za mało miejsca na urządzeniu";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Nie udało się przywrócić danych przeniesionych z Twojego poprzedniego urządzenia. Wyślij dzienniki debugowania na adres support@signal.org, abyśmy mogli rozwiązać ten problem. Jeśli ponownie zainstalujesz Signal, możesz stracić historię wiadomości.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Nie udało się przywrócić danych przeniesionych z Twojego poprzedniego urządzenia. Wyślij dzienniki debugowania na adres support@noise.app, abyśmy mogli rozwiązać ten problem. Jeśli ponownie zainstalujesz Noise, możesz stracić historię wiadomości.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Nie udało się przenieść danych";
@@ -422,7 +422,7 @@
 "ATTACHMENT_KEYBOARD_GIF" = "GIF";
 
 /* Text in chat attachment panel when Signal only has access to some photos/videos. This string is in a compact horizontal space, so it should be short if possible. */
-"ATTACHMENT_KEYBOARD_LIMITED_ACCESS" = "Signal ma ograniczony dostęp do zdjęć";
+"ATTACHMENT_KEYBOARD_LIMITED_ACCESS" = "Noise ma ograniczony dostęp do zdjęć";
 
 /* A button to select a location from the Attachment Keyboard */
 "ATTACHMENT_KEYBOARD_LOCATION" = "Lokalizacja";
@@ -434,7 +434,7 @@
 "ATTACHMENT_KEYBOARD_NO_MEDIA_TITLE" = "Brak zdjęć i wideo";
 
 /* Text in chat attachment panel explaining that user needs to give Signal permission to access photos. */
-"ATTACHMENT_KEYBOARD_NO_PHOTO_ACCESS" = "Signal nie ma dostępu do Twoich zdjęć ani wideo. Aby zezwolić na dostęp, otwórz ustawienia i wybierz opcję Zdjęcia";
+"ATTACHMENT_KEYBOARD_NO_PHOTO_ACCESS" = "Noise nie ma dostępu do Twoich zdjęć ani wideo. Aby zezwolić na dostęp, otwórz ustawienia i wybierz opcję Zdjęcia";
 
 /* Button in chat attachment panel to let user open Settings app and give Signal persmission to access photos. */
 "ATTACHMENT_KEYBOARD_OPEN_SETTINGS" = "Otwórz ustawienia";
@@ -539,7 +539,7 @@
 "BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_ACTION" = "Włącz";
 
 /* Body for Backup enablement reminder megaphone */
-"BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_BODY" = "Dzięki temu nie stracisz historii wiadomości nawet po zmianie telefonu czy ponownej instalacji aplikacji Signal.";
+"BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_BODY" = "Dzięki temu nie stracisz historii wiadomości nawet po zmianie telefonu czy ponownej instalacji aplikacji Noise.";
 
 /* Title for Backup enablement reminder megaphone */
 "BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_TITLE" = "Włącz tworzenie szyfrowanych kopii zapasowych";
@@ -578,7 +578,7 @@
 "BACKUP_ONBOARDING_CANCEL_SHEET_TITLE" = "Przerwać konfigurację kopii zapasowych?";
 
 /* Body for a sheet warning users to their 'Recovery Key' safe. */
-"BACKUP_ONBOARDING_CONFIRM_KEY_KEEP_KEY_SAFE_SHEET_BODY" = "Jeśli go zgubisz, Signal nie będzie mógł Ci pomóc w przywróceniu kopii zapasowej. Przechowuj swój kod w bezpiecznym miejscu. Nie udostępniaj kodu innym osobom.";
+"BACKUP_ONBOARDING_CONFIRM_KEY_KEEP_KEY_SAFE_SHEET_BODY" = "Jeśli go zgubisz, Noise nie będzie mógł Ci pomóc w przywróceniu kopii zapasowej. Przechowuj swój kod w bezpiecznym miejscu. Nie udostępniaj kodu innym osobom.";
 
 /* Title for a sheet warning users to their 'Recovery Key' safe. */
 "BACKUP_ONBOARDING_CONFIRM_KEY_KEEP_KEY_SAFE_SHEET_TITLE" = "Zapisz kod w bezpiecznym miejscu";
@@ -605,10 +605,10 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "Możesz włączyć kopie zapasowe w sekcji „Ustawienia”.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Twórz kopie zapasowe wiadomości i multimediów w usłudze bezpiecznego przechowywania Signal z szyfrowaniem end-to-end. Dzięki temu nie stracisz historii wiadomości, nawet gdy zmienisz telefon lub ponownie zainstalujesz aplikację Signal.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Twórz kopie zapasowe wiadomości i multimediów w usłudze bezpiecznego przechowywania Noise z szyfrowaniem end-to-end. Dzięki temu nie stracisz historii wiadomości, nawet gdy zmienisz telefon lub ponownie zainstalujesz aplikację Noise.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_TITLE" = "Bezpieczne kopie zapasowe Signal";
+"BACKUP_ONBOARDING_INTRO_TITLE" = "Bezpieczne kopie zapasowe Noise";
 
 /* Text for a bullet point in a view introducing the 'Recovery Key' during an onboarding flow. */
 "BACKUP_ONBOARDING_KEY_INTRO_BULLET_1" = "Kod odzyskiwania to sekwencja 64 znaków potrzebna do przywrócenia kopii zapasowej.";
@@ -626,10 +626,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Kod odzyskiwania";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Subskrypcja kopii zapasowych wygasła, ponieważ nie można było jej odnowić przy użyciu wybranej metody płatności.\n\nAby dalej tworzyć kopie zapasowe multimediów, możesz ponownie wykupić subskrypcję. Tymczasem korzystasz z bezpłatnej usługi tworzenia kopii zapasowych Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Subskrypcja kopii zapasowych wygasła, ponieważ nie można było jej odnowić przy użyciu wybranej metody płatności.\n\nAby dalej tworzyć kopie zapasowe multimediów, możesz ponownie wykupić subskrypcję. Tymczasem korzystasz z bezpłatnej usługi tworzenia kopii zapasowych Noise.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Subskrypcja kopii zapasowych wygasła, ponieważ nie używasz już TestFlight.\n\nAby dalej tworzyć kopie zapasowe multimediów, możesz wykupić subskrypcję. Tymczasem korzystasz z bezpłatnej usługi tworzenia kopii zapasowych Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Subskrypcja kopii zapasowych wygasła, ponieważ nie używasz już TestFlight.\n\nAby dalej tworzyć kopie zapasowe multimediów, możesz wykupić subskrypcję. Tymczasem korzystasz z bezpłatnej usługi tworzenia kopii zapasowych Noise.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Zarządzaj usługą";
@@ -668,7 +668,7 @@
 "BACKUP_RESTORE_MODAL_TITLE" = "Przywracanie wiadomości…";
 
 /* Message describing that the Background App Refresh permission is disabled for Signal. \"Background App Refresh\" should be localized the same way it is in iOS Settings app permissions. */
-"BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_MESSAGE" = "Automatyczne tworzenie kopii zapasowych jest wyłączone. Aby włączyć automatyczne tworzenie kopii zapasowych, zmień uprawnienia aplikacji Signal na swoim urządzeniu.";
+"BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_MESSAGE" = "Automatyczne tworzenie kopii zapasowych jest wyłączone. Aby włączyć automatyczne tworzenie kopii zapasowych, zmień uprawnienia aplikacji Noise na swoim urządzeniu.";
 
 /* Add-on to a message describing that the Background App Refresh permission is disabled for Signal. \"Background App Refresh\" should be localized the same way it is in iOS Settings app permissions. */
 "BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_MESSAGE_UPDATE_NOW" = "Zmień teraz";
@@ -677,7 +677,7 @@
 "BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_SHEET_GO_TO_SETTINGS_BUTTON" = "Przejdź do ustawień";
 
 /* Message for a sheet warning the user about the Background App Refresh permission. \"Background App Refresh\" should be localized the same way it is in iOS Settings app permissions. */
-"BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_SHEET_MESSAGE" = "Aby umożliwić aplikacji Signal automatyczne tworzenie kopii zapasowych wiadomości, naciśnij przycisk „Przejdź do ustawień” poniżej i włącz „Odświeżanie w tle”";
+"BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_SHEET_MESSAGE" = "Aby umożliwić aplikacji Noise automatyczne tworzenie kopii zapasowych wiadomości, naciśnij przycisk „Przejdź do ustawień” poniżej i włącz „Odświeżanie w tle”";
 
 /* Title for a sheet warning the user about the Background App Refresh permission. \"Background App Refresh\" should be localized the same way it is in iOS Settings app permissions. */
 "BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_SHEET_TITLE" = "Automatyczne kopie zapasowe są wyłączone";
@@ -773,7 +773,7 @@
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_ACTION_BUTTON_TITLE" = "Odnów";
 
 /* Text describing that the user's paid backup plan did not correspond to a App Store subscription on this device. */
-"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "Subskrypcja jest nieaktywna na tym urządzeniu. Aby dalej korzystać z usługi kopii zapasowych Signal, odnów subskrypcję.";
+"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "Subskrypcja jest nieaktywna na tym urządzeniu. Aby dalej korzystać z usługi kopii zapasowych Noise, odnów subskrypcję.";
 
 /* Header describing what the paid backup plan includes. */
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_HEADER" = "Wiadomości tekstowe + wszystkie multimedia";
@@ -785,16 +785,16 @@
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_RENEWAL_FORMAT" = "Odnowi się %1$@";
 
 /* Footer for a menu section related to settings for when Backups are disabled. */
-"BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Tworzenie kopii zapasowych zostało wyłączone, a Twoje dane zostały usunięte z usługi bezpiecznego przechowywania Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Tworzenie kopii zapasowych zostało wyłączone, a Twoje dane zostały usunięte z usługi bezpiecznego przechowywania Noise.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Tworzenie kopii zapasowych zostało wyłączone. Wszystkie multimedia, które nie znajdują się na urządzeniu, są właśnie pobierane. Następnie zostaną one usunięte z usługi bezpiecznego przechowywania Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Tworzenie kopii zapasowych zostało wyłączone. Wszystkie multimedia, które nie znajdują się na urządzeniu, są właśnie pobierane. Następnie zostaną one usunięte z usługi bezpiecznego przechowywania Noise.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Wystąpił błąd. Skontaktuj się z naszą pomocą techniczną.";
 
 /* Header for a menu section related to settings for when disabling Backups encountered an unexpected error. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_SECTION_HEADER" = "Podczas usuwania danych z usługi bezpiecznego przechowywania Signal wystąpił błąd.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_SECTION_HEADER" = "Podczas usuwania danych z usługi bezpiecznego przechowywania Noise wystąpił błąd.";
 
 /* Title for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_TITLE" = "Nie udało się usunąć kopii zapasowej";
@@ -803,7 +803,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLING_PROGRESS_VIEW_DESCRIPTION" = "Usuwanie kopii zapasowej…";
 
 /* Header for a menu section related to disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_SECTION_HEADER" = "Tworzenie kopii zapasowych zostało wyłączone, a Twoje dane zostaną usunięte z usługi bezpiecznego przechowywania Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_SECTION_HEADER" = "Tworzenie kopii zapasowych zostało wyłączone, a Twoje dane zostaną usunięte z usługi bezpiecznego przechowywania Noise.";
 
 /* Header for a menu section related to settings for when Backups are enabled. */
 "BACKUP_SETTINGS_BACKUPS_ENABLED_SECTION_HEADER" = "Szczegóły kopii zapasowej";
@@ -848,13 +848,13 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Wyłączyć i usunąć kopie zapasowe?";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "W kopii zapasowej masz multimedia, które nie zostały jeszcze pobrane na to urządzenie. Pobieranie ich z kopii zapasowej może potrwać dłuższą chwilę – aby nie przerywać tego procesu, nie zamykaj aplikacji Signal.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "W kopii zapasowej masz multimedia, które nie zostały jeszcze pobrane na to urządzenie. Pobieranie ich z kopii zapasowej może potrwać dłuższą chwilę – aby nie przerywać tego procesu, nie zamykaj aplikacji Noise.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Trwa pobieranie kopii zapasowej";
 
 /* Message shown in an action sheet indicating we failed to delete the user's Backup due to an unexpected error. */
-"BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_MESSAGE" = "Podczas usuwania danych z usługi bezpiecznego przechowywania Signal wystąpił błąd.";
+"BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_MESSAGE" = "Podczas usuwania danych z usługi bezpiecznego przechowywania Noise wystąpił błąd.";
 
 /* Title shown in an action sheet indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_TITLE" = "Nie udało się usunąć kopii zapasowej";
@@ -866,7 +866,7 @@
 "BACKUP_SETTINGS_DISABLING_SUBSCRIPTION_CANCEL_ACTION_SHEET_MANAGE_SUBSCRIPTION_BUTTON" = "Zarządzaj subskrypcją";
 
 /* Message for an action sheet shown when the user disables Backups, but is still subscribed to the paid plan. */
-"BACKUP_SETTINGS_DISABLING_SUBSCRIPTION_CANCEL_ACTION_SHEET_MESSAGE" = "Jeśli chcesz anulować subskrypcję, dotknij opcji Zarządzaj subskrypcją > Signal > Anuluj subskrypcję";
+"BACKUP_SETTINGS_DISABLING_SUBSCRIPTION_CANCEL_ACTION_SHEET_MESSAGE" = "Jeśli chcesz anulować subskrypcję, dotknij opcji Zarządzaj subskrypcją > Noise > Anuluj subskrypcję";
 
 /* Title for an action sheet shown when the user disables Backups, but is still subscribed to the paid plan. */
 "BACKUP_SETTINGS_DISABLING_SUBSCRIPTION_CANCEL_ACTION_SHEET_TITLE" = "Nadal subskrybujesz płatną usługę tworzenia kopii zapasowych";
@@ -944,7 +944,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Pobierz później";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "W kopii zapasowej masz multimedia, które nie zostały jeszcze pobrane na to urządzenie. Pobieranie może potrwać dłuższą chwilę – aby nie przerywać tego procesu, nie zamykaj aplikacji Signal.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "W kopii zapasowej masz multimedia, które nie zostały jeszcze pobrane na to urządzenie. Pobieranie może potrwać dłuższą chwilę – aby nie przerywać tego procesu, nie zamykaj aplikacji Noise.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Pobierz teraz";
@@ -965,13 +965,13 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_AVAILABLE_FOR_TESTERS" = "Nieużywane multimedia zostaną usunięte z urządzenia, ale dopóki korzystasz z aplikacji TestFlight, w dowolnym momencie możesz je pobrać z kopii zapasowej.";
 
 /* Footer for a toggle allowing users to change the Optimize Local Storage setting, if the toggle is unavailable. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "Optymalizacja pamięci jest dostępna tylko w ramach płatnej usługi kopii zapasowych Signal. Aby korzystać z tej funkcji, wykup płatny tryb tworzenia kopii zapasowych.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "Optymalizacja pamięci jest dostępna tylko w ramach płatnej usługi kopii zapasowych Noise. Aby korzystać z tej funkcji, wykup płatny tryb tworzenia kopii zapasowych.";
 
 /* Title for a toggle allowing users to change the Optimize Local Storage setting. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_TITLE" = "Zoptymalizuj pamięć na urządzeniu";
 
 /* Subtitle for a notification telling the user they are out of remote storage space. */
-"BACKUP_SETTINGS_OUT_OF_STORAGE_SPACE_NOTIFICATION_SUBTITLE" = "Wykorzystano limit miejsca na kopie zapasowe. Aby dalej tworzyć kopie zapasowe czatów i multimediów, zwolnij najpierw trochę miejsca w aplikacji Signal.";
+"BACKUP_SETTINGS_OUT_OF_STORAGE_SPACE_NOTIFICATION_SUBTITLE" = "Wykorzystano limit miejsca na kopie zapasowe. Aby dalej tworzyć kopie zapasowe czatów i multimediów, zwolnij najpierw trochę miejsca w aplikacji Noise.";
 
 /* Title for a notification telling the user they are out of remote storage space. */
 "BACKUP_SETTINGS_OUT_OF_STORAGE_SPACE_NOTIFICATION_TITLE" = "Brak miejsca na kopie zapasowe";
@@ -995,7 +995,7 @@
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_NOTICE_TITLE" = "Nie udało się skorzystać z usługi tworzenia kopii zapasowych";
 
 /* Body for a sheet explaining that the user's Backups subscription was already redeemed. */
-"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "W tym miesiącu próbowano skorzystać z usługi tworzenia kopii zapasowych na zbyt wielu urządzeniach.\n\nByć może zostało przez Ciebie podjętych zbyt wiele prób ponownej rejestracji konta Signal lub korzystasz z tej samej subskrypcji na zbyt wielu urządzeniach.";
+"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "W tym miesiącu próbowano skorzystać z usługi tworzenia kopii zapasowych na zbyt wielu urządzeniach.\n\nByć może zostało przez Ciebie podjętych zbyt wiele prób ponownej rejestracji konta Noise lub korzystasz z tej samej subskrypcji na zbyt wielu urządzeniach.";
 
 /* Button for a sheet explaining that the user's Backups subscription was already redeemed. */
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_GOT_IT_BUTTON" = "Rozumiem";
@@ -1016,7 +1016,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Przesyłanie multimediów wstrzymane: oczekiwanie na Wi-Fi";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Wykorzystano limit miejsca (%1$@) dostępnego w tym trybie tworzenia kopii zapasowych. Aby utworzyć kopię zapasową nowych czatów i multimediów, zwolnij %2$@ w aplikacji Signal, a następnie wybierz opcję „Utwórz kopię teraz”.";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Wykorzystano limit miejsca (%1$@) dostępnego w tym trybie tworzenia kopii zapasowych. Aby utworzyć kopię zapasową nowych czatów i multimediów, zwolnij %2$@ w aplikacji Noise, a następnie wybierz opcję „Utwórz kopię teraz”.";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "Przesyłanie %1$@ z %2$@ (%3$@)";
@@ -1025,13 +1025,13 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING_GENERIC" = "Przesyłanie…";
 
 /* Message for a sheet shown after the user enables backups. */
-"BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_MESSAGE" = "W przypadku dużej ilości danych tworzenie kopii zapasowej może zająć sporo czasu. Podczas gdy to się dzieje, możesz normalnie korzystać z aplikacji Signal.";
+"BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_MESSAGE" = "W przypadku dużej ilości danych tworzenie kopii zapasowej może zająć sporo czasu. Podczas gdy to się dzieje, możesz normalnie korzystać z aplikacji Noise.";
 
 /* Title for a sheet shown after the user enables backups. */
 "BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_TITLE" = "Wszystko gotowe. Możesz już utworzyć bezpieczną kopię zapasową";
 
 /* Message for a sheet shown when your Backup subscription fails to renew. */
-"BACKUP_SUBSCRIPTION_FAILED_TO_RENEW_SHEET_MESSAGE" = "Upewnij się, że dane do płatności w wybranej metodzie są aktualne. Wybierz opcję Zarządzaj subskrypcją > Signal > Aktualizuj metodę płatności.";
+"BACKUP_SUBSCRIPTION_FAILED_TO_RENEW_SHEET_MESSAGE" = "Upewnij się, że dane do płatności w wybranej metodzie są aktualne. Wybierz opcję Zarządzaj subskrypcją > Noise > Aktualizuj metodę płatności.";
 
 /* Primary button for a sheet shown when your Backup subscription fails to renew. */
 "BACKUP_SUBSCRIPTION_FAILED_TO_RENEW_SHEET_PRIMARY_BUTTON" = "Zarządzaj subskrypcją";
@@ -1049,7 +1049,7 @@
 "BACKUPS_SETTINGS_TITLE" = "Bezpieczne kopie zapasowe";
 
 /* Body for system notification or megaphone when backups is enabled. Embeds {{ time backups was enabled }} */
-"BACKUPS_TURNED_ON_NOTIFICATION_BODY_FORMAT" = "Kopie zapasowe Signal zostały włączone na tym koncie o godz. %1$@. Dotknij, aby wyświetlić.";
+"BACKUPS_TURNED_ON_NOTIFICATION_BODY_FORMAT" = "Kopie zapasowe Noise zostały włączone na tym koncie o godz. %1$@. Dotknij, aby wyświetlić.";
 
 /* Title for system notification or megaphone when backups is enabled */
 "BACKUPS_TURNED_ON_TITLE" = "Włączasz tworzenie kopii zapasowych";
@@ -1067,10 +1067,10 @@
 "BADGE_DETAILS_DONATE_TO_SIGNAL" = "Wpłać darowiznę teraz";
 
 /* When viewing someone else's donor badge, you'll see a sheet. This is the title on that sheet. Embeds {badge owner's short name} */
-"BADGE_DETAILS_TITLE_FOR_SUPPORTER" = "%1$@ wspiera Signal";
+"BADGE_DETAILS_TITLE_FOR_SUPPORTER" = "%1$@ wspiera Noise";
 
 /* String explaining to the user that their boost badge has expired on the badge expiry sheet. */
-"BADGE_EXPIRED_BOOST_BODY" = "Odznaka za wsparcie wygasła i nie wyświetla się już w Twoim profilu.\n\nNadal możesz korzystać z aplikacji Signal. Aby wspierać technologię rozwijaną z myślą o osobach takich jak Ty, rozważ przekazywanie comiesięcznej darowizny cyklicznej.";
+"BADGE_EXPIRED_BOOST_BODY" = "Odznaka za wsparcie wygasła i nie wyświetla się już w Twoim profilu.\n\nNadal możesz korzystać z aplikacji Noise. Aby wspierać technologię rozwijaną z myślą o osobach takich jak Ty, rozważ przekazywanie comiesięcznej darowizny cyklicznej.";
 
 /* String explaining to the user that their boost badge has expired while they are a current subscription sustainer on the badge expiry sheet. */
 "BADGE_EXPIRED_BOOST_CURRENT_SUSTAINER_BODY" = "Odznaka za wsparcie wygasła i nie wyświetla się już w Twoim profilu.\n\nAby reaktywować tę odznakę na kolejne 30 dni, wpłać darowiznę jednorazową.";
@@ -1115,7 +1115,7 @@
 "BANK_DONATION_FOOTER_FIND_ACCOUNT_INFO" = "Gdzie szukać danych konta";
 
 /* On the bank transfer donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their bank information (2) tell them that Signal does not collect or store their personal information. */
-"BANK_DONATION_SUBHEADER_TEXT" = "Wpisz dane do przelewu. Signal nie gromadzi ani nie przechowuje Twoich danych osobowych.";
+"BANK_DONATION_SUBHEADER_TEXT" = "Wpisz dane do przelewu. Noise nie gromadzi ani nie przechowuje Twoich danych osobowych.";
 
 /* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is a label for a button to agree to the mandate. */
 "BANK_MANDATE_AGREE" = "Zgadzam się";
@@ -1124,7 +1124,7 @@
 "BANK_MANDATE_READ_MORE" = "Czytaj dalej";
 
 /* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is a subtitle about the payment processor Stripe above that mandate. */
-"BANK_MANDATE_SUBTITLE" = "Darowizny wpłacane na rzecz aplikacji Signal są przetwarzane przez Stripe. Signal nie gromadzi ani nie przechowuje danych osobowych.";
+"BANK_MANDATE_SUBTITLE" = "Darowizny wpłacane na rzecz aplikacji Noise są przetwarzane przez Stripe. Noise nie gromadzi ani nie przechowuje danych osobowych.";
 
 /* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is the title above that mandate. */
 "BANK_MANDATE_TITLE" = "Przelew bankowy";
@@ -1280,7 +1280,7 @@
 "CALL_AUDIO_MISSED_WEEK_NOTIFICATION_BODY_FORMAT" = "📞 Nieodebrane połączenie głosowe (%1$@)";
 
 /* Alert message when calling and permissions for microphone are missing */
-"CALL_AUDIO_PERMISSION_MESSAGE" = "Aby dzwonić i nagrywać wiadomości głosowe w aplikacji Signal, zezwól na dostęp do mikrofonu w ustawieniach swojego urządzenia z iOS.";
+"CALL_AUDIO_PERMISSION_MESSAGE" = "Aby dzwonić i nagrywać wiadomości głosowe w aplikacji Noise, zezwól na dostęp do mikrofonu w ustawieniach swojego urządzenia z iOS.";
 
 /* Alert title when calling and permissions for microphone are missing */
 "CALL_AUDIO_PERMISSION_TITLE" = "Wymagany dostęp do mikrofonu";
@@ -1346,7 +1346,7 @@
 "CALL_LINK_JOIN_REQUEST_PROMPT" = "Prosi o dołączenie…";
 
 /* Shown in a message bubble when you send a call link in a Signal chat */
-"CALL_LINK_LINK_PREVIEW_DESCRIPTION" = "Aby dołączyć do połączenia Signal, użyj tego linku";
+"CALL_LINK_LINK_PREVIEW_DESCRIPTION" = "Aby dołączyć do połączenia Noise, użyj tego linku";
 
 /* Text that appears on a toast in a call lobby before joining a call link informing the user what information will be shared with other call members when they have phone number sharing turned off. */
 "CALL_LINK_LOBBY_SHARING_INFO_PHONE_NUMBER_SHARING_OFF" = "Każda osoba, która dołączy do rozmowy za pomocą linku, może wyświetlić Twoje imię oraz zdjęcie.";
@@ -1370,7 +1370,7 @@
 "CALL_LINK_REQUIRE_APPROVAL" = "Wymagaj zatwierdzenia przez administratora";
 
 /* Button to open UI to share a Call Link with someone on Signal. */
-"CALL_LINK_SHARE_VIA_SIGNAL" = "Udostępnij link w aplikacji Signal";
+"CALL_LINK_SHARE_VIA_SIGNAL" = "Udostępnij link w aplikacji Noise";
 
 /* Button to open the system share sheet to share a Call Link. */
 "CALL_LINK_SHARE_VIA_SYSTEM" = "Udostępnij link";
@@ -1391,7 +1391,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "Dziękujemy za opinię!";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Prosimy o podanie wszystkich istotnych szczegółów dotyczących problemu. Informacje te będą traktowane poufnie i zostaną wykorzystane wyłącznie do ulepszenia połączeń w aplikacji Signal.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Prosimy o podanie wszystkich istotnych szczegółów dotyczących problemu. Informacje te będą traktowane poufnie i zostaną wykorzystane wyłącznie do ulepszenia połączeń w aplikacji Noise.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "Opisz swój problem";
@@ -1406,7 +1406,7 @@
 "CALL_QUALITY_SURVEY_DEBUG_LOG_PREVIEW_LINK" = "Wyświetl dziennik debugowania";
 
 /* Title for the debug log sharing screen in the call quality survey */
-"CALL_QUALITY_SURVEY_DEBUG_LOG_TITLE" = "Pomóż nam ulepszyć Signal";
+"CALL_QUALITY_SURVEY_DEBUG_LOG_TITLE" = "Pomóż nam ulepszyć Noise";
 
 /* Label for the toggle to share debug log in the call quality survey */
 "CALL_QUALITY_SURVEY_DEBUG_LOG_TOGGLE" = "Udostępnij dziennik debugowania";
@@ -1460,7 +1460,7 @@
 "CALL_QUALITY_SURVEY_ISSUES_SHEET_TITLE" = "Jakie problemy wystąpiły?";
 
 /* Header text explaining the purpose of the call quality survey */
-"CALL_QUALITY_SURVEY_RATING_HEADER" = "Twoja opinia pomoże nam ulepszyć połączenia Signal. Gdy się nią podzielisz, nie zapiszemy żadnych Twoich danych osobowych.";
+"CALL_QUALITY_SURVEY_RATING_HEADER" = "Twoja opinia pomoże nam ulepszyć połączenia Noise. Gdy się nią podzielisz, nie zapiszemy żadnych Twoich danych osobowych.";
 
 /* Title for the initial rating screen in the call quality survey */
 "CALL_QUALITY_SURVEY_RATING_TITLE" = "Jaka była jakość połączenia?";
@@ -1556,10 +1556,10 @@
 "CALLING_MEMBER_VIEW_YOUR_CAMERA_IS_OFF" = "Kamera jest wyłączona";
 
 /* The generic name used for calls if CallKit privacy is enabled */
-"CALLKIT_ANONYMOUS_CONTACT_NAME" = "Użytkownik aplikacji Signal";
+"CALLKIT_ANONYMOUS_CONTACT_NAME" = "Użytkownik aplikacji Noise";
 
 /* The generic name used for group calls if CallKit privacy is enabled */
-"CALLKIT_ANONYMOUS_GROUP_NAME" = "Grupa Signal";
+"CALLKIT_ANONYMOUS_GROUP_NAME" = "Grupa Noise";
 
 /* Title for the calls list view. */
 "CALLS_LIST_TITLE" = "Połączenia";
@@ -1733,7 +1733,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/RR";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Signal nie gromadzi ani nie przechowuje Twoich danych osobowych potrzebnych do wpłacenia darowizny.\n\nDo przetwarzania darowizn używamy systemu płatności Stripe. Nie zapisujemy, nie przechowujemy ani nie mamy dostępu do żadnych danych, które przekazujesz.\n\nSignal nie wiąże ani nie może powiązać darowizny z Twoim kontem Signal.\n\nDziękujemy za Twoje wsparcie!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Noise nie gromadzi ani nie przechowuje Twoich danych osobowych potrzebnych do wpłacenia darowizny.\n\nDo przetwarzania darowizn używamy systemu płatności Stripe. Nie zapisujemy, nie przechowujemy ani nie mamy dostępu do żadnych danych, które przekazujesz.\n\nNoise nie wiąże ani nie może powiązać darowizny z Twoim kontem Noise.\n\nDziękujemy za Twoje wsparcie!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Twoje dane są poufne";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_SUBHEADER_LEARN_MORE" = "Dowiedz się więcej.";
 
 /* On the credit/debit card donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their credit/debit card information (2) tell them that Signal does not collect or store their personal information. */
-"CARD_DONATION_SUBHEADER_TEXT" = "Podaj dane karty. Signal nie gromadzi ani nie przechowuje Twoich danych osobowych.";
+"CARD_DONATION_SUBHEADER_TEXT" = "Podaj dane karty. Noise nie gromadzi ani nie przechowuje Twoich danych osobowych.";
 
 /* Title for the 'censorship circumvention country' view. */
 "CENSORSHIP_CIRCUMVENTION_COUNTRY_VIEW_TITLE" = "Wybierz kraj";
@@ -1844,7 +1844,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Wznów";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Tworzenie kopii zapasowej multimediów przy użyciu sieci komórkowej może spowodować naliczenie opłat za transmisję danych. Przesyłanie kopii zapasowej może trochę potrwać – aby nie przerywać tego procesu, nie zamykaj aplikacji Signal.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Tworzenie kopii zapasowej multimediów przy użyciu sieci komórkowej może spowodować naliczenie opłat za transmisję danych. Przesyłanie kopii zapasowej może trochę potrwać – aby nie przerywać tego procesu, nie zamykaj aplikacji Noise.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Wznowić przy użyciu sieci komórkowej?";
@@ -1934,7 +1934,7 @@
 "CHOOSE_BACKUP_PLAN_SUBSCRIBE_PAID_BUTTON_TEXT" = "Subskrybuj za %1$@/mies.";
 
 /* Subtitle for a view allowing users to choose a Backup plan. */
-"CHOOSE_BACKUP_PLAN_SUBTITLE" = "Kopie zapasowe są szyfrowane metodą end-to-end. Signal jest organizacją non profit. Opłata za tworzenie kopii zapasowych to wsparcie w realizacji naszej misji.";
+"CHOOSE_BACKUP_PLAN_SUBTITLE" = "Kopie zapasowe są szyfrowane metodą end-to-end. Noise jest organizacją non profit. Opłata za tworzenie kopii zapasowych to wsparcie w realizacji naszej misji.";
 
 /* Title for a label allowing users to view Signal's Terms & Conditions. */
 "CHOOSE_BACKUP_PLAN_TERM_AND_PRIVACY_POLICY_TEXT" = "Regulamin i polityka prywatności";
@@ -1949,7 +1949,7 @@
 "COMPARE_SAFETY_NUMBER_ACTION" = "Porównaj ze schowkiem";
 
 /* Accessibility hint describing what you can do with the compose button */
-"COMPOSE_BUTTON_HINT" = "Wybierz lub wyszukaj użytkownika aplikacji Signal, aby utworzyć czat.";
+"COMPOSE_BUTTON_HINT" = "Wybierz lub wyszukaj użytkownika aplikacji Noise, aby utworzyć czat.";
 
 /* Accessibility label from compose button. */
 "COMPOSE_BUTTON_LABEL" = "Utwórz wiadomość";
@@ -1976,13 +1976,13 @@
 "COMPOSE_SCREEN_LIMITED_CONTACTS_CTA" = "Zarządzaj";
 
 /* Multi-line label explaining why compose-screen contact picker is empty. */
-"COMPOSE_SCREEN_LIMITED_CONTACTS_PERMISSION" = "Signal ma ograniczony dostęp do kontaktów systemowych";
+"COMPOSE_SCREEN_LIMITED_CONTACTS_PERMISSION" = "Noise ma ograniczony dostęp do kontaktów systemowych";
 
 /* Button to open settings from an empty compose-screen contact picker. */
 "COMPOSE_SCREEN_MISSING_CONTACTS_CTA" = "Otwórz ustawienia";
 
 /* Multi-line label explaining why compose-screen contact picker is empty. */
-"COMPOSE_SCREEN_MISSING_CONTACTS_PERMISSION" = "Aby sprawdzić, kto z Twoich kontaktów korzysta już z aplikacji Signal, zezwól na dostęp do kontaktów w ustawieniach swojego urządzenia z iOS.";
+"COMPOSE_SCREEN_MISSING_CONTACTS_PERMISSION" = "Aby sprawdzić, kto z Twoich kontaktów korzysta już z aplikacji Noise, zezwól na dostęp do kontaktów w ustawieniach swojego urządzenia z iOS.";
 
 /* Configure reactions title text */
 "CONFIGURE_REACTIONS" = "Skonfiguruj reakcje";
@@ -2024,10 +2024,10 @@
 "CONTACT_ABOUT_SHEET_PROFILE_NAMES_EDUCATION" = "Imiona i nazwiska w profilach nie są weryfikowane";
 
 /* Message for a tooltip that appears above a parenthesized name for another user, indicating that that name is the name the other user set for themself. Embeds {{name}} */
-"CONTACT_ABOUT_SHEET_SECONDARY_NAME_TOOLTIP_MESSAGE" = "%1$@ to imię, które ta osoba podała w swoim profilu Signal.";
+"CONTACT_ABOUT_SHEET_SECONDARY_NAME_TOOLTIP_MESSAGE" = "%1$@ to imię, które ta osoba podała w swoim profilu Noise.";
 
 /* A label indicating a user is a signal connection. */
-"CONTACT_ABOUT_SHEET_SIGNAL_CONNECTION_LABEL" = "Kontakt Signal";
+"CONTACT_ABOUT_SHEET_SIGNAL_CONNECTION_LABEL" = "Kontakt Noise";
 
 /* The title for a contact 'about' sheet. */
 "CONTACT_ABOUT_SHEET_TITLE" = "O kontakcie";
@@ -2069,7 +2069,7 @@
 "CONTACT_NOTE_TITLE" = "Notatka";
 
 /* Body for contact permission action sheet */
-"CONTACT_PERMISSION_ACTION_SHEET_2_BODY" = "Aby znaleźć w aplikacji Signal znajome osoby:";
+"CONTACT_PERMISSION_ACTION_SHEET_2_BODY" = "Aby znaleźć w aplikacji Noise znajome osoby:";
 
 /* First step for contact permission action sheet */
 "CONTACT_PERMISSION_ACTION_SHEET_2_STEP_ONE" = "Dotknij opcji „Przejdź do ustawień” poniżej";
@@ -2102,10 +2102,10 @@
 "CONTACT_PERMISSION_REMINDER_MEGAPHONE_ACTION" = "Zezwól na dostęp";
 
 /* Body for contact permission reminder megaphone */
-"CONTACT_PERMISSION_REMINDER_MEGAPHONE_BODY" = "Zezwól na dostęp do kontaktów, aby wyszukiwać je w aplikacji Signal.";
+"CONTACT_PERMISSION_REMINDER_MEGAPHONE_BODY" = "Zezwól na dostęp do kontaktów, aby wyszukiwać je w aplikacji Noise.";
 
 /* Title for contact permission reminder megaphone */
-"CONTACT_PERMISSION_REMINDER_MEGAPHONE_TITLE" = "Twoje kontakty w aplikacji Signal";
+"CONTACT_PERMISSION_REMINDER_MEGAPHONE_TITLE" = "Twoje kontakty w aplikacji Noise";
 
 /* Label for a contact's phone number. */
 "CONTACT_PHONE" = "Numer telefonu";
@@ -2129,7 +2129,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "Nieprawidłowy kontakt.";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Signal potrzebuje dostępu do Twoich kontaktów. Przejdź do ustawień urządzenia z iOS i włącz dostęp do kontaktów. Twoje kontakty są szyfrowane i nieczytelne dla usługi Signal.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Noise potrzebuje dostępu do Twoich kontaktów. Przejdź do ustawień urządzenia z iOS i włącz dostęp do kontaktów. Twoje kontakty są szyfrowane i nieczytelne dla usługi Noise.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "Zezwól na dostęp do kontaktów";
@@ -2315,7 +2315,7 @@
 "CONVERSATION_SETTINGS_ATTRIBUTES_ACCESS_SECTION_FOOTER_V2" = "Wybierz, kto może edytować nazwę, zdjęcie i opis tej grupy, przypięte wiadomości oraz czas, po którym wiadomości będą znikać.";
 
 /* Footer string for a contact's badges in conversation settings */
-"CONVERSATION_SETTINGS_BADGES_FOOTER" = "Wspieraj Signal, a też otrzymasz taką odznakę w swoim profilu. Dotknij odznaki, aby dowiedzieć się więcej.";
+"CONVERSATION_SETTINGS_BADGES_FOOTER" = "Wspieraj Noise, a też otrzymasz taką odznakę w swoim profilu. Dotknij odznaki, aby dowiedzieć się więcej.";
 
 /* Header title for a contact's badges in conversation settings */
 "CONVERSATION_SETTINGS_BADGES_HEADER" = "Odznaki";
@@ -2609,10 +2609,10 @@
 "DATABASE_RECOVERY_MORE_STORAGE_SPACE_NEEDED_TITLE" = "Potrzeba więcej miejsca na urządzeniu";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) This is the description on the screen where we show an error message. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_DESCRIPTION" = "Nie udało się przywrócić historii wiadomości. Aby nadal korzystać z aplikacji Signal, zainstaluj ją ponownie. Wyślij nam dzienniki debugowania, abyśmy mogli przeanalizować, co poszło nie tak.";
+"DATABASE_RECOVERY_RECOVERY_FAILED_DESCRIPTION" = "Nie udało się przywrócić historii wiadomości. Aby nadal korzystać z aplikacji Noise, zainstaluj ją ponownie. Wyślij nam dzienniki debugowania, abyśmy mogli przeanalizować, co poszło nie tak.";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) This button lets them delete all of their data. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_BUTTON" = "Zresetuj Signal";
+"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_BUTTON" = "Zresetuj Noise";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) If they want to delete the app and restart, they will be presented with a confirmation dialog. This is the final button they will press before their data is reset. */
 "DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_CONFIRM" = "Zresetuj";
@@ -2621,7 +2621,7 @@
 "DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_DESCRIPTION" = "Dane konta, profil i wszystkie wiadomości zostaną usunięte. Następnie aplikacja zostanie zamknięta.";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) If they want to delete the app and restart, they will be presented with a confirmation dialog. This is the title of that dialog. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_TITLE" = "Zresetuj Signal";
+"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_TITLE" = "Zresetuj Noise";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) They were asked to submit a debug log. This is the button that submits this log. */
 "DATABASE_RECOVERY_RECOVERY_FAILED_SUBMIT_DEBUG_LOG_BUTTON" = "Wyślij dzienniki debugowania";
@@ -2702,7 +2702,7 @@
 "DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_ACTION" = "Usuń konto";
 
 /* Title for the action sheet message of the 'delete account confirmation' view controller. */
-"DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_MESSAGE" = "Spowoduje to usunięcie Twojego konta Signal i zresetowanie aplikacji. Następnie zostanie ona zamknięta";
+"DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_MESSAGE" = "Spowoduje to usunięcie Twojego konta Noise i zresetowanie aplikacji. Następnie zostanie ona zamknięta";
 
 /* Title for the action sheet confirmation title of the 'delete account confirmation' view controller. */
 "DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_TITLE" = "Czy na pewno chcesz usunąć konto?";
@@ -2726,7 +2726,7 @@
 "DELETE_ACCOUNT_CONFIRMATION_PHONE_NUMBER_TITLE" = "Numer telefonu";
 
 /* Section header */
-"DELETE_ACCOUNT_CONFIRMATION_SECTION_TITLE" = "Potwierdź swój numer Signal";
+"DELETE_ACCOUNT_CONFIRMATION_SECTION_TITLE" = "Potwierdź swój numer Noise";
 
 /* Title for the 'delete account' confirmation view. */
 "DELETE_ACCOUNT_CONFIRMATION_TITLE" = "Usuń konto";
@@ -2774,7 +2774,7 @@
 "DELETED_USER" = "Konto usunięte";
 
 /* Notification warning the user that they have been de-registered. */
-"DEREGISTRATION_NOTIFICATION" = "Wylogowano z usługi Signal na tym urządzeniu.";
+"DEREGISTRATION_NOTIFICATION" = "Wylogowano z usługi Noise na tym urządzeniu.";
 
 /* Button that lets users re-register using the same phone number. */
 "DEREGISTRATION_REREGISTER_BUTTON" = "Zarejestruj ponownie";
@@ -2783,7 +2783,7 @@
 "DEREGISTRATION_REREGISTER_PROMPT_TITLE" = "Zarejestrować ten numer ponownie?";
 
 /* Label warning the user that they have been de-registered. */
-"DEREGISTRATION_WARNING" = "To urządzenie nie jest już zarejestrowane. Możliwe, że ten sam numer telefonu został przez Ciebie zarejestrowany w aplikacji Signal na innym urządzeniu.";
+"DEREGISTRATION_WARNING" = "To urządzenie nie jest już zarejestrowane. Możliwe, że ten sam numer telefonu został przez Ciebie zarejestrowany w aplikacji Noise na innym urządzeniu.";
 
 /* If the user has been deregistered, they'll see a warning. This is This is the call to action on that warning. */
 "DEREGISTRATION_WARNING_ACTION_TITLE" = "Zarejestruj urządzenie ponownie";
@@ -2837,7 +2837,7 @@
 "DEVICE_TRANSFER_CHOICE_TRANSFER_LINKED_TITLE" = "Przenieś z innego iPada";
 
 /* An error indicating that the other device closed signal mid-transfer and it could not complete */
-"DEVICE_TRANSFER_ERROR_BACKGROUNDED" = "Nie udało się przenieść. Upewnij się, że aplikacja Signal jest uruchomiona na obu urządzeniach, i spróbuj ponownie.";
+"DEVICE_TRANSFER_ERROR_BACKGROUNDED" = "Nie udało się przenieść. Upewnij się, że aplikacja Noise jest uruchomiona na obu urządzeniach, i spróbuj ponownie.";
 
 /* An error indicating that something went wrong with the transfer and it could not complete */
 "DEVICE_TRANSFER_ERROR_GENERIC" = "Nie udało się przenieść. Upewnij się, że urządzenia znajdują się blisko siebie, i spróbuj ponownie.";
@@ -2846,10 +2846,10 @@
 "DEVICE_TRANSFER_ERROR_NOT_ENOUGH_SPACE" = "Na urządzeniu nie ma wystarczająco dużo miejsca, aby dokończyć przenoszenie";
 
 /* An error indicating the user must update their device before trying to transfer. */
-"DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Zaktualizuj Signal do najnowszej wersji i spróbuj ponownie";
+"DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Zaktualizuj Noise do najnowszej wersji i spróbuj ponownie";
 
 /* The explanation on the view that shows receiving progress */
-"DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Urządzenia muszą znajdować się blisko siebie. Nie wyłączaj żadnego z nich ani nie zamykaj aplikacji Signal. Przenoszenie jest szyfrowane metodą end-to-end.";
+"DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Urządzenia muszą znajdować się blisko siebie. Nie wyłączaj żadnego z nich ani nie zamykaj aplikacji Noise. Przenoszenie jest szyfrowane metodą end-to-end.";
 
 /* The title on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_TITLE" = "Odbieranie danych";
@@ -2876,7 +2876,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_TRANSFERRING" = "Przenoszenie";
 
 /* Description in the progress view displayed during device transfer. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_TRANSFERRING_DESCRIPTION" = "Urządzenia muszą znajdować się blisko siebie. Nie wyłączaj żadnego z nich ani nie zamykaj aplikacji Signal. Przenoszenie jest szyfrowane metodą end-to-end.";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_TRANSFERRING_DESCRIPTION" = "Urządzenia muszą znajdować się blisko siebie. Nie wyłączaj żadnego z nich ani nie zamykaj aplikacji Noise. Przenoszenie jest szyfrowane metodą end-to-end.";
 
 /* Status message on old device when cancelling transfer. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CANCELLING" = "Anulowanie połączenia z nowym iPhone'em…";
@@ -2978,13 +2978,13 @@
 "DONATE_CHOOSE_PAYMENT_METHOD_SHEET_SUBTITLE_FOR_ONE_TIME_DONATION" = "Zdobądź odznakę %1$@ na 30 dni";
 
 /* When users make donations on a friend's behalf, they see a sheet that lets them pick a payment method. This is the title on that sheet. Embeds {{amount of money}}, such as \"$5\". */
-"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "%1$@ dla aplikacji Signal";
+"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "%1$@ dla aplikacji Noise";
 
 /* When users make monthly donations, they see a sheet that lets them pick a payment method. This is the title on that sheet. Embeds {{amount of money per month}}, such as \"$5/month\". */
-"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_MONTHLY_DONATION" = "Wpłać %1$@ i wesprzyj Signal";
+"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_MONTHLY_DONATION" = "Wpłać %1$@ i wesprzyj Noise";
 
 /* When users make one-time donations, they see a sheet that lets them pick a payment method. This is the title on that sheet. Embeds {{amount of money}}, such as \"$5\". */
-"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_ONE_TIME_DONATION" = "Wpłać %1$@ i wesprzyj Signal";
+"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_ONE_TIME_DONATION" = "Wpłać %1$@ i wesprzyj Noise";
 
 /* Users can donate on a friend's behalf and can optionally add a message. This is tells users about that optional message. */
 "DONATE_ON_BEHALF_OF_A_FRIEND_ADDITIONAL_MESSAGE_INFO" = "Osoba ta otrzyma powiadomienie o darowiźnie w wiadomości prywatnej. Poniżej możesz dodać coś od siebie.";
@@ -3101,7 +3101,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_BADGE_REDEEMED" = "Odebrano";
 
 /* Users can donate on behalf of a friend, and the friend will receive a badge. This is a short paragraph on the screen where users choose the badge their friend will receive. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_DESCRIPTION" = "Wesprzyj Signal i wpłać darowiznę w imieniu innej osoby, np. przyjaciółki czy kogoś z rodziny, korzystającej z naszej aplikacji. Osoba ta otrzyma od nas odznakę, którą może wyświetlać w swoim profilu.";
+"DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_DESCRIPTION" = "Wesprzyj Noise i wpłać darowiznę w imieniu innej osoby, np. przyjaciółki czy kogoś z rodziny, korzystającej z naszej aplikacji. Osoba ta otrzyma od nas odznakę, którą może wyświetlać w swoim profilu.";
 
 /* Users can donate on behalf of a friend, and the friend will receive a badge. This is the title on the screen where users choose the badge their friend will receive. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_TITLE" = "Wpłać darowiznę w imieniu znajomego";
@@ -3137,7 +3137,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_PREVIEW_OUTGOING" = "✨ %1$@ zostaje dzięki Tobie darczyńcą";
 
 /* You received a donation from a friend. This is the title of that message in the chat. Embeds {{short contact name}}. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_RECEIVED_TITLE_FORMAT" = "%1$@ wpłaca w Twoim imieniu darowiznę na rzecz aplikacji Signal";
+"DONATION_ON_BEHALF_OF_A_FRIEND_RECEIVED_TITLE_FORMAT" = "%1$@ wpłaca w Twoim imieniu darowiznę na rzecz aplikacji Noise";
 
 /* Users can donate on a friend's behalf. This is the error message that appears if the try to do this, but the recipient is blocked. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_RECIPIENT_IS_BLOCKED_ERROR_BODY" = "Nie możesz wpłacić darowizny w imieniu tej osoby, ponieważ została ona przez Ciebie zablokowana.";
@@ -3161,7 +3161,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_SENT_TITLE_FORMAT" = "%1$@, wpłacam w Twoim imieniu darowiznę";
 
 /* When you donate on behalf of a friend, a thank-you sheet will appear. This is the text on that sheet. Embeds {{recipient name}}. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_BODY_FORMAT" = "Twoja darowizna na rzecz aplikacji Signal została wpłacona w imieniu wybranej osoby. %1$@ może się teraz pochwalić wsparciem w swoim profilu.";
+"DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_BODY_FORMAT" = "Twoja darowizna na rzecz aplikacji Noise została wpłacona w imieniu wybranej osoby. %1$@ może się teraz pochwalić wsparciem w swoim profilu.";
 
 /* When you donate on behalf of a friend, a thank-you sheet will appear. This is the title on that sheet. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_TITLE" = "Dziękujemy Ci za wsparcie!";
@@ -3170,10 +3170,10 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_VIEW" = "Wyświetl";
 
 /* A friend has donated on your behalf and you received a badge. This text says that you received a badge, and from whom. Embeds {{contact's short name, such as a first name}}. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ wpłaca w Twoim imieniu darowiznę na rzecz aplikacji Signal. Pochwal się okazanym wsparciem w swoim profilu.";
+"DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ wpłaca w Twoim imieniu darowiznę na rzecz aplikacji Noise. Pochwal się okazanym wsparciem w swoim profilu.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Jako niezależna organizacja non profit stawiamy na poufność wiadomości i połączeń. Bez reklam, bez śledzenia, bez inwigilacji. Wpłać darowiznę i wesprzyj Signal.";
+"DONATION_READ_MORE_SHEET_BODY" = "Jako niezależna organizacja non profit stawiamy na poufność wiadomości i połączeń. Bez reklam, bez śledzenia, bez inwigilacji. Wpłać darowiznę i wesprzyj Noise.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "W zamian za darowiznę otrzymasz specjalną odznakę w swoim profilu";
@@ -3182,7 +3182,7 @@
 "DONATION_READ_MORE_SHEET_BULLET_2" = "Twoja prywatność jest naszą misją";
 
 /* Bullet point for a sheet discussing donating to Signal. For non-English languages, skip the word 501c3, and skip the language about US donations being tax deductible. */
-"DONATION_READ_MORE_SHEET_BULLET_3" = "Signal jest organizacją non profit.";
+"DONATION_READ_MORE_SHEET_BULLET_3" = "Noise jest organizacją non profit.";
 
 /* Section title for donation amount on receipts */
 "DONATION_RECEIPT_AMOUNT" = "Kwota";
@@ -3197,7 +3197,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Udostępnij potwierdzenie";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Dziękujemy za wsparcie aplikacji Signal. Twoja darowizna wspomaga rozwój otwartoźródłowej technologii, która zapewnia prywatność, chroni wolność słowa i umożliwia bezpieczną komunikację milionom osób na całym świecie. Jeśli mieszkasz w Stanach Zjednoczonych, zachowaj to potwierdzenie, aby uwzględnić wpłatę w zeznaniu podatkowym. Signal Technology Foundation jest organizacją non profit zwolnioną z podatku w USA na podstawie zapisu 501c3 Internal Revenue Code (Kodeksu Podatkowego). Nasz federalny numer identyfikacji podatkowej to 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Dziękujemy za wsparcie aplikacji Noise. Twoja darowizna wspomaga rozwój otwartoźródłowej technologii, która zapewnia prywatność, chroni wolność słowa i umożliwia bezpieczną komunikację milionom osób na całym świecie. Jeśli mieszkasz w Stanach Zjednoczonych, zachowaj to potwierdzenie, aby uwzględnić wpłatę w zeznaniu podatkowym. Noise Technology Foundation jest organizacją non profit zwolnioną z podatku w USA na podstawie zapisu 501c3 Internal Revenue Code (Kodeksu Podatkowego). Nasz federalny numer identyfikacji podatkowej to 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Darowizna w imieniu znajomego";
@@ -3218,7 +3218,7 @@
 "DONATION_RECEIPTS" = "Potwierdzenia darowizn";
 
 /* Text at the bottom of the donation receipts list, telling users that receipts might not be available */
-"DONATION_RECEIPTS_MIGHT_BE_MISSING_IF_YOU_REINSTALLED" = "Jeśli aplikacja Signal została zainstalowana ponownie, wcześniejsze potwierdzenia darowizn nie są dostępne.";
+"DONATION_RECEIPTS_MIGHT_BE_MISSING_IF_YOU_REINSTALLED" = "Jeśli aplikacja Noise została zainstalowana ponownie, wcześniejsze potwierdzenia darowizn nie są dostępne.";
 
 /* Error message displayed if something goes wrong with 3DSecure/iDEAL payment authorization.  This will be encountered if the user cancels the webview before authrizing the payment. */
 "DONATION_REDIRECT_ERROR_CANCELLED_MESSAGE" = "Płatność anulowana. Spróbuj ponownie.";
@@ -3233,7 +3233,7 @@
 "DONATION_SCREEN_DONATE_BUTTON" = "Wpłać darowiznę";
 
 /* On donation screens, a small amount of information text is shown. This is the subtitle for that text. */
-"DONATION_SCREENS_HEADER_DESCRIPTION" = "Wpłać darowiznę i wesprzyj nasz prywatny komunikator. To właśnie dzięki darowiznom aplikacja Signal pozostaje niezależna i nie wyświetla reklam.";
+"DONATION_SCREENS_HEADER_DESCRIPTION" = "Wpłać darowiznę i wesprzyj nasz prywatny komunikator. To właśnie dzięki darowiznom aplikacja Noise pozostaje niezależna i nie wyświetla reklam.";
 
 /* On donation screens, a small amount of information text is shown. Users can click this link to learn more information. */
 "DONATION_SCREENS_HEADER_READ_MORE" = "Czytaj dalej";
@@ -3311,7 +3311,7 @@
 "DONATION_VIEW_DONATE_ON_BEHALF_OF_A_FRIEND" = "Wpłać darowiznę w imieniu znajomego";
 
 /* Text describing to the user that they're going to pay a donation to Signal */
-"DONATION_VIEW_DONATION_TO_SIGNAL" = "Darowizna na rzecz aplikacji Signal";
+"DONATION_VIEW_DONATION_TO_SIGNAL" = "Darowizna na rzecz aplikacji Noise";
 
 /* Title for the 'Donor FAQ' button on the donation screen */
 "DONATION_VIEW_DONOR_FAQ" = "Częste pytania darczyńców";
@@ -3323,13 +3323,13 @@
 "DONATION_VIEW_MANAGE_BADGES" = "Odznaki";
 
 /* Text describing to the user that they're going to pay a monthly donation to Signal */
-"DONATION_VIEW_MONTHLY_DONATION_TO_SIGNAL" = "Comiesięczna darowizna na rzecz aplikacji Signal";
+"DONATION_VIEW_MONTHLY_DONATION_TO_SIGNAL" = "Comiesięczna darowizna na rzecz aplikacji Noise";
 
 /* Title for the 'my support' section in the donation view */
 "DONATION_VIEW_MY_SUPPORT_TITLE" = "Moje wsparcie";
 
 /* Title on the 'Donate to Signal' screen */
-"DONATION_VIEW_TITLE" = "Wesprzyj Signal darowizną";
+"DONATION_VIEW_TITLE" = "Wesprzyj Noise darowizną";
 
 /* Label for the currency picker button in donation views */
 "DONATIONS_CURRENCY_PICKER_LABEL" = "Waluta";
@@ -3347,13 +3347,13 @@
 "EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_BODY" = "Możesz przyznać dostęp w ustawieniach swojego urządzenia z iOS.";
 
 /* Alert title for when the user has just tried to edit a contacts after declining to give Signal contacts permissions */
-"EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_TITLE" = "Aby umożliwić edycję informacji o kontakcie, Signal potrzebuje dostępu do kontaktów";
+"EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_TITLE" = "Aby umożliwić edycję informacji o kontakcie, Noise potrzebuje dostępu do kontaktów";
 
 /* The navbar title for the 'update group' view. */
 "EDIT_GROUP_DEFAULT_TITLE" = "Edytuj grupę";
 
 /* Error message indicating the a user can't be added to a group. */
-"EDIT_GROUP_ERROR_CANNOT_ADD_MEMBER" = "Aby można było dodać do grupy tę osobę, musi ona zaktualizować aplikację Signal.";
+"EDIT_GROUP_ERROR_CANNOT_ADD_MEMBER" = "Aby można było dodać do grupy tę osobę, musi ona zaktualizować aplikację Noise.";
 
 /* Error message indicating that an avatar image is invalid and cannot be used. */
 "EDIT_GROUP_ERROR_INVALID_AVATAR" = "Nieprawidłowe zdjęcie.";
@@ -3380,13 +3380,13 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Cześć,\n\nzależy mi na prywatności, więc do komunikacji na iPhonie używam aplikacji Signal. Fajnie będzie, jeśli też ją zainstalujesz – wtedy możemy mieć pewność, że nikt postronny nie czyta ani nie słucha naszych rozmów.\n\nSignal jest dostępny na iPhone'a, Androida oraz komputery. Aplikację możesz pobrać tutaj: %1$@\n\nSignal działa tak, jak każdy inny komunikator. Umożliwia wysyłanie zdjęć i filmów, dzwonienie, a także tworzenie czatów grupowych. Najlepsze jest jednak to, że nikt inny nie będzie mieć dostępu do naszych wiadomości, nawet osoby, które zbudowały tę aplikację!\n\nWięcej o komunikatorze Signal przeczytasz tutaj: %2$@";
+"EMAIL_INVITE_BODY" = "Cześć,\n\nzależy mi na prywatności, więc do komunikacji na iPhonie używam aplikacji Noise. Fajnie będzie, jeśli też ją zainstalujesz – wtedy możemy mieć pewność, że nikt postronny nie czyta ani nie słucha naszych rozmów.\n\nNoise jest dostępny na iPhone'a, Androida oraz komputery. Aplikację możesz pobrać tutaj: %1$@\n\nNoise działa tak, jak każdy inny komunikator. Umożliwia wysyłanie zdjęć i filmów, dzwonienie, a także tworzenie czatów grupowych. Najlepsze jest jednak to, że nikt inny nie będzie mieć dostępu do naszych wiadomości, nawet osoby, które zbudowały tę aplikację!\n\nWięcej o komunikatorze Noise przeczytasz tutaj: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
-"EMAIL_INVITE_SUBJECT" = "Zacznij korzystać z aplikacji Signal";
+"EMAIL_INVITE_SUBJECT" = "Zacznij korzystać z aplikacji Noise";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Na urządzeniu nie zostało skonfigurowane wysyłanie wiadomości e-mail. Aby przekazać zgłoszenie zespołowi pomocy technicznej, skonfiguruj e-mail na swoim urządzeniu lub wyślij wiadomość na adres support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Na urządzeniu nie zostało skonfigurowane wysyłanie wiadomości e-mail. Aby przekazać zgłoszenie zespołowi pomocy technicznej, skonfiguruj e-mail na swoim urządzeniu lub wyślij wiadomość na adres support@noise.app";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "E-mail niedostępny";
@@ -3422,7 +3422,7 @@
 "EMOJI_CATEGORY_TRAVEL_NAME" = "Podróże i miejsca";
 
 /* Full width label displayed when attempting to compose message */
-"EMPTY_CONTACTS_LABEL_LINE1" = "Nikt spośród Twoich kontaktów nie ma aplikacji Signal.";
+"EMPTY_CONTACTS_LABEL_LINE1" = "Nikt spośród Twoich kontaktów nie ma aplikacji Noise.";
 
 /* Full width label displayed when attempting to compose message */
 "EMPTY_CONTACTS_LABEL_LINE2" = "Może kogoś zaprosisz?";
@@ -3512,7 +3512,7 @@
 "ERROR_DESCRIPTION_UNKNOWN_ERROR" = "Wystąpił nieznany błąd.";
 
 /* Error message when attempting to send message */
-"ERROR_DESCRIPTION_UNREGISTERED_RECIPIENT" = "Nie udało się wysłać wiadomości. Ta osoba nie korzysta już z aplikacji Signal.";
+"ERROR_DESCRIPTION_UNREGISTERED_RECIPIENT" = "Nie udało się wysłać wiadomości. Ta osoba nie korzysta już z aplikacji Noise.";
 
 /* Error message indicating that attachment upload(s) failed. */
 "ERROR_MESSAGE_ATTACHMENT_UPLOAD_FAILED" = "Nie udało się przesłać załącznika.";
@@ -3557,10 +3557,10 @@
 "ERROR_NETWORK_FAILURE" = "Błąd sieci";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Aby pomóc nam ulepszyć Signal, wyślij zgłoszenie o tym błędzie wraz z dziennikami debugowania z Twojego urządzenia na adres support@signal.org: %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Aby pomóc nam ulepszyć Noise, wyślij zgłoszenie o tym błędzie wraz z dziennikami debugowania z Twojego urządzenia na adres support@noise.app: %1$@";
 
 /* Format string for an error alert notification title. */
-"ERROR_NOTIFICATION_TITLE" = "Signal Beta: wystąpił błąd";
+"ERROR_NOTIFICATION_TITLE" = "Noise Beta: wystąpił błąd";
 
 /* Error indicating a send failure due to a delinked application. */
 "ERROR_SENDING_DELINKED" = "Twoje urządzenie nie jest już połączone z aplikacją. Aby wysyłać wiadomości, połącz urządzenie ponownie.";
@@ -3569,7 +3569,7 @@
 "ERROR_SENDING_DEREGISTERED" = "Twoje urządzenie nie jest już zarejestrowane. Aby wysyłać wiadomości, zarejestruj urządzenie ponownie.";
 
 /* Error indicating a send failure due to an expired application. */
-"ERROR_SENDING_EXPIRED" = "Ta wersja aplikacji Signal została wycofana. Aby wysyłać wiadomości, zaktualizuj aplikację.";
+"ERROR_SENDING_EXPIRED" = "Ta wersja aplikacji Noise została wycofana. Aby wysyłać wiadomości, zaktualizuj aplikację.";
 
 /* Format string for 'unregistered user' error. Embeds {{the unregistered user's name or signal id}}. */
 "ERROR_UNREGISTERED_USER_FORMAT" = "Niezarejestrowany użytkownik: %1$@";
@@ -3581,19 +3581,19 @@
 "EXIT_REREGISTRATION" = "Opuść rejestrację";
 
 /* Label notifying the user that the app has expired. */
-"EXPIRATION_ERROR" = "Ta wersja Signal wygasła. Aby wysyłać i otrzymywać wiadomości, zaktualizuj aplikację.";
+"EXPIRATION_ERROR" = "Ta wersja Noise wygasła. Aby wysyłać i otrzymywać wiadomości, zaktualizuj aplikację.";
 
 /* If the user's app is too old, they'll be shown a warning asking them to upgrade. This is the text on the warning, and tapping it will open the App Store page for Signal. */
 "EXPIRATION_WARNING_ACTION_TITLE" = "Zaktualizuj teraz";
 
 /* Label warning the user that the app will expire soon. Embeds {{date}}. */
-"EXPIRATION_WARNING_SOON" = "Ta wersja Signal wygaśnie %1$@. Aby dalej wysyłać i otrzymywać wiadomości, zaktualizuj aplikację.";
+"EXPIRATION_WARNING_SOON" = "Ta wersja Noise wygaśnie %1$@. Aby dalej wysyłać i otrzymywać wiadomości, zaktualizuj aplikację.";
 
 /* Label warning the user that the app will expire today. */
-"EXPIRATION_WARNING_TODAY" = "Ta wersja Signal wygaśnie dzisiaj. Aby dalej wysyłać i otrzymywać wiadomości, zaktualizuj aplikację.";
+"EXPIRATION_WARNING_TODAY" = "Ta wersja Noise wygaśnie dzisiaj. Aby dalej wysyłać i otrzymywać wiadomości, zaktualizuj aplikację.";
 
 /* action sheet header when re-sending message which failed because of an invalid key signature */
-"FAILED_SENDING_BECAUSE_INVALID_KEY_SIGNATURE" = "Nie udało się wysłać wiadomości. %1$@ musi zaktualizować i otworzyć Signal.";
+"FAILED_SENDING_BECAUSE_INVALID_KEY_SIGNATURE" = "Nie udało się wysłać wiadomości. %1$@ musi zaktualizować i otworzyć Noise.";
 
 /* action sheet header when re-sending message which failed because of untrusted identity keys */
 "FAILED_SENDING_BECAUSE_UNTRUSTED_IDENTITY_KEY" = "Ty i %1$@ macie nowy numer bezpieczeństwa. Rozważ jego weryfikację, zanim spróbujesz wysłać wiadomość jeszcze raz.";
@@ -3935,10 +3935,10 @@
 "GROUP_CALL_WILL_NOTIFY_TWO_PEOPLE_FORMAT" = "%1$@ i %2$@ otrzymają powiadomienie";
 
 /* Text shown before the user starts a group call if the user has enabled ringing and there is one other person in the group. Embeds {member name} */
-"GROUP_CALL_WILL_RING_ONE_PERSON_FORMAT" = "Signal zadzwoni do tej osoby: %1$@";
+"GROUP_CALL_WILL_RING_ONE_PERSON_FORMAT" = "Noise zadzwoni do tej osoby: %1$@";
 
 /* Text shown before the user starts a group call if the user has enabled ringing and there are two other people in the group. Embeds {{ %1$@ participant1, %2$@ participant2 }} */
-"GROUP_CALL_WILL_RING_TWO_PEOPLE_FORMAT" = "Signal zadzwoni do tych osób: %1$@ i %2$@";
+"GROUP_CALL_WILL_RING_TWO_PEOPLE_FORMAT" = "Noise zadzwoni do tych osób: %1$@ i %2$@";
 
 /* Text explaining that you are in the group call. */
 "GROUP_CALL_YOU_ARE_HERE" = "Uczestniczysz w połączeniu grupowym";
@@ -4151,7 +4151,7 @@
 "GROUP_LINK_VIEW_SHARE_LINK_VIA_QR_CODE" = "Kod QR";
 
 /* Label for the 'share group link via Signal' button in the 'group link' view. */
-"GROUP_LINK_VIEW_SHARE_LINK_VIA_SIGNAL" = "Udostępnij przez Signal";
+"GROUP_LINK_VIEW_SHARE_LINK_VIA_SIGNAL" = "Udostępnij przez Noise";
 
 /* Message for the 'share group link' action sheet in the 'group link' view. */
 "GROUP_LINK_VIEW_SHARE_SHEET_MESSAGE" = "Każdy, kto otrzyma link, może wyświetlić nazwę grupy i listę osób, które do niej należą, a także poprosić o przyjęcie do grupy. Udostępniaj link tylko zaufanym osobom.";
@@ -4577,13 +4577,13 @@
 "HOME_VIEW_DRAFT_PREFIX" = "Wersja robocza: ";
 
 /* Format string for a label offering to start a new conversation with your contacts, if you have 1 Signal contact.  Embeds {{The name of 1 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_1_CONTACT_FORMAT" = "Z aplikacji Signal korzystają już niektóre osoby z Twoich kontaktów, między innymi %1$@.";
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_1_CONTACT_FORMAT" = "Z aplikacji Noise korzystają już niektóre osoby z Twoich kontaktów, między innymi %1$@.";
 
 /* Format string for a label offering to start a new conversation with your contacts, if you have 2 Signal contacts.  Embeds {{The names of 2 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_2_CONTACTS_FORMAT" = "Z aplikacji Signal korzystają już niektóre osoby z Twoich kontaktów, między innymi %1$@ i %2$@.";
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_2_CONTACTS_FORMAT" = "Z aplikacji Noise korzystają już niektóre osoby z Twoich kontaktów, między innymi %1$@ i %2$@.";
 
 /* Format string for a label offering to start a new conversation with your contacts, if you have at least 3 Signal contacts.  Embeds {{The names of 3 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_3_CONTACTS_FORMAT" = "Z aplikacji Signal korzystają już niektóre osoby z Twoich kontaktów, między innymi %1$@, %2$@ i %3$@.";
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_3_CONTACTS_FORMAT" = "Z aplikacji Noise korzystają już niektóre osoby z Twoich kontaktów, między innymi %1$@, %2$@ i %3$@.";
 
 /* A label offering to start a new conversation with your contacts, if you have no Signal contacts. */
 "HOME_VIEW_FIRST_CONVERSATION_OFFER_NO_CONTACTS" = "Rozpocznij swój pierwszy czat tutaj.";
@@ -4679,7 +4679,7 @@
 "INACTIVE_LINKED_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Nieaktywne połączone urządzenie";
 
 /* Body for an in-app megaphone about a user's inactive primary device. */
-"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_BODY" = "Aby konto pozostało aktywne, otwórz Signal na swoim głównym urządzeniu.";
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_BODY" = "Aby konto pozostało aktywne, otwórz Noise na swoim głównym urządzeniu.";
 
 /* Title for a button in an in-app megaphone about a user's inactive primary device, temporarily dismissing the megaphone. */
 "INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_GOT_IT_BUTTON" = "Rozumiem";
@@ -4688,7 +4688,7 @@
 "INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_LEARN_MORE_BUTTON" = "Dowiedz się więcej";
 
 /* Title for an in-app megaphone about a user's inactive primary device. */
-"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Otwórz Signal na telefonie";
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Otwórz Noise na telefonie";
 
 /* Label reminding the user that they are in archive mode, and that muted chats remain archived when they receive a new message. */
 "INBOX_VIEW_ARCHIVE_MODE_MUTED_CHATS_REMINDER" = "Gdy w wyciszonym zarchiwizowanym czacie pojawi się nowa wiadomość, pozostanie on w archiwum.";
@@ -4724,10 +4724,10 @@
 "INFO_MESSAGE_BLOCKED_OTHER_USER" = "Blokujesz tę osobę.";
 
 /* Indicates that a previously-removed recipient has been added back to the current user's contacts. */
-"INFO_MESSAGE_CONTACT_REINSTATED" = "Osoba została z powrotem dodana do listy Twoich kontaktów Signal.";
+"INFO_MESSAGE_CONTACT_REINSTATED" = "Osoba została z powrotem dodana do listy Twoich kontaktów Noise.";
 
 /* Indicates that the recipient has been removed from the current user's contacts and that messaging them will re-add them. */
-"INFO_MESSAGE_CONTACT_REMOVED" = "Ta osoba została wcześniej usunięta z listy Twoich kontaktów Signal. Jeśli wyślesz do tej osoby wiadomość, trafi ona z powrotem na listę.";
+"INFO_MESSAGE_CONTACT_REMOVED" = "Ta osoba została wcześniej usunięta z listy Twoich kontaktów Noise. Jeśli wyślesz do tej osoby wiadomość, trafi ona z powrotem na listę.";
 
 /* When you start a chat with someone and then later learn their profile name, we insert an in-chat message with this string to record the identifier you originally used to contact them. Embeds {{ the identifier, either a phone number or a username }}. */
 "INFO_MESSAGE_LEARNED_PROFILE_KEY" = "Rozpoczynasz czat, na którym jesteście Ty i %1$@.";
@@ -4748,7 +4748,7 @@
 "INFO_MESSAGE_REPORTED_SPAM" = "Zgłoszono jako spam";
 
 /* Body message of the alert shown when a user taps on 'learn more' via the spam info message. */
-"INFO_MESSAGE_REPORTED_SPAM_LEARN_MORE_MESSAGE" = "Zostaliśmy powiadomieni o tym, że ten użytkownik może wysyłać spam. Signal nie ma dostępu do treści czatów.";
+"INFO_MESSAGE_REPORTED_SPAM_LEARN_MORE_MESSAGE" = "Zostaliśmy powiadomieni o tym, że ten użytkownik może wysyłać spam. Noise nie ma dostępu do treści czatów.";
 
 /* Title of the alert shown when a user taps on 'learn more' via the spam info message. */
 "INFO_MESSAGE_REPORTED_SPAM_LEARN_MORE_TITLE" = "Zgłoszono spam";
@@ -4766,7 +4766,7 @@
 "INFO_MESSAGE_USER_CHANGED_PHONE_NUMBER_FORMAT" = "%1$@ ma nowy numer telefonu.";
 
 /* Shown in inbox and conversation when a user joins Signal, embeds the new user's {{contact name}} */
-"INFO_MESSAGE_USER_JOINED_SIGNAL_BODY_FORMAT" = "%1$@ korzysta z aplikacji Signal!";
+"INFO_MESSAGE_USER_JOINED_SIGNAL_BODY_FORMAT" = "%1$@ korzysta z aplikacji Noise!";
 
 /* Label at the top of the input text when editing a message */
 "INPUT_TOOLBAR_EDIT_MESSAGE_LABEL" = "Edytuj wiadomość";
@@ -4793,13 +4793,13 @@
 "INVALID_PROXY_HOST_ERROR" = "Podany adres proxy jest nieprawidłowy. Sprawdź adres i spróbuj ponownie.";
 
 /* Alert body when contacts disabled while trying to invite contacts to signal */
-"INVITE_FLOW_REQUIRES_CONTACT_ACCESS_BODY" = "Aby zaprosić znajomych, zezwól aplikacji Signal na dostęp do kontaktów w ustawieniach swojego urządzenia z iOS.";
+"INVITE_FLOW_REQUIRES_CONTACT_ACCESS_BODY" = "Aby zaprosić znajomych, zezwól aplikacji Noise na dostęp do kontaktów w ustawieniach swojego urządzenia z iOS.";
 
 /* Alert title when contacts disabled while trying to invite contacts to signal */
 "INVITE_FLOW_REQUIRES_CONTACT_ACCESS_TITLE" = "Zezwól na dostęp do kontaktów";
 
 /* Label for the cell that presents the 'invite contacts' workflow. */
-"INVITE_FRIENDS_CONTACT_TABLE_BUTTON" = "Zaproś znajomych do aplikacji Signal";
+"INVITE_FRIENDS_CONTACT_TABLE_BUTTON" = "Zaproś znajomych do aplikacji Noise";
 
 /* Header label above a section for more options for adding contacts */
 "INVITE_FRIENDS_CONTACT_TABLE_HEADER" = "Więcej";
@@ -4934,7 +4934,7 @@
 "LINK_DEVICE_SCANNING_INSTRUCTIONS_SHEET_TITLE" = "Zeskanuj kod QR";
 
 /* Body text for a sheet when a user tries to link a device informing them that they will need to authenticate their device */
-"LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_BODY" = "Aby potwierdzić, dotknij opcji „Kontynuuj” i użyj swojej metody odblokowywania telefonu. Nie wpisuj PIN-u do aplikacji Signal.";
+"LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_BODY" = "Aby potwierdzić, dotknij opcji „Kontynuuj” i użyj swojej metody odblokowywania telefonu. Nie wpisuj PIN-u do aplikacji Noise.";
 
 /* Title for a sheet when a user tries to link a device informing them that they will need to authenticate their device */
 "LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_TITLE" = "Potwierdź, że to Ty";
@@ -4943,7 +4943,7 @@
 "LINK_NEW_DEVICE_AUTHENTICATION_REASON" = "Uwierzytelnij, aby połączyć urządzenie";
 
 /* Body text for a sheet when a user has started linking a device informing them to finish the process on that other device */
-"LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_BODY" = "Dokończ łączenie aplikacji Signal na drugim urządzeniu.";
+"LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_BODY" = "Dokończ łączenie aplikacji Noise na drugim urządzeniu.";
 
 /* Title for a sheet when a user has started linking a device informing them to finish the process on that other device */
 "LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_TITLE" = "Dokończ łączenie na drugim urządzeniu";
@@ -4985,10 +4985,10 @@
 "LINK_PREVIEW_UNKNOWN_DOMAIN" = "Podgląd linku";
 
 /* Shown in an alert when trying to edit a contact. */
-"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Zarządzanie kontaktami zapisanymi na telefonie nie jest już obsługiwane na iPadzie. Aby dodać kontakty Signal do listy kontaktów telefonu, otwórz aplikację Signal na swoim telefonie.";
+"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Zarządzanie kontaktami zapisanymi na telefonie nie jest już obsługiwane na iPadzie. Aby dodać kontakty Noise do listy kontaktów telefonu, otwórz aplikację Noise na swoim telefonie.";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
-"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Zarządzanie kontaktami zapisanymi na telefonie nie jest już obsługiwane na iPadzie. Na tym urządzeniu dalej będą synchronizowane wszelkie zmiany wprowadzane do listy kontaktów w aplikacji Signal na telefonie.";
+"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Zarządzanie kontaktami zapisanymi na telefonie nie jest już obsługiwane na iPadzie. Na tym urządzeniu dalej będą synchronizowane wszelkie zmiany wprowadzane do listy kontaktów w aplikacji Noise na telefonie.";
 
 /* A button shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. Tapping it opens a website with more details. */
 "LINKED_DEVICE_MANAGE_CONTACTS_LEARN_MORE" = "Dowiedz się więcej";
@@ -5003,28 +5003,28 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Połączono nowe urządzenie";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Aby połączyć konto Signal z komputerem lub iPadem, przejdź do sekcji „Połączone urządzenia”, dotknij opcji „Połącz nowe urządzenie” i zeskanuj kod QR ponownie. Pamiętaj, aby skanować wyłącznie kody QR pochodzące bezpośrednio z aplikacji Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Aby połączyć konto Noise z komputerem lub iPadem, przejdź do sekcji „Połączone urządzenia”, dotknij opcji „Połącz nowe urządzenie” i zeskanuj kod QR ponownie. Pamiętaj, aby skanować wyłącznie kody QR pochodzące bezpośrednio z aplikacji Noise.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Wygląda na to, że próbujesz połączyć swoje konto Signal z nowym urządzeniem. Aby to zrobić, dotknij opcji „Kontynuuj”, a potem „Połącz nowe urządzenie” i zeskanuj kod QR ponownie.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Wygląda na to, że próbujesz połączyć swoje konto Noise z nowym urządzeniem. Aby to zrobić, dotknij opcji „Kontynuuj”, a potem „Połącz nowe urządzenie” i zeskanuj kod QR ponownie.";
 
 /* Bullet point about downloads on the linked devices education sheet. Embeds {{ %1$@ iPad download link, %2$@ desktop download link }} */
 "LINKED_DEVICES_EDUCATION_POINT_DOWNLOADS" = "Zainstaluj odpowiednią wersję aplikacji na drugim urządzeniu: otwórz %1$@ (na iPadzie) lub %2$@ (na komputerze).";
 
 /* Bullet point about message sync on the linked devices education sheet */
-"LINKED_DEVICES_EDUCATION_POINT_MESSAGES" = "Po połączeniu urządzeń wiadomości będą synchronizowane z aplikacją Signal na Twoim telefonie komórkowym.";
+"LINKED_DEVICES_EDUCATION_POINT_MESSAGES" = "Po połączeniu urządzeń wiadomości będą synchronizowane z aplikacją Noise na Twoim telefonie komórkowym.";
 
 /* Bullet point about privacy on the linked devices education sheet */
 "LINKED_DEVICES_EDUCATION_POINT_PRIVACY" = "Wszystkie wiadomości na połączonych urządzeniach są prywatne.";
 
 /* Title for the linked device education sheet */
-"LINKED_DEVICES_EDUCATION_TITLE" = "Signal na komputery lub iPady";
+"LINKED_DEVICES_EDUCATION_TITLE" = "Noise na komputery lub iPady";
 
 /* Text that appears where the linked device list would be indicating that there are no linked devices. */
 "LINKED_DEVICES_EMPTY_STATE" = "Brak połączonych urządzeń";
 
 /* Description for header of the linked devices list */
-"LINKED_DEVICES_HEADER_DESCRIPTION" = "Korzystaj z aplikacji Signal na komputerze lub iPadzie.";
+"LINKED_DEVICES_HEADER_DESCRIPTION" = "Korzystaj z aplikacji Noise na komputerze lub iPadzie.";
 
 /* Footer text below the list of currently-linked devices */
 "LINKED_DEVICES_LIST_FOOTER" = "Wiadomości i informacje o czacie są zabezpieczane szyfrowaniem end-to-end na wszystkich urządzeniach";
@@ -5078,7 +5078,7 @@
 "LOGGING_SECTION" = "Logowanie";
 
 /* Footer for the 'logging' help section. */
-"LOGGING_SECTION_FOOTER" = "Dzienniki debugowania pomagają zespołowi Signal usuwać błędy i awarie.";
+"LOGGING_SECTION_FOOTER" = "Dzienniki debugowania pomagają zespołowi Noise usuwać błędy i awarie.";
 
 /* Title for the 'long text message' view. */
 "LONG_TEXT_VIEW_TITLE" = "Wiadomość";
@@ -5237,7 +5237,7 @@
 "MEMBER_LABEL_VIEW_TITLE" = "Rola w grupie";
 
 /* A one-time confirmation that you, as an admin, want to delete for everyone */
-"MESSAGE_ACTION_ADMIN_DELETE_FOR_EVERYONE_CONFIRMATION" = "Osoby w grupie korzystające z najnowszej wersji aplikacji Signal dowiedzą się, że wiadomość została przez Ciebie usunięta.";
+"MESSAGE_ACTION_ADMIN_DELETE_FOR_EVERYONE_CONFIRMATION" = "Osoby w grupie korzystające z najnowszej wersji aplikacji Noise dowiedzą się, że wiadomość została przez Ciebie usunięta.";
 
 /* Action sheet button title */
 "MESSAGE_ACTION_COPY_TEXT" = "Skopiuj tekst wiadomości";
@@ -5246,7 +5246,7 @@
 "MESSAGE_ACTION_DELETE_FOR_EVERYONE" = "Usuń u wszystkich";
 
 /* A one-time confirmation that you want to delete for everyone */
-"MESSAGE_ACTION_DELETE_FOR_EVERYONE_CONFIRMATION" = "Wiadomość zostanie usunięta u wszystkich osób uczestniczących w czacie, pod warunkiem że mają najnowszą wersję aplikacji Signal. Wyświetli się u nich informacja, że wiadomość została przez Ciebie usunięta.";
+"MESSAGE_ACTION_DELETE_FOR_EVERYONE_CONFIRMATION" = "Wiadomość zostanie usunięta u wszystkich osób uczestniczących w czacie, pod warunkiem że mają najnowszą wersję aplikacji Noise. Wyświetli się u nich informacja, że wiadomość została przez Ciebie usunięta.";
 
 /* The title for the action sheet asking who the user wants to delete the message for. */
 "MESSAGE_ACTION_DELETE_FOR_TITLE" = "U kogo chcesz usunąć tę wiadomość?";
@@ -5291,7 +5291,7 @@
 "MESSAGE_ACTION_LINK_OPEN_LINK" = "Otwórz link";
 
 /* Label for button to open a signal proxy. */
-"MESSAGE_ACTION_LINK_OPEN_PROXY" = "Otwórz proxy Signal";
+"MESSAGE_ACTION_LINK_OPEN_PROXY" = "Otwórz proxy Noise";
 
 /* Label for button to open a sticker pack. */
 "MESSAGE_ACTION_LINK_OPEN_STICKER_PACK" = "Wyświetl pakiet naklejek";
@@ -5465,7 +5465,7 @@
 "MESSAGE_REQUEST_NAME_COLLISON_UPDATE_CONTACT_ACTION" = "Zmień kontakt";
 
 /* Action sheet message to confirm reporting a conversation as spam via a message request. */
-"MESSAGE_REQUEST_REPORT_CONVERSATION_MESSAGE" = "Zostaniemy powiadomieni o tym, że ten użytkownik może wysyłać spam. Signal nie ma dostępu do treści czatów.";
+"MESSAGE_REQUEST_REPORT_CONVERSATION_MESSAGE" = "Zostaniemy powiadomieni o tym, że ten użytkownik może wysyłać spam. Noise nie ma dostępu do treści czatów.";
 
 /* Action sheet title to confirm reporting a conversation as spam via a message request. */
 "MESSAGE_REQUEST_REPORT_CONVERSATION_TITLE" = "Zgłosić spam?";
@@ -5594,7 +5594,7 @@
 "MISSED_CALL_BLOCKED_SYSTEM_CONTACT" = "Nieodebrane połączenie od kontaktu zablokowanego w ustawieniach telefonu";
 
 /* Action to block contact in Signal for sheet shown when the user taps a missed call from a contact blocked in iOS settings. */
-"MISSED_CALL_BLOCKED_SYSTEM_SETTINGS_SHEET_BLOCK_ACTION" = "Zablokuj kontakt również w aplikacji Signal";
+"MISSED_CALL_BLOCKED_SYSTEM_SETTINGS_SHEET_BLOCK_ACTION" = "Zablokuj kontakt również w aplikacji Noise";
 
 /* Message for sheet shown when the user taps a missed call from a contact blocked in iOS settings. */
 "MISSED_CALL_BLOCKED_SYSTEM_SETTINGS_SHEET_MESSAGE" = "Nie odebrano połączenia od tej osoby, ponieważ została ona zablokowana w ustawieniach telefonu. Aby to zmienić, przejdź do sekcji Ustawienia > Telefon i dotknij opcji Zablokowane kontakty.";
@@ -5615,19 +5615,19 @@
 "MISSING_CAMERA_PERMISSION_MESSAGE" = "Możesz przyznać dostęp do aparatu w ustawieniach swojego urządzenia z iOS.";
 
 /* Alert title */
-"MISSING_CAMERA_PERMISSION_TITLE" = "Signal potrzebuje dostępu do aparatu";
+"MISSING_CAMERA_PERMISSION_TITLE" = "Noise potrzebuje dostępu do aparatu";
 
 /* Alert body indicating the user has denied location permissions */
 "MISSING_LOCATION_PERMISSION_MESSAGE" = "Możesz włączyć to uprawnienie w ustawieniach swojego urządzenia z iOS.";
 
 /* Alert title indicating the user has denied location permissions */
-"MISSING_LOCATION_PERMISSION_TITLE" = "Aby używać tej funkcji, musisz zezwolić aplikacji Signal na dostęp do Twojej lokalizacji.";
+"MISSING_LOCATION_PERMISSION_TITLE" = "Aby używać tej funkcji, musisz zezwolić aplikacji Noise na dostęp do Twojej lokalizacji.";
 
 /* Alert body when user has previously denied media library access */
 "MISSING_MEDIA_LIBRARY_PERMISSION_MESSAGE" = "Możesz włączyć to uprawnienie w ustawieniach swojego urządzenia z iOS.";
 
 /* Alert title when user has previously denied media library access */
-"MISSING_MEDIA_LIBRARY_PERMISSION_TITLE" = "Aby używać tej funkcji, musisz zezwolić aplikacji Signal na dostęp do Twoich zdjęć.";
+"MISSING_MEDIA_LIBRARY_PERMISSION_TITLE" = "Aby używać tej funkcji, musisz zezwolić aplikacji Noise na dostęp do Twoich zdjęć.";
 
 /* An error shown as the title of an alert when try to link a new device & the user is already at the limit. */
 "MULTIDEVICE_PAIRING_MAX_DESC" = "Nie możesz połączyć więcej urządzeń.";
@@ -5648,7 +5648,7 @@
 "MY_STORIES_SETTINGS_VISIBILITY_ALL_SIGNAL_CONNECTIONS_EXCEPT_TITLE" = "Wszyscy oprócz…";
 
 /* Title for the visibility option */
-"MY_STORIES_SETTINGS_VISIBILITY_ALL_SIGNAL_CONNECTIONS_TITLE" = "Wszystkie kontakty Signal";
+"MY_STORIES_SETTINGS_VISIBILITY_ALL_SIGNAL_CONNECTIONS_TITLE" = "Wszystkie kontakty Noise";
 
 /* Title for the visibility option */
 "MY_STORIES_SETTINGS_VISIBILITY_ONLY_SHARE_WITH_TITLE" = "Udostępniaj tylko…";
@@ -5810,7 +5810,7 @@
 "NICKNAME_EDITOR_DELETE_CONFIRMATION_TITLE" = "Usunąć pseudonim?";
 
 /* The description below the title on the profile nickname editor view. */
-"NICKNAME_EDITOR_DESCRIPTION" = "Pseudonimy i notatki są przechowywane w aplikacji Signal oraz szyfrowane metodą end-to-end. Są widoczne tylko dla Ciebie.";
+"NICKNAME_EDITOR_DESCRIPTION" = "Pseudonimy i notatki są przechowywane w aplikacji Noise oraz szyfrowane metodą end-to-end. Są widoczne tylko dla Ciebie.";
 
 /* Placeholder text it the text field for the family name in the profile nickname editor. */
 "NICKNAME_EDITOR_FAMILY_NAME_PLACEHOLDER" = "Nazwisko";
@@ -5837,13 +5837,13 @@
 "NO_OTHER_GROUPS_IN_COMMON" = "Brak innych wspólnych grup.";
 
 /* Shown in place of the text input box in a conversation when the user is no longer registered can't send messages. The embedded value is 'Re-link' (translated via NOT_LINKED_BOTTOM_RELINK), and it will be formatted as a tappable link. */
-"NOT_LINKED_BOTTOM" = "To urządzenie nie jest już połączone. Aby dalej korzystać z aplikacji Signal na tym urządzeniu, %1$@.";
+"NOT_LINKED_BOTTOM" = "To urządzenie nie jest już połączone. Aby dalej korzystać z aplikacji Noise na tym urządzeniu, %1$@.";
 
 /* Shown in place of the text input box in a conversation when the user is no longer registered can't send messages. This value is a tappable link embedded in a larger sentence. */
 "NOT_LINKED_BOTTOM_RELINK" = "połącz je ponownie";
 
 /* Shown in place of the text input box in a conversation when the user is no longer registered can't send messages. The embedded value is 'Re-register' (translated via NOT_REGISTERED_BOTTOM_REREGISTER), and it will be formatted as a tappable link. */
-"NOT_REGISTERED_BOTTOM" = "To urządzenie nie jest już zarejestrowane. Aby dalej korzystać z aplikacji Signal na tym urządzeniu, %1$@.";
+"NOT_REGISTERED_BOTTOM" = "To urządzenie nie jest już zarejestrowane. Aby dalej korzystać z aplikacji Noise na tym urządzeniu, %1$@.";
 
 /* Shown in place of the text input box in a conversation when the user is no longer registered can't send messages. This value is a tappable link embedded in a larger sentence. */
 "NOT_REGISTERED_BOTTOM_REREGISTER" = "zarejestruj je ponownie";
@@ -5885,7 +5885,7 @@
 "NOTIFICATION_PERMISSION_REMINDER_MEGAPHONE_TITLE" = "Włączyć powiadomienia?";
 
 /* Shown as the body of an alert when notifications can't be shown due to an error. */
-"NOTIFICATIONS_ERROR_MESSAGE" = "Jeśli nie otrzymujesz powiadomień z aplikacji Signal, problem może zniknąć, gdy %1$@ zostanie uruchomiony ponownie.";
+"NOTIFICATIONS_ERROR_MESSAGE" = "Jeśli nie otrzymujesz powiadomień z aplikacji Noise, problem może zniknąć, gdy %1$@ zostanie uruchomiony ponownie.";
 
 /* Shown as the title of an alert when notifications can't be shown due to an error. */
 "NOTIFICATIONS_ERROR_TITLE" = "Nie można wyświetlić powiadomień";
@@ -5945,10 +5945,10 @@
 "ONBOARDING_2FA_SKIP_PIN_ENTRY_TITLE" = "Pominąć wpisywanie PIN-u?";
 
 /* The body for the device transfer 'choice' view 'restore backup' option */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_BODY" = "Przywróć swoje konto i wiadomości z kopii zapasowej Signal";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_BODY" = "Przywróć swoje konto i wiadomości z kopii zapasowej Noise";
 
 /* The title for the device transfer 'choice' view 'restore backup' option */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_TITLE" = "Przywróć bezpieczną kopię zapasową Signal";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_TITLE" = "Przywróć bezpieczną kopię zapasową Noise";
 
 /* Body for a sheet warning users about skipping restore. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_CONFIRM_SKIP_RESTORE_BODY" = "Jeśli teraz pominiesz przywracanie, nie będzie można tego zrobić później. Ponadto jeśli włączysz ponownie tworzenie kopii zapasowych na tym urządzeniu, bieżąca kopia zapasowa zostanie zastąpiona nową historią wiadomości.";
@@ -5960,7 +5960,7 @@
 "ONBOARDING_CHOOSE_RESTORE_METHOD_DESCRIPTION" = "Zdecyduj, w jaki sposób chcesz przywrócić historię wiadomości i dane konta.";
 
 /* Message body displayed to a user during registration if there are no restore options available. */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Ponieważ przechodzisz z Androida na urządzenie z systemem iOS, jedynym sposobem na przeniesienie wiadomości i multimediów jest włączenie usługi kopii zapasowych Signal na poprzednim urządzeniu.";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Ponieważ przechodzisz z Androida na urządzenie z systemem iOS, jedynym sposobem na przeniesienie wiadomości i multimediów jest włączenie usługi kopii zapasowych Noise na poprzednim urządzeniu.";
 
 /* Title displayed to a user during registration if there are no restore options available. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_TITLE" = "Brak kopii zapasowej do przywrócenia";
@@ -6020,7 +6020,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Połącz iPhone'a";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Gdy dotkniesz opcji „Zarejestruj iPada”, będziesz mieć możliwość utworzenia nowego konta Signal lub przeniesienia dotychczasowego konta na tego iPada. Spowoduje to dezaktywację aplikacji Signal na wszystkich innych urządzeniach zarejestrowanych przy użyciu tego samego numeru telefonu.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Gdy dotkniesz opcji „Zarejestruj iPada”, będziesz mieć możliwość utworzenia nowego konta Noise lub przeniesienia dotychczasowego konta na tego iPada. Spowoduje to dezaktywację aplikacji Noise na wszystkich innych urządzeniach zarejestrowanych przy użyciu tego samego numeru telefonu.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Gdy dotkniesz opcji „Połącz iPhone'a”, będziesz mieć możliwość połączenia telefonu z dotychczasowym kontem. Łączenie telefonu nie jest zalecane i ogranicza działanie niektórych funkcjonalności, takich jak wykonywanie połączeń.";
@@ -6032,13 +6032,13 @@
 "ONBOARDING_MODE_SWITCH_TITLE_REGISTERING" = "Połącz tego iPhone'a";
 
 /* warning to the user that registering an ipad is not recommended */
-"ONBOARDING_MODE_SWITCH_WARNING_PROVISIONING" = "Gdy zarejestrujesz tego iPada, aplikacja Signal zdezaktywuje się na wszystkich innych urządzeniach zarejestrowanych przy użyciu tego samego numeru telefonu.";
+"ONBOARDING_MODE_SWITCH_WARNING_PROVISIONING" = "Gdy zarejestrujesz tego iPada, aplikacja Noise zdezaktywuje się na wszystkich innych urządzeniach zarejestrowanych przy użyciu tego samego numeru telefonu.";
 
 /* warning to the user that linking a phone is not recommended */
 "ONBOARDING_MODE_SWITCH_WARNING_REGISTERING" = "Łączenie iPhone'a nie jest zalecane i ogranicza działanie niektórych podstawowych funkcjonalności.";
 
 /* Description of the 'Contacts' permission in the 'onboarding permissions' view. */
-"ONBOARDING_PERMISSIONS_CONTACTS_DESCRIPTION" = "Znajdź osoby, które znasz. Twoje kontakty są szyfrowane i niewidoczne dla usługi Signal.";
+"ONBOARDING_PERMISSIONS_CONTACTS_DESCRIPTION" = "Znajdź osoby, które znasz. Twoje kontakty są szyfrowane i niewidoczne dla usługi Noise.";
 
 /* Title introducing the 'Contacts' permission in the 'onboarding permissions' view. */
 "ONBOARDING_PERMISSIONS_CONTACTS_TITLE" = "Kontakty";
@@ -6050,13 +6050,13 @@
 "ONBOARDING_PERMISSIONS_NOTIFICATIONS_TITLE" = "Powiadomienia";
 
 /* Preamble of the 'onboarding permissions' view. */
-"ONBOARDING_PERMISSIONS_PREAMBLE" = "Signal prosi o te uprawnienia.";
+"ONBOARDING_PERMISSIONS_PREAMBLE" = "Noise prosi o te uprawnienia.";
 
 /* Title of the 'onboarding permissions' view. */
 "ONBOARDING_PERMISSIONS_TITLE" = "Włącz uprawnienia";
 
 /* Explanation of the 'onboarding phone number discoverability' view. Embeds {user phone number} */
-"ONBOARDING_PHONE_NUMBER_DISCOVERABILITY_EXPLANATION_FORMAT" = "Wybierz, kto może Cię znaleźć w aplikacji Signal za pomocą numeru %1$@";
+"ONBOARDING_PHONE_NUMBER_DISCOVERABILITY_EXPLANATION_FORMAT" = "Wybierz, kto może Cię znaleźć w aplikacji Noise za pomocą numeru %1$@";
 
 /* Title of the 'onboarding phone number discoverability' view. */
 "ONBOARDING_PHONE_NUMBER_DISCOVERABILITY_TITLE" = "Kto może Cię znaleźć za pomocą numeru telefonu?";
@@ -6071,7 +6071,7 @@
 "ONBOARDING_PHONE_NUMBER_VALIDATION_WARNING" = "Nieprawidłowy numer telefonu. Aby się zarejestrować, podaj poprawny numer.";
 
 /* Explanation of the 'onboarding pin attempts exhausted' view when reglock is disabled. */
-"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_EXPLANATION" = "Nie możesz już więcej razy próbować zgadnąć PIN-u, ale wciąż możesz odzyskać dostęp do swojego konta Signal. W tym celu utwórz nowy PIN. W trosce o Twoją prywatność i bezpieczeństwo Twojego konta przywrócimy je bez zapisanych wcześniej informacji w profilu ani ustawień.";
+"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_EXPLANATION" = "Nie możesz już więcej razy próbować zgadnąć PIN-u, ale wciąż możesz odzyskać dostęp do swojego konta Noise. W tym celu utwórz nowy PIN. W trosce o Twoją prywatność i bezpieczeństwo Twojego konta przywrócimy je bez zapisanych wcześniej informacji w profilu ani ustawień.";
 
 /* Label for the 'learn more' link when reglock is disabled in the 'onboarding pin attempts exhausted' view. */
 "ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_LEARN_MORE" = "Dowiedz się więcej o kodach PIN";
@@ -6080,22 +6080,22 @@
 "ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_TITLE" = "Niepoprawny PIN";
 
 /* Explanation of the 'onboarding pin attempts exhausted' view when it is unknown if reglock is enabled. */
-"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "Nie możesz więcej razy próbować odgadnąć PIN-u. Aby zalogować się na konto Signal, możesz jeszcze spróbować zweryfikować swój numer telefonu. W trosce o Twoją prywatność i bezpieczeństwo Twojego konta przywrócimy je bez zapisanych wcześniej informacji w profilu ani ustawień.";
+"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "Nie możesz więcej razy próbować odgadnąć PIN-u. Aby zalogować się na konto Noise, możesz jeszcze spróbować zweryfikować swój numer telefonu. W trosce o Twoją prywatność i bezpieczeństwo Twojego konta przywrócimy je bez zapisanych wcześniej informacji w profilu ani ustawień.";
 
 /* Explanation of 'do not have old device' flow for the 'Restore or Transfer' prompt */
-"ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_BODY" = "Wybierz tę opcję również wtedy, gdy ponownie instalujesz Signal na tym samym urządzeniu";
+"ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_BODY" = "Wybierz tę opcję również wtedy, gdy ponownie instalujesz Noise na tym samym urządzeniu";
 
 /* Title for the 'do not have my old device' choice of the 'Restore or Transfer' prompt */
 "ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_TITLE" = "Nie mam swojego poprzedniego telefonu";
 
 /* Explanation of 'have old device' flow for the 'Restore or Transfer' prompt */
-"ONBOARDING_SPLASH_HAVE_OLD_DEVICE_BODY" = "Aby szybko zacząć korzystać z aplikacji Signal, zeskanuj kod QR ze swojego obecnego urządzenia";
+"ONBOARDING_SPLASH_HAVE_OLD_DEVICE_BODY" = "Aby szybko zacząć korzystać z aplikacji Noise, zeskanuj kod QR ze swojego obecnego urządzenia";
 
 /* Title for the 'have my old device' choice of the 'Restore or Transfer' prompt */
 "ONBOARDING_SPLASH_HAVE_OLD_DEVICE_TITLE" = "Mam swój poprzedni telefon";
 
 /* Text indicating Signal is a nonprofit on the 'onboarding splash' view. For non-English languages, exclude the word '501c3'. */
-"ONBOARDING_SPLASH_NONPROFIT" = "Signal to organizacja non profit";
+"ONBOARDING_SPLASH_NONPROFIT" = "Noise to organizacja non profit";
 
 /* Button for restoring or transferring account in the 'onboarding splash' view. */
 "ONBOARDING_SPLASH_RESTORE_OR_TRANSFER_BUTTON_TITLE" = "Przywróć lub przenieś konto";
@@ -6149,19 +6149,19 @@
 "OPEN_SETTINGS_BUTTON" = "Ustawienia";
 
 /* Signal doesn't support old versions of iOS and shows a warning if you're on unsupported version. Some users can upgrade their device to a newer version of iOS to continue using Signal. If that's the case, they'll be shown this text. */
-"OS_EXPIRED_AND_CAN_UPGRADE_OS" = "Signal nie działa już na tym urządzeniu. Aby dalej korzystać z aplikacji Signal, zaktualizuj system operacyjny do nowszej wersji iOS.";
+"OS_EXPIRED_AND_CAN_UPGRADE_OS" = "Noise nie działa już na tym urządzeniu. Aby dalej korzystać z aplikacji Noise, zaktualizuj system operacyjny do nowszej wersji iOS.";
 
 /* Signal doesn't support old devices. If that's the case, they'll be shown this action, and tapping it will open information about Signal's minimum supported operating systems. */
-"OS_EXPIRED_AND_DEVICE_IS_STUCK" = "Signal nie działa już na tym urządzeniu. Aby dalej korzystać z aplikacji Signal, wymień urządzenie na nowsze.";
+"OS_EXPIRED_AND_DEVICE_IS_STUCK" = "Noise nie działa już na tym urządzeniu. Aby dalej korzystać z aplikacji Noise, wymień urządzenie na nowsze.";
 
 /* Signal doesn't support old versions of iOS and shows a warning if you're on an old version. Some users can upgrade their device to a newer version of iOS to continue using Signal. If that's the case, they'll be shown this action, and tapping it will open device update instructions. */
 "OS_SOON_TO_EXPIRE_ACTION_TITLE" = "Zaktualizuj teraz";
 
 /* Signal doesn't support old versions of iOS and shows a warning if you're an old version that will soon lose support. Some users can upgrade their device to a newer version of iOS to continue using Signal. If that's the case, they'll be shown this text. Embeds {{expiration date}}. */
-"OS_SOON_TO_EXPIRE_AND_CAN_UPGRADE_OS_FORMAT" = "Aplikacja Signal wkrótce przestanie być zgodna z wersją systemu iOS na tym urządzeniu. Aby dalej korzystać z aplikacji, zainstaluj nowszą wersję iOS do %1$@.";
+"OS_SOON_TO_EXPIRE_AND_CAN_UPGRADE_OS_FORMAT" = "Aplikacja Noise wkrótce przestanie być zgodna z wersją systemu iOS na tym urządzeniu. Aby dalej korzystać z aplikacji, zainstaluj nowszą wersję iOS do %1$@.";
 
 /* Signal doesn't support old versions of iOS and shows a warning if you're on an old version that will soon lose support. This is the text on that warning when users can't upgrade iOS without getting a new device. Embeds {{expiration date}}. */
-"OS_SOON_TO_EXPIRE_AND_DEVICE_WILL_BE_STUCK_FORMAT" = "Aplikacja Signal wkrótce przestanie być zgodna z wersją systemu iOS na tym urządzeniu. Aby dalej korzystać z aplikacji, wymień urządzenie na nowsze do %1$@.";
+"OS_SOON_TO_EXPIRE_AND_DEVICE_WILL_BE_STUCK_FORMAT" = "Aplikacja Noise wkrótce przestanie być zgodna z wersją systemu iOS na tym urządzeniu. Aby dalej korzystać z aplikacji, wymień urządzenie na nowsze do %1$@.";
 
 /* Info Message when another user disabled disappearing messages. Embeds {{name of other user}}. */
 "OTHER_DISABLED_DISAPPEARING_MESSAGES_CONFIGURATION" = "%1$@ wyłącza znikające wiadomości.";
@@ -6170,13 +6170,13 @@
 "OTHER_UPDATED_DISAPPEARING_MESSAGES_CONFIGURATION" = "%1$@ ustawia czas, po którym wiadomości znikają, na %2$@.";
 
 /* Label warning the user that the Signal service may be down. */
-"OUTAGE_WARNING" = "Signal ma problemy techniczne. Staramy się jak najszybciej je rozwiązać.";
+"OUTAGE_WARNING" = "Noise ma problemy techniczne. Staramy się jak najszybciej je rozwiązać.";
 
 /* Label for action link when the user has an outdated payment client */
 "OUTDATED_PAYMENT_CLIENT_ACTION_TITLE" = "Zaktualizuj teraz";
 
 /* Label warning the user that they should update Signal to continue using payments. */
-"OUTDATED_PAYMENT_CLIENT_REMINDER_TEXT" = "Aby dalej korzystać z płatności, zaktualizuj Signal. Twoje saldo może być nieaktualne.";
+"OUTDATED_PAYMENT_CLIENT_REMINDER_TEXT" = "Aby dalej korzystać z płatności, zaktualizuj Noise. Twoje saldo może być nieaktualne.";
 
 /* Body of prompt notifying restore was cancelled. */
 "OUTGOING_DEVICE_REGISTRATION_CANCELLED_RESTORE_BODY" = "Przywracanie zostało anulowane. Spróbuj ponownie.";
@@ -6185,7 +6185,7 @@
 "OUTGOING_DEVICE_REGISTRATION_CANCELLED_RESTORE_TITLE" = "Przywracanie zostało anulowane";
 
 /* Body of prompt notifying registration without restore completed on the new device. */
-"OUTGOING_DEVICE_REGISTRATION_COMPLETE_BODY" = "Twoje konto Signal zostało aktywowane na innym urządzeniu. Na tym urządzeniu Signal jest już nieaktywny.";
+"OUTGOING_DEVICE_REGISTRATION_COMPLETE_BODY" = "Twoje konto Noise zostało aktywowane na innym urządzeniu. Na tym urządzeniu Noise jest już nieaktywny.";
 
 /* Title of prompt notifying registration without restore completed on the new device. */
 "OUTGOING_DEVICE_REGISTRATION_COMPLETE_TITLE" = "Rejestracja zakończona";
@@ -6218,7 +6218,7 @@
 "OUTGOING_DEVICE_RESTORE_BACKUP_RESTORE_DESCRIPTION" = "Ostatnia kopia zapasowa została utworzona %1$@ o godz. %2$@.";
 
 /* Body of prompt notifying device restore started on the new device. */
-"OUTGOING_DEVICE_RESTORE_COMPLETE_BODY" = "Rozpoczęto przenoszenie konta Signal oraz wiadomości na inne urządzenie. Na tym urządzeniu Signal jest już nieaktywny.";
+"OUTGOING_DEVICE_RESTORE_COMPLETE_BODY" = "Rozpoczęto przenoszenie konta Noise oraz wiadomości na inne urządzenie. Na tym urządzeniu Noise jest już nieaktywny.";
 
 /* Title of prompt notifying device restore started on the new device. */
 "OUTGOING_DEVICE_RESTORE_COMPLETE_TITLE" = "Przywracanie zakończone";
@@ -6242,7 +6242,7 @@
 "OUTGOING_DEVICE_RESTORE_INITIAL_VIEW_TITLE" = "Przenieś konto";
 
 /* Body of prompt notifying device transfer completed. */
-"OUTGOING_DEVICE_TRANSFER_COMPLETE_BODY" = "Udało się przenieść Twoje konto Signal oraz wiadomości na inne urządzenie. Na tym urządzeniu Signal jest już nieaktywny.";
+"OUTGOING_DEVICE_TRANSFER_COMPLETE_BODY" = "Udało się przenieść Twoje konto Noise oraz wiadomości na inne urządzenie. Na tym urządzeniu Noise jest już nieaktywny.";
 
 /* Title of prompt notifying device transfer completed. */
 "OUTGOING_DEVICE_TRANSFER_COMPLETE_TITLE" = "Przenoszenie zakończone";
@@ -6254,10 +6254,10 @@
 "OUTGOING_MISSED_VOICE_CALL" = "Nieodebrane połączenie głosowe";
 
 /* Button for action sheet shown when device transfer completes; quits the Signal app immediately (does not automatically relaunch, but the user may choose to relaunch). */
-"OUTGOING_TRANSFER_COMPLETE_EXIT_ACTION" = "Zamknij Signal";
+"OUTGOING_TRANSFER_COMPLETE_EXIT_ACTION" = "Zamknij Noise";
 
 /* Message for action sheet shown when device transfer completes */
-"OUTGOING_TRANSFER_COMPLETE_MESSAGE" = "Aplikacja Signal na tym urządzeniu zostanie teraz zamknięta";
+"OUTGOING_TRANSFER_COMPLETE_MESSAGE" = "Aplikacja Noise na tym urządzeniu zostanie teraz zamknięta";
 
 /* Title for action sheet shown when device transfer completes */
 "OUTGOING_TRANSFER_COMPLETE_TITLE" = "Przenoszenie zakończone";
@@ -6407,7 +6407,7 @@
 "PAYMENTS_NEW_PAYMENT_ERROR_INVALID_TRANSACTION" = "Nieprawidłowa transakcja";
 
 /* Indicates that a payment failed due to an outdated client. */
-"PAYMENTS_NEW_PAYMENT_ERROR_OUTDATED_CLIENT" = "Aby wykonywać płatności, zaktualizuj aplikację Signal.";
+"PAYMENTS_NEW_PAYMENT_ERROR_OUTDATED_CLIENT" = "Aby wykonywać płatności, zaktualizuj aplikację Noise.";
 
 /* Indicates that an outgoing payment could not be verified in a timely way. */
 "PAYMENTS_NEW_PAYMENT_ERROR_OUTGOING_VERIFICATION_TAKING_TOO_LONG" = "Płatność nie została jeszcze zweryfikowana";
@@ -6650,13 +6650,13 @@
 "PHONE_NUMBER_DISCOVERABILITY_EVERYBODY" = "Wszyscy";
 
 /* A user friendly description of the 'everybody' phone number discoverability mode. */
-"PHONE_NUMBER_DISCOVERABILITY_EVERYBODY_DESCRIPTION" = "Każdy, kto ma Twój numer telefonu, może Cię znaleźć w aplikacji Signal i rozpocząć z Tobą czat.";
+"PHONE_NUMBER_DISCOVERABILITY_EVERYBODY_DESCRIPTION" = "Każdy, kto ma Twój numer telefonu, może Cię znaleźć w aplikacji Noise i rozpocząć z Tobą czat.";
 
 /* A user friendly name for the 'nobody' phone number discoverability mode. */
 "PHONE_NUMBER_DISCOVERABILITY_NOBODY" = "Nikt";
 
 /* A user friendly description of the 'nobody' phone number discoverability mode. */
-"PHONE_NUMBER_DISCOVERABILITY_NOBODY_DESCRIPTION" = "O tym, że korzystasz z aplikacji Signal, nie dowie się nikt oprócz osób, którym wyślesz wiadomość lub z którymi masz już czat.";
+"PHONE_NUMBER_DISCOVERABILITY_NOBODY_DESCRIPTION" = "O tym, że korzystasz z aplikacji Noise, nie dowie się nikt oprócz osób, którym wyślesz wiadomość lub z którymi masz już czat.";
 
 /* A format for a label showing an example phone number. Embeds {{the example phone number}}. */
 "PHONE_NUMBER_EXAMPLE_FORMAT" = "Przykład: %1$@";
@@ -6752,22 +6752,22 @@
 "PIN_CREATION_DISABLE_CONFIRMATION_ACTION" = "Wyłącz PIN";
 
 /* Message of the 'pin disable' action sheet. */
-"PIN_CREATION_DISABLE_CONFIRMATION_MESSAGE" = "Jeśli wyłączysz PIN, przy ponownej rejestracji w aplikacji Signal stracisz wszystkie dane (chyba że przeniesiesz je z innego urządzenia z systemem iOS). Gdy PIN jest wyłączony, nie można też korzystać z funkcji blokady rejestracji.";
+"PIN_CREATION_DISABLE_CONFIRMATION_MESSAGE" = "Jeśli wyłączysz PIN, przy ponownej rejestracji w aplikacji Noise stracisz wszystkie dane (chyba że przeniesiesz je z innego urządzenia z systemem iOS). Gdy PIN jest wyłączony, nie można też korzystać z funkcji blokady rejestracji.";
 
 /* Title of the 'pin disable' action sheet. */
 "PIN_CREATION_DISABLE_CONFIRMATION_TITLE" = "Uwaga";
 
 /* The explanation in the 'pin creation' view. */
-"PIN_CREATION_EXPLANATION" = "Dzięki PIN-owi dane przechowywane w aplikacji Signal są szyfrowane i tylko Ty masz do nich dostęp. PIN pozwoli Ci przywrócić profil, ustawienia i kontakty, gdy ponownie zainstalujesz Signal. Nie potrzebujesz PIN-u, aby otwierać aplikację.";
+"PIN_CREATION_EXPLANATION" = "Dzięki PIN-owi dane przechowywane w aplikacji Noise są szyfrowane i tylko Ty masz do nich dostęp. PIN pozwoli Ci przywrócić profil, ustawienia i kontakty, gdy ponownie zainstalujesz Noise. Nie potrzebujesz PIN-u, aby otwierać aplikację.";
 
 /* Learn more action on the pin creation view */
 "PIN_CREATION_LEARN_MORE" = "Więcej informacji o kodzie PIN";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the text on that sheet. */
-"PIN_CREATION_LEARN_MORE_TEXT" = "Dzięki PIN-owi dane przechowywane w aplikacji Signal są szyfrowane i tylko Ty masz do nich dostęp. PIN pozwoli Ci przywrócić profil, ustawienia i kontakty, gdy ponownie zainstalujesz aplikację.";
+"PIN_CREATION_LEARN_MORE_TEXT" = "Dzięki PIN-owi dane przechowywane w aplikacji Noise są szyfrowane i tylko Ty masz do nich dostęp. PIN pozwoli Ci przywrócić profil, ustawienia i kontakty, gdy ponownie zainstalujesz aplikację.";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the title on that sheet. */
-"PIN_CREATION_LEARN_MORE_TITLE" = "Co to jest PIN Signal";
+"PIN_CREATION_LEARN_MORE_TITLE" = "Co to jest PIN Noise";
 
 /* Label indicating that the attempted PIN does not match the first PIN */
 "PIN_CREATION_MISMATCH_ERROR" = "Kody PIN są różne. Spróbuj ponownie.";
@@ -6800,7 +6800,7 @@
 "PIN_CREATION_WEAK_ERROR" = "Ułóż silniejszy PIN";
 
 /* If your attempted PIN is too weak, you'll see an error message. This is the text on the error dialog. */
-"PIN_CREATION_WEAK_ERROR_MESSAGE" = "Dzięki PIN-owi dane przechowywane w aplikacji Signal są szyfrowane i tylko Ty masz do nich dostęp. Aby chronić swoje konto, ustaw mocniejszy PIN.";
+"PIN_CREATION_WEAK_ERROR_MESSAGE" = "Dzięki PIN-owi dane przechowywane w aplikacji Noise są szyfrowane i tylko Ty masz do nich dostęp. Aby chronić swoje konto, ustaw mocniejszy PIN.";
 
 /* If the user is re-registering, they need to enter their PIN to restore all their data. In some cases, they can skip this entry and lose some data. This text is shown on a button that lets them begin to do this. */
 "PIN_ENTER_EXISTING_SKIP" = "Pomiń PIN";
@@ -6833,7 +6833,7 @@
 "PIN_REMINDER_MEGAPHONE_FEW_DAYS_TOAST" = "Przypomnimy Ci jeszcze raz za kilka dni.";
 
 /* Title for PIN reminder megaphone */
-"PIN_REMINDER_MEGAPHONE_TITLE" = "Zweryfikuj swój PIN Signal";
+"PIN_REMINDER_MEGAPHONE_TITLE" = "Zweryfikuj swój PIN Noise";
 
 /* Toast indicating that we'll ask you for your PIN again tomorrow, after successfully entering it. */
 "PIN_REMINDER_MEGAPHONE_TOMORROW_SUCCESSFUL_TOAST" = "PIN poprawny. Poprosimy Cię o niego ponownie jutro.";
@@ -6857,7 +6857,7 @@
 "PIN_REMINDER_MISMATCH_ERROR" = "Nieprawidłowy PIN. Spróbuj ponownie.";
 
 /* The title for the 'pin reminder' dialog. */
-"PIN_REMINDER_TITLE" = "Wpisz swój PIN Signal";
+"PIN_REMINDER_TITLE" = "Wpisz swój PIN Noise";
 
 /* Label indicating that the attempted PIN is too short */
 "PIN_REMINDER_TOO_SHORT_ERROR" = "PIN musi mieć co najmniej 4 cyfry.";
@@ -6944,7 +6944,7 @@
 "PINS_MEGAPHONE_ACTION" = "Utwórz PIN";
 
 /* Body for PIN megaphone when user doesn't have a PIN */
-"PINS_MEGAPHONE_BODY" = "Utwórz swój PIN Signal.";
+"PINS_MEGAPHONE_BODY" = "Utwórz swój PIN Noise.";
 
 /* Title for PIN megaphone when user doesn't have a PIN */
 "PINS_MEGAPHONE_TITLE" = "Utwórz PIN";
@@ -7058,19 +7058,19 @@
 "PRIVACY_VERIFICATION_FAILED_MISMATCHED_SAFETY_NUMBERS_IN_CLIPBOARD" = "Numer ze schowka nie wygląda na poprawny numer bezpieczeństwa tego czatu.";
 
 /* Alert body for user error */
-"PRIVACY_VERIFICATION_FAILED_NO_SAFETY_NUMBERS_IN_CLIPBOARD" = "Aplikacja Signal nie znalazła w schowku numeru bezpieczeństwa. Upewnij się, że został on poprawnie skopiowany.";
+"PRIVACY_VERIFICATION_FAILED_NO_SAFETY_NUMBERS_IN_CLIPBOARD" = "Aplikacja Noise nie znalazła w schowku numeru bezpieczeństwa. Upewnij się, że został on poprawnie skopiowany.";
 
 /* Alert body when verifying with {{contact name}} */
-"PRIVACY_VERIFICATION_FAILED_THEY_HAVE_WRONG_KEY_FOR_ME" = "Każda para użytkowników Signal ma swój numer bezpieczeństwa. Upewnij się, że %1$@ pokazuje *Wasz* unikalny numer.";
+"PRIVACY_VERIFICATION_FAILED_THEY_HAVE_WRONG_KEY_FOR_ME" = "Każda para użytkowników Noise ma swój numer bezpieczeństwa. Upewnij się, że %1$@ pokazuje *Wasz* unikalny numer.";
 
 /* alert body */
-"PRIVACY_VERIFICATION_FAILED_WITH_OLD_LOCAL_VERSION" = "Korzystasz z nieaktualnej wersji aplikacji. Aby można było dokończyć weryfikację, zaktualizuj Signal.";
+"PRIVACY_VERIFICATION_FAILED_WITH_OLD_LOCAL_VERSION" = "Korzystasz z nieaktualnej wersji aplikacji. Aby można było dokończyć weryfikację, zaktualizuj Noise.";
 
 /* alert body */
-"PRIVACY_VERIFICATION_FAILED_WITH_OLD_REMOTE_VERSION" = "Twój kontakt korzysta z nieaktualnej wersji aplikacji. Aby można było dokończyć weryfikację, ta osoba musi zaktualizować Signal.";
+"PRIVACY_VERIFICATION_FAILED_WITH_OLD_REMOTE_VERSION" = "Twój kontakt korzysta z nieaktualnej wersji aplikacji. Aby można było dokończyć weryfikację, ta osoba musi zaktualizować Noise.";
 
 /* alert body */
-"PRIVACY_VERIFICATION_FAILURE_INVALID_QRCODE" = "Zeskanowany kod nie wygląda na numer bezpieczeństwa. Upewnij się, że Ty i Twój kontakt używacie aktualnej wersji aplikacji Signal.";
+"PRIVACY_VERIFICATION_FAILURE_INVALID_QRCODE" = "Zeskanowany kod nie wygląda na numer bezpieczeństwa. Upewnij się, że Ty i Twój kontakt używacie aktualnej wersji aplikacji Noise.";
 
 /* Navbar title */
 "PRIVACY_VERIFICATION_TITLE" = "Zweryfikuj numer bezpieczeństwa";
@@ -7145,7 +7145,7 @@
 "PROFILE_NAME_EDUCATION_SHEET_BULLET_3" = "Nie udostępniaj danych osobowych użytkownikom, których nie znasz";
 
 /* Header for the explainer sheet for profile names */
-"PROFILE_NAME_EDUCATION_SHEET_HEADER_FORMAT" = "<bold>Imię i nazwisko w profilu</bold> w aplikacji Signal podaje osoba, do której należy dane konto.";
+"PROFILE_NAME_EDUCATION_SHEET_HEADER_FORMAT" = "<bold>Imię i nazwisko w profilu</bold> w aplikacji Noise podaje osoba, do której należy dane konto.";
 
 /* Title for the profile name view. */
 "PROFILE_NAME_VIEW_TITLE" = "Twoje imię";
@@ -7244,7 +7244,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Zeskanuj kod QR";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Aby przenieść to konto na nowe urządzenie, dotknij opcji „Kontynuuj” i zeskanuj kod QR za pomocą aparatu w aplikacji Signal. Upewnij się, że skanujesz kod QR pochodzący bezpośrednio z aplikacji Signal.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Aby przenieść to konto na nowe urządzenie, dotknij opcji „Kontynuuj” i zeskanuj kod QR za pomocą aparatu w aplikacji Noise. Upewnij się, że skanujesz kod QR pochodzący bezpośrednio z aplikacji Noise.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Odpowiedź na wiadomość, której nadawcą jest %1$@. %2$@";
@@ -7355,7 +7355,7 @@
 "RECIPIENT_PICKER_ERROR_USER_CANNOT_BE_SELECTED" = "Nie można wybrać użytkownika.";
 
 /* Alert text. Shown after selecting a phone number that isn't valid. */
-"RECIPIENT_PICKER_INVALID_NUMBER_MESSAGE" = "%1$@ nie używa aplikacji Signal. Podaj prawidłowy numer telefonu i spróbuj ponownie.";
+"RECIPIENT_PICKER_INVALID_NUMBER_MESSAGE" = "%1$@ nie używa aplikacji Noise. Podaj prawidłowy numer telefonu i spróbuj ponownie.";
 
 /* Alert title. Shown after selecting a phone number that isn't valid. */
 "RECIPIENT_PICKER_INVALID_NUMBER_TITLE" = "Nieprawidłowy numer telefonu";
@@ -7364,22 +7364,22 @@
 "RECIPIENT_PICKER_INVITE_ACTION" = "Zaproś";
 
 /* Alert text. Shown after selecting a phone number that isn't a Signal user. */
-"RECIPIENT_PICKER_INVITE_MESSAGE" = "%1$@ nie używa aplikacji Signal. Chcesz wysłać na ten numer zaproszenie?";
+"RECIPIENT_PICKER_INVITE_MESSAGE" = "%1$@ nie używa aplikacji Noise. Chcesz wysłać na ten numer zaproszenie?";
 
 /* Alert title. Shown after selecting a phone number that isn't a Signal user. */
-"RECIPIENT_PICKER_INVITE_TITLE" = "Zaproś do aplikacji Signal";
+"RECIPIENT_PICKER_INVITE_TITLE" = "Zaproś do aplikacji Noise";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Potrzebujesz pomocy?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN to kod utworzony przez Ciebie z co najmniej 4 znaków. Może składać się z cyfr lub z cyfr i liter. Jeśli nie pamiętasz PIN-u, musisz odczekać 7 dni, aby ponownie zarejestrować konto. Jeśli masz włączone bezpieczne kopie zapasowe Signal, możesz użyć kodu odzyskiwania.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN to kod utworzony przez Ciebie z co najmniej 4 znaków. Może składać się z cyfr lub z cyfr i liter. Jeśli nie pamiętasz PIN-u, musisz odczekać 7 dni, aby ponownie zarejestrować konto. Jeśli masz włączone bezpieczne kopie zapasowe Noise, możesz użyć kodu odzyskiwania.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN to kod utworzony przez Ciebie z co najmniej 4 znaków. Może składać się z cyfr lub z cyfr i liter. Jeśli nie pamiętasz PIN-u, możesz się zarejestrować i korzystać ze swojego konta, ale stracisz niektóre zapisane ustawienia, takie jak informacje w profilu. Jeśli masz włączone bezpieczne kopie zapasowe Signal, możesz użyć kodu odzyskiwania.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN to kod utworzony przez Ciebie z co najmniej 4 znaków. Może składać się z cyfr lub z cyfr i liter. Jeśli nie pamiętasz PIN-u, możesz się zarejestrować i korzystać ze swojego konta, ale stracisz niektóre zapisane ustawienia, takie jak informacje w profilu. Jeśli masz włączone bezpieczne kopie zapasowe Noise, możesz użyć kodu odzyskiwania.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN to kod utworzony przez Ciebie z co najmniej 4 znaków. Może składać się z cyfr lub z cyfr i liter. Jeśli nie pamiętasz PIN-u, możesz utworzyć nowy. Możesz się zarejestrować i korzystać ze swojego konta, ale stracisz niektóre zapisane ustawienia, takie jak informacje w profilu. Jeśli masz włączone bezpieczne kopie zapasowe Signal, możesz użyć kodu odzyskiwania.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN to kod utworzony przez Ciebie z co najmniej 4 znaków. Może składać się z cyfr lub z cyfr i liter. Jeśli nie pamiętasz PIN-u, możesz utworzyć nowy. Możesz się zarejestrować i korzystać ze swojego konta, ale stracisz niektóre zapisane ustawienia, takie jak informacje w profilu. Jeśli masz włączone bezpieczne kopie zapasowe Noise, możesz użyć kodu odzyskiwania.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "Nieprawidłowy PIN";
@@ -7427,7 +7427,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Nie udało się przenieść danych";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Podano niepoprawny kod odzyskiwania albo na starym urządzeniu nie została utworzona żadna kopia zapasowa. \n\nUpewnij się, że rejestrujesz się za pomocą tego samego numeru telefonu co wcześniej oraz kodu odzyskiwania otrzymanego podczas włączania usługi bezpiecznych kopii zapasowych Signal. Sprawdź też, czy na starym urządzeniu została utworzona kopia zapasowa.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Podano niepoprawny kod odzyskiwania albo na starym urządzeniu nie została utworzona żadna kopia zapasowa. \n\nUpewnij się, że rejestrujesz się za pomocą tego samego numeru telefonu co wcześniej oraz kodu odzyskiwania otrzymanego podczas włączania usługi bezpiecznych kopii zapasowych Noise. Sprawdź też, czy na starym urządzeniu została utworzona kopia zapasowa.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "Nie możesz więcej razy próbować wpisać kodu odzyskiwania. Ze względów bezpieczeństwa liczba prób jest ograniczona. Odczekaj godzinę i spróbuj ponownie.";
@@ -7460,7 +7460,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_UNRETRYABLE_SERVER_ERROR_TITLE" = "Nie można przywrócić kopii zapasowej";
 
 /* Body for a sheet warning users about an incompatible backup version. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_BODY" = "Aby przywrócić kopię zapasową, sprawdź, czy masz najnowszą wersję aplikacji Signal, i spróbuj ponownie. Jeśli problem będzie się powtarzać, skontaktuj się z pomocą techniczną.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_BODY" = "Aby przywrócić kopię zapasową, sprawdź, czy masz najnowszą wersję aplikacji Noise, i spróbuj ponownie. Jeśli problem będzie się powtarzać, skontaktuj się z pomocą techniczną.";
 
 /* Title for a sheet warning users about an incompatible backup version. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_TITLE" = "Wymagana aktualizacja";
@@ -7472,7 +7472,7 @@
 "REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_ACTION" = "Zaktualizuj";
 
 /* During (re)registration, users may need to update their app to continue. They'll be presented with an alert if this is the case, prompting them to update. This is the description text on that alert. */
-"REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_DESCRIPTION" = "Aby kontynuować rejestrację, zaktualizuj aplikację Signal do najnowszej wersji.";
+"REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_DESCRIPTION" = "Aby kontynuować rejestrację, zaktualizuj aplikację Noise do najnowszej wersji.";
 
 /* During (re)registration, users may need to update their app to continue. They'll be presented with an alert if this is the case, prompting them to update. This is the title on that alert. */
 "REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_TITLE" = "Wymagana aktualizacja";
@@ -7514,7 +7514,7 @@
 "REGISTRATION_NO_BACKUP_KEY_BUTTON_TITLE" = "Nie masz kodu odzyskiwania?";
 
 /* Body text on a sheet with info for what to do if you don't have a recovery key */
-"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Bez kodu odzyskiwania składającego się z 64 znaków nie odzyskasz kopii zapasowej. Jeśli nie masz swojego kodu, nie będziemy w stanie przywrócić kopii zapasowej Twojego konta Signal.\n\nJeśli masz dostęp do swojego starego urządzenia, kod odzyskiwania znajdziesz w sekcji Ustawienia > Czaty > Kopie zapasowe. Następnie wybierz opcję „Wyświetl kod odzyskiwania”.";
+"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Bez kodu odzyskiwania składającego się z 64 znaków nie odzyskasz kopii zapasowej. Jeśli nie masz swojego kodu, nie będziemy w stanie przywrócić kopii zapasowej Twojego konta Noise.\n\nJeśli masz dostęp do swojego starego urządzenia, kod odzyskiwania znajdziesz w sekcji Ustawienia > Czaty > Kopie zapasowe. Następnie wybierz opcję „Wyświetl kod odzyskiwania”.";
 
 /* Title for sheet with info for what to do if you don't have a recovery key */
 "REGISTRATION_NO_BACKUP_KEY_SHEET_TITLE" = "Nie masz kodu odzyskiwania?";
@@ -7544,13 +7544,13 @@
 "REGISTRATION_PIN_CONFIRM_TITLE" = "Potwierdź PIN";
 
 /* During registration, users are asked to create a PIN code. This is the subtitle on the screen where this happens. A \"learn more\" link will be added to the end of this string. */
-"REGISTRATION_PIN_CREATE_SUBTITLE" = "PIN służy do przywracania konta i szyfrowania danych w aplikacji Signal.";
+"REGISTRATION_PIN_CREATE_SUBTITLE" = "PIN służy do przywracania konta i szyfrowania danych w aplikacji Noise.";
 
 /* During registration, users are asked to create a PIN code. This is the title on the screen where this happens. */
 "REGISTRATION_PIN_CREATE_TITLE" = "Utwórz PIN";
 
 /* During re-registration, users may be asked to re-enter their PIN code. This is the subtitle on the screen where this happens. A \"learn more\" link will be added to the end of this string. */
-"REGISTRATION_PIN_ENTER_EXISTING_SUBTITLE" = "PIN służy do przywracania konta i szyfrowania danych w aplikacji Signal.";
+"REGISTRATION_PIN_ENTER_EXISTING_SUBTITLE" = "PIN służy do przywracania konta i szyfrowania danych w aplikacji Noise.";
 
 /* During re-registration, users may be asked to re-enter their PIN code. This is the title on the screen where this happens. */
 "REGISTRATION_PIN_ENTER_EXISTING_TITLE" = "Wpisz PIN";
@@ -7586,7 +7586,7 @@
 "REGISTRATION_RESTORE_METHOD_MAKE_BACKUP_TUTORIAL_ENABLE_BACKUPS" = "Włącz opcję tworzenia kopii zapasowych i poczekaj, aż kopia zapasowa zostanie utworzona";
 
 /* First step in directions for how to make a backup */
-"REGISTRATION_RESTORE_METHOD_MAKE_BACKUP_TUTORIAL_OPEN_SIGNAL" = "Otwórz Signal na swoim poprzednim urządzeniu";
+"REGISTRATION_RESTORE_METHOD_MAKE_BACKUP_TUTORIAL_OPEN_SIGNAL" = "Otwórz Noise na swoim poprzednim urządzeniu";
 
 /* Second step in directions for how to make a backup */
 "REGISTRATION_RESTORE_METHOD_MAKE_BACKUP_TUTORIAL_TAP_SETTINGS" = "Dotknij opcji Ustawienia > Kopie zapasowe";
@@ -7604,7 +7604,7 @@
 "REGISTRATION_SCAN_QR_CODE_TITLE" = "Zeskanuj ten kod swoim poprzednim urządzeniem";
 
 /* Tutorial text describing the first step to scanning the restore/transfer QR code with your old phone: opening Signal */
-"REGISTRATION_SCAN_QR_CODE_TUTORIAL_OPEN_SIGNAL" = "Otwórz Signal na swoim poprzednim urządzeniu";
+"REGISTRATION_SCAN_QR_CODE_TUTORIAL_OPEN_SIGNAL" = "Otwórz Noise na swoim poprzednim urządzeniu";
 
 /* Tutorial text describing the third step to scanning the restore/transfer QR code with your old phone: scan the code */
 "REGISTRATION_SCAN_QR_CODE_TUTORIAL_SCAN" = "Zeskanuj ten kod aparatem";
@@ -7811,7 +7811,7 @@
 "SAFETY_NUMBER_CONFIRMATION_VIEW_ACTION" = "Wyświetl";
 
 /* Snippet to share {{safety number}} with a friend. sent e.g. via SMS */
-"SAFETY_NUMBER_SHARE_FORMAT" = "Nasz numer bezpieczeństwa Signal:\n%1$@";
+"SAFETY_NUMBER_SHARE_FORMAT" = "Nasz numer bezpieczeństwa Noise:\n%1$@";
 
 /* Title for a button offering automatic key verification. */
 "SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_BUTTON_VERIFY" = "Zweryfikuj automatycznie";
@@ -7826,13 +7826,13 @@
 "SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_BUTTON_VERIFYING" = "Weryfikowanie szyfrowania…";
 
 /* Body for a sheet introducing Key Transparency. */
-"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_EDUCATION_SHEET_BODY" = "W przypadku osób, z którymi kontakt został nawiązany za pomocą numeru telefonu, Signal może automatycznie potwierdzić, czy połączenie jest bezpieczne – robi to za pomocą mechanizmu przejrzystości kluczy. Jeśli chcesz mieć absolutną pewność, że komunikujesz się z właściwą osobą, możesz dodatkowo weryfikować kontakty ręcznie za pomocą kodu QR lub przez porównanie numerów bezpieczeństwa.";
+"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_EDUCATION_SHEET_BODY" = "W przypadku osób, z którymi kontakt został nawiązany za pomocą numeru telefonu, Noise może automatycznie potwierdzić, czy połączenie jest bezpieczne – robi to za pomocą mechanizmu przejrzystości kluczy. Jeśli chcesz mieć absolutną pewność, że komunikujesz się z właściwą osobą, możesz dodatkowo weryfikować kontakty ręcznie za pomocą kodu QR lub przez porównanie numerów bezpieczeństwa.";
 
 /* Title for a sheet introducing Key Transparency. */
-"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_EDUCATION_SHEET_TITLE" = "Signal może teraz automatycznie weryfikować szyfrowanie";
+"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_EDUCATION_SHEET_TITLE" = "Noise może teraz automatycznie weryfikować szyfrowanie";
 
 /* Body for a sheet explaining that encryption auto-verification did not succeed. Embeds {{ 1: the contact's name }}. */
-"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_FAILURE_SHEET_BODY_FORMAT" = "Signal nie może już automatycznie weryfikować szyfrowania w tym czacie – prawdopodobnie dlatego, że %1$@ ma nowy numer telefonu. Sprawdź szyfrowanie end-to-end ręcznie. W tym celu porównaj Wasze numery bezpieczeństwa z poprzedniego ekranu lub zeskanuj kod QR z urządzenia kontaktu.";
+"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_FAILURE_SHEET_BODY_FORMAT" = "Noise nie może już automatycznie weryfikować szyfrowania w tym czacie – prawdopodobnie dlatego, że %1$@ ma nowy numer telefonu. Sprawdź szyfrowanie end-to-end ręcznie. W tym celu porównaj Wasze numery bezpieczeństwa z poprzedniego ekranu lub zeskanuj kod QR z urządzenia kontaktu.";
 
 /* Title for a sheet explaining that encryption auto-verification did not succeed. */
 "SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_FAILURE_SHEET_TITLE" = "W tym czacie automatyczna weryfikacja nie jest już dostępna";
@@ -7844,13 +7844,13 @@
 "SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_HEADER" = "Automatyczna weryfikacja kluczy";
 
 /* Body for a sheet explaining that encryption auto-verification is not available. */
-"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_NOT_AVAILABLE_SHEET_BODY" = "Signal może automatycznie weryfikować szyfrowanie wyłącznie w przypadku tych osób, z którym kontakt nawiązano przez numer telefonu. Jeżeli kontakt został nawiązany przez nazwę użytkownika lub wspólną grupę, szyfrowanie end-to-end możesz zweryfikować ręcznie. W tym celu porównaj Wasze numery bezpieczeństwa z poprzedniego ekranu lub zeskanuj kod QR z urządzenia kontaktu.";
+"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_NOT_AVAILABLE_SHEET_BODY" = "Noise może automatycznie weryfikować szyfrowanie wyłącznie w przypadku tych osób, z którym kontakt nawiązano przez numer telefonu. Jeżeli kontakt został nawiązany przez nazwę użytkownika lub wspólną grupę, szyfrowanie end-to-end możesz zweryfikować ręcznie. W tym celu porównaj Wasze numery bezpieczeństwa z poprzedniego ekranu lub zeskanuj kod QR z urządzenia kontaktu.";
 
 /* Title for a sheet explaining that encryption auto-verification is not available. */
 "SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_NOT_AVAILABLE_SHEET_TITLE" = "W tym czacie automatyczna weryfikacja jest niedostępna";
 
 /* Body for a sheet explaining that encryption auto-verification succeeded. */
-"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_SUCCESS_SHEET_BODY" = "W przypadku osób, z którymi kontakt został nawiązany za pomocą numeru telefonu, Signal może automatycznie potwierdzić, czy połączenie jest bezpieczne – robi to za pomocą mechanizmu przejrzystości kluczy. Jeśli chcesz mieć absolutną pewność, że komunikujesz się z właściwą osobą, możesz dodatkowo sprawdzić szyfrowanie end-to-end ręcznie. W tym celu porównaj Wasze numery bezpieczeństwa z poprzedniego ekranu lub zeskanuj kod QR z urządzenia kontaktu.";
+"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_SUCCESS_SHEET_BODY" = "W przypadku osób, z którymi kontakt został nawiązany za pomocą numeru telefonu, Noise może automatycznie potwierdzić, czy połączenie jest bezpieczne – robi to za pomocą mechanizmu przejrzystości kluczy. Jeśli chcesz mieć absolutną pewność, że komunikujesz się z właściwą osobą, możesz dodatkowo sprawdzić szyfrowanie end-to-end ręcznie. W tym celu porównaj Wasze numery bezpieczeństwa z poprzedniego ekranu lub zeskanuj kod QR z urządzenia kontaktu.";
 
 /* Title for a sheet explaining that encryption auto-verification succeeded. */
 "SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_SUCCESS_SHEET_TITLE" = "Szyfrowanie w tym czacie zostało zweryfikowane automatycznie";
@@ -7871,7 +7871,7 @@
 "SAFETY_TIPS_FAKE_BUSINESS_TITLE" = "Fałszywe konta firm i instytucji";
 
 /* Message contents for the fake names safety tip. */
-"SAFETY_TIPS_FAKE_NAMES_BODY" = "Signal nigdy nie zwróci się do Ciebie z prośbą o podanie kodu rejestracyjnego ani PIN-u. Uważaj na tego typu wiadomości – mogą pochodzić od osób podszywających się pod kogoś innego. Imię i nazwisko w profilu podaje osoba posługująca się kontem, a Signal tego nie weryfikuje.";
+"SAFETY_TIPS_FAKE_NAMES_BODY" = "Noise nigdy nie zwróci się do Ciebie z prośbą o podanie kodu rejestracyjnego ani PIN-u. Uważaj na tego typu wiadomości – mogą pochodzić od osób podszywających się pod kogoś innego. Imię i nazwisko w profilu podaje osoba posługująca się kontem, a Noise tego nie weryfikuje.";
 
 /* Message title describing the fake names safety tip. */
 "SAFETY_TIPS_FAKE_NAMES_TITLE" = "Uwaga na oszustów";
@@ -7931,13 +7931,13 @@
 "SCREEN_LOCK_ERROR_LOCAL_AUTHENTICATION_PASSCODE_NOT_SET" = "Aby korzystać z blokady ekranu, musisz ustawić kod w ustawieniach iOS.";
 
 /* Description of how and why Signal iOS uses Touch ID/Face ID/Phone Passcode to unlock 'screen lock'. */
-"SCREEN_LOCK_REASON_UNLOCK_SCREEN_LOCK" = "Uwierzytelnij, aby otworzyć Signal.";
+"SCREEN_LOCK_REASON_UNLOCK_SCREEN_LOCK" = "Uwierzytelnij, aby otworzyć Noise.";
 
 /* Title for alert indicating that screen lock could not be unlocked. */
 "SCREEN_LOCK_UNLOCK_FAILED" = "Nie udało się uwierzytelnić";
 
 /* Label for button on lock screen that lets users unlock Signal. */
-"SCREEN_LOCK_UNLOCK_SIGNAL" = "Odblokuj Signal";
+"SCREEN_LOCK_UNLOCK_SIGNAL" = "Odblokuj Noise";
 
 /* Placeholder text indicating the user can search for contacts by name, username, or phone number. */
 "SEARCH_BY_NAME_OR_USERNAME_OR_NUMBER_PLACEHOLDER_TEXT" = "Imię, nazwa lub numer";
@@ -7970,13 +7970,13 @@
 "SECONDARY_LINKING_ERROR_DIFFERENT_ACCOUNT_TITLE" = "Niezgodne konto";
 
 /* Message for error alert indicating that a linked device must be upgraded before it can be linked. */
-"SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_MESSAGE" = "Aby połączyć Signal z telefonem, zaktualizuj aplikację na tym urządzeniu.";
+"SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_MESSAGE" = "Aby połączyć Noise z telefonem, zaktualizuj aplikację na tym urządzeniu.";
 
 /* Title for error alert indicating that a linked device must be upgraded before it can be linked. */
 "SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_TITLE" = "Nieobsługiwana wersja";
 
 /* alert message for outdated linking device */
-"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "Na drugim urządzeniu masz zainstalowaną starą wersję aplikacji Signal, która nie obsługuje skanowania kodów QR na iPadzie. Zainstaluj najnowszą wersję aplikacji i spróbuj ponownie.";
+"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "Na drugim urządzeniu masz zainstalowaną starą wersję aplikacji Noise, która nie obsługuje skanowania kodów QR na iPadzie. Zainstaluj najnowszą wersję aplikacji i spróbuj ponownie.";
 
 /* alert title for outdated linking device */
 "SECONDARY_LINKING_ERROR_OLD_VERSION_TITLE" = "Zaktualizuj urządzenie skanujące";
@@ -7997,7 +7997,7 @@
 "SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_CHECK_FOR_UPDATE_BUTTON" = "Sprawdź dostępne aktualizacje";
 
 /* Message for action sheet when the secondary device fails to sync messages due to an app update being required. */
-"SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_ERROR_MESSAGE" = "Aby dokończyć synchronizację wiadomości, zaktualizuj aplikację Signal.";
+"SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_ERROR_MESSAGE" = "Aby dokończyć synchronizację wiadomości, zaktualizuj aplikację Noise.";
 
 /* Title for action sheet when the secondary device fails to sync messages due to an app update being required. */
 "SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_ERROR_TITLE" = "Wymagana aktualizacja";
@@ -8006,19 +8006,19 @@
 "SECONDARY_ONBOARDING_CHOOSE_DEVICE_NAME_PLACEHOLDER" = "Wybierz nazwę";
 
 /* header text before the user can link this device */
-"SECONDARY_ONBOARDING_GET_STARTED_BY_OPENING_PRIMARY" = "Aby połączyć tego iPada ze swoim kontem, uruchom aplikację Signal na telefonie";
+"SECONDARY_ONBOARDING_GET_STARTED_BY_OPENING_PRIMARY" = "Aby połączyć tego iPada ze swoim kontem, uruchom aplikację Noise na telefonie";
 
 /* Link explaining what to do when trying to link a device before having a primary device. */
-"SECONDARY_ONBOARDING_GET_STARTED_DO_NOT_HAVE_PRIMARY" = "Nie mam aplikacji Signal na telefonie…";
+"SECONDARY_ONBOARDING_GET_STARTED_DO_NOT_HAVE_PRIMARY" = "Nie mam aplikacji Noise na telefonie…";
 
 /* alert body */
-"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_BODY" = "Przejdź do App Store na telefonie, zainstaluj aplikację Signal i zarejestruj się w niej. Wtedy możesz połączyć z tym samym kontem swojego iPada.";
+"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_BODY" = "Przejdź do App Store na telefonie, zainstaluj aplikację Noise i zarejestruj się w niej. Wtedy możesz połączyć z tym samym kontem swojego iPada.";
 
 /* alert title */
-"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_TITLE" = "Zainstaluj Signal na telefonie";
+"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_TITLE" = "Zainstaluj Noise na telefonie";
 
 /* body text while displaying a QR code which, when scanned, will link this device. */
-"SECONDARY_ONBOARDING_SCAN_CODE_BODY" = "Na telefonie dotknij swojego zdjęcia profilowego i otwórz ustawienia aplikacji Signal. Przejdź do sekcji „Połączone urządzenia”, wybierz opcję „Połącz nowe urządzenie” i zeskanuj telefonem ten kod:";
+"SECONDARY_ONBOARDING_SCAN_CODE_BODY" = "Na telefonie dotknij swojego zdjęcia profilowego i otwórz ustawienia aplikacji Noise. Przejdź do sekcji „Połączone urządzenia”, wybierz opcję „Połącz nowe urządzenie” i zeskanuj telefonem ten kod:";
 
 /* Link text for page with troubleshooting info shown on the QR scanning screen */
 "SECONDARY_ONBOARDING_SCAN_CODE_HELP_TEXT" = "Otrzymaj pomoc przy łączeniu iPada";
@@ -8030,7 +8030,7 @@
 "SECONDARY_ONBOARDING_SCAN_CODE_TITLE" = "Zeskanuj kod QR swoim telefonem";
 
 /* header text before the user can transfer to this device */
-"SECONDARY_TRANSFER_GET_STARTED_BY_OPENING_IPAD" = "Aby przenieść konto, uruchom Signal na swoim poprzednim iPadzie";
+"SECONDARY_TRANSFER_GET_STARTED_BY_OPENING_IPAD" = "Aby przenieść konto, uruchom Noise na swoim poprzednim iPadzie";
 
 /* No comment provided by engineer. */
 "SECURE_SESSION_RESET" = "Bezpieczna sesja zresetowana.";
@@ -8120,7 +8120,7 @@
 "SEPA_DONATION_NAME_PLACEHOLDER" = "Imię i nazwisko na koncie bankowym";
 
 /* Description for the session refresh alert */
-"SESSION_REFRESH_ALERT_MESSAGE" = "Signal stosuje metodę szyfrowania end-to-end. Z tego powodu czasem może być konieczne odświeżenie sesji czatu. Nie wpływa to na jego bezpieczeństwo, ale mogło się zdarzyć, że wiadomość od tego kontaktu do Ciebie nie dotarła. Poproś tę osobę o ponowne przesłanie wiadomości.";
+"SESSION_REFRESH_ALERT_MESSAGE" = "Noise stosuje metodę szyfrowania end-to-end. Z tego powodu czasem może być konieczne odświeżenie sesji czatu. Nie wpływa to na jego bezpieczeństwo, ale mogło się zdarzyć, że wiadomość od tego kontaktu do Ciebie nie dotarła. Poproś tę osobę o ponowne przesłanie wiadomości.";
 
 /* Title for the session refresh alert */
 "SESSION_REFRESH_ALERT_TITLE" = "Sesja czatu odświeżona";
@@ -8153,7 +8153,7 @@
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_COUNTRY" = "Lokalizacja";
 
 /* Table footer for the 'censorship circumvention' section when censorship circumvention can be manually enabled. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Gdy ta opcja jest włączona, Signal w miarę możliwości korzysta z mechanizmów obchodzenia cenzury. Nie włączaj tej opcji, jeśli znajdujesz się w miejscu, w którym aplikacja Signal nie jest blokowana.";
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Gdy ta opcja jest włączona, Noise w miarę możliwości korzysta z mechanizmów obchodzenia cenzury. Nie włączaj tej opcji, jeśli znajdujesz się w miejscu, w którym aplikacja Noise nie jest blokowana.";
 
 /* Table footer for the 'censorship circumvention' section shown when censorship circumvention has been auto-enabled based on local phone number. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_AUTO_ENABLED" = "Obchodzenie cenzury zostało włączone na podstawie numeru telefonu na Twoim koncie.";
@@ -8165,7 +8165,7 @@
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_NO_CONNECTION" = "Aby włączyć obchodzenie cenzury, musisz mieć połączenie z internetem.";
 
 /* Table footer for the 'censorship circumvention' section shown when the app is connected to the Signal service. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_WEBSOCKET_CONNECTED" = "Obchodzenie cenzury nie jest konieczne. Masz połączenie z usługą Signal.";
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_WEBSOCKET_CONNECTED" = "Obchodzenie cenzury nie jest konieczne. Masz połączenie z usługą Noise.";
 
 /* Label for the 'advanced pin settings' button. */
 "SETTINGS_ADVANCED_PIN_SETTINGS" = "Zaawansowane ustawienia PIN-u";
@@ -8192,13 +8192,13 @@
 "SETTINGS_ADVANCED_VIEW_ERROR_LOG" = "Dzienniki błędów";
 
 /* Information on sheet about changing the app icon - first line */
-"SETTINGS_APP_ICON_EDUCATION_APP_NAME" = "Nazwa „Signal” będzie widoczna na ekranie początkowym, w powiadomieniach oraz w bibliotece aplikacji.";
+"SETTINGS_APP_ICON_EDUCATION_APP_NAME" = "Nazwa „Noise” będzie widoczna na ekranie początkowym, w powiadomieniach oraz w bibliotece aplikacji.";
 
 /* Information on sheet about changing the app icon - second line */
-"SETTINGS_APP_ICON_EDUCATION_HOME_SCREEN_DOCK" = "Możesz usunąć nazwę „Signal” z ekranu początkowego. Aby to zrobić, przenieś aplikację na pasek u dołu ekranu początkowego.";
+"SETTINGS_APP_ICON_EDUCATION_HOME_SCREEN_DOCK" = "Możesz usunąć nazwę „Noise” z ekranu początkowego. Aby to zrobić, przenieś aplikację na pasek u dołu ekranu początkowego.";
 
 /* The footer for the app icon selection settings page. */
-"SETTINGS_APP_ICON_FOOTER" = "Nazwa „Signal” będzie widoczna na ekranie początkowym, w powiadomieniach oraz w bibliotece aplikacji.";
+"SETTINGS_APP_ICON_FOOTER" = "Nazwa „Noise” będzie widoczna na ekranie początkowym, w powiadomieniach oraz w bibliotece aplikacji.";
 
 /* The title for the app icon selection settings page. */
 "SETTINGS_APP_ICON_TITLE" = "Ikona aplikacji";
@@ -8228,7 +8228,7 @@
 "SETTINGS_BLOCK_LIST_ADD_BUTTON" = "Zablokuj użytkownika";
 
 /* A label that indicates the user has no Signal contacts that they haven't blocked. */
-"SETTINGS_BLOCK_LIST_NO_CONTACTS" = "Nie masz żadnych kontaktów w aplikacji Signal.";
+"SETTINGS_BLOCK_LIST_NO_CONTACTS" = "Nie masz żadnych kontaktów w aplikacji Noise.";
 
 /* A label that indicates the user's search has no matching results. */
 "SETTINGS_BLOCK_LIST_NO_SEARCH_RESULTS" = "Nic nie znaleziono";
@@ -8240,7 +8240,7 @@
 "SETTINGS_CALLING_HIDES_IP_ADDRESS_PREFERENCE_TITLE" = "Zawsze pośrednicz w połączeniach";
 
 /* User settings section footer, a detailed explanation */
-"SETTINGS_CALLING_HIDES_IP_ADDRESS_PREFERENCE_TITLE_DETAIL" = "Aby nie ujawniać swojego adresu IP kontaktom, realizuj wszystkie połączenia za pośrednictwem serwera Signal. Gdy ta opcja jest włączona, połączenia mają gorszą jakość.";
+"SETTINGS_CALLING_HIDES_IP_ADDRESS_PREFERENCE_TITLE_DETAIL" = "Aby nie ujawniać swojego adresu IP kontaktom, realizuj wszystkie połączenia za pośrednictwem serwera Noise. Gdy ta opcja jest włączona, połączenia mają gorszą jakość.";
 
 /* Label for the 'edit phone number' button in the 'change phone number' views. */
 "SETTINGS_CHANGE_PHONE_NUMBER_BACK_TO_EDIT_BUTTON" = "Edytuj numer";
@@ -8354,7 +8354,7 @@
 "SETTINGS_DISAPPEARING_MESSAGES_FOOTER" = "Ustaw domyślny czas, po którym wiadomości znikają, we wszystkich nowych czatach rozpoczętych przez Ciebie.";
 
 /* Title for the 'donate to signal' link in settings. */
-"SETTINGS_DONATE" = "Wesprzyj Signal darowizną";
+"SETTINGS_DONATE" = "Wesprzyj Noise darowizną";
 
 /* Title for help button and help pages in app settings. */
 "SETTINGS_HELP" = "Pomoc";
@@ -8375,7 +8375,7 @@
 "SETTINGS_KEEP_MUTED_ARCHIVED_LABEL" = "Pozostaw wyciszone czaty w archiwum";
 
 /* Footer for settings section describing Key Transparency. */
-"SETTINGS_KEY_TRANSPARENCY_OPT_OUT_FOOTER" = "Gdy ta opcja jest włączona, Signal w miarę możliwości automatycznie weryfikuje szyfrowanie czatów prywatnych.";
+"SETTINGS_KEY_TRANSPARENCY_OPT_OUT_FOOTER" = "Gdy ta opcja jest włączona, Noise w miarę możliwości automatycznie weryfikuje szyfrowanie czatów prywatnych.";
 
 /* Title for for a settings option describing that Key Transparency is enabled. */
 "SETTINGS_KEY_TRANSPARENCY_OPT_OUT_SWITCH_TITLE" = "Automatyczna weryfikacja kluczy";
@@ -8429,7 +8429,7 @@
 "SETTINGS_NOTIFICATION_CONTENT_TITLE" = "Treść powiadomień";
 
 /* When the local device discovers a contact has recently installed signal, the app can generates a message encouraging the local user to say hello. Turning this switch off disables that feature. */
-"SETTINGS_NOTIFICATION_EVENTS_CONTACT_JOINED_SIGNAL" = "Kontakt zaczyna korzystać z aplikacji Signal";
+"SETTINGS_NOTIFICATION_EVENTS_CONTACT_JOINED_SIGNAL" = "Kontakt zaczyna korzystać z aplikacji Noise";
 
 /* table section header */
 "SETTINGS_NOTIFICATION_NOTIFY_WHEN_TITLE" = "Powiadamiaj, gdy…";
@@ -8441,7 +8441,7 @@
 "SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_AGREE" = "Aktywuj";
 
 /* Description for the 'activate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Za pomocą aplikacji Signal możesz wysyłać i otrzymywać płatności w walucie MobileCoin. Wszystkie płatności podlegają regulaminowi użytkowania waluty MobileCoin oraz usługi MobileCoin Wallet. Mogą wystąpić z nimi problemy, a ewentualna utrata płatności lub środków może być nieodwracalna.";
+"SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Za pomocą aplikacji Noise możesz wysyłać i otrzymywać płatności w walucie MobileCoin. Wszystkie płatności podlegają regulaminowi użytkowania waluty MobileCoin oraz usługi MobileCoin Wallet. Mogą wystąpić z nimi problemy, a ewentualna utrata płatności lub środków może być nieodwracalna.";
 
 /* Title for the 'activate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_TITLE" = "Aktywuj";
@@ -8465,7 +8465,7 @@
 "SETTINGS_PAYMENTS_BALANCE_CONVERSION_FORMAT" = "%1$@ %2$@ %3$@";
 
 /* Error message indicating that payments could not be activated because the feature is not currently available. */
-"SETTINGS_PAYMENTS_CANNOT_ACTIVATE_PAYMENTS_KILL_SWITCH" = "Płatności w aplikacji Signal nie są już dostępne. Wciąż możesz przenieść środki do kantoru, ale nie możesz otrzymywać ani wysyłać płatności, jak również dodawać środków.";
+"SETTINGS_PAYMENTS_CANNOT_ACTIVATE_PAYMENTS_KILL_SWITCH" = "Płatności w aplikacji Noise nie są już dostępne. Wciąż możesz przenieść środki do kantoru, ale nie możesz otrzymywać ani wysyłać płatności, jak również dodawać środków.";
 
 /* Error message indicating that payments could not be deactivated because the current balance is unavailable. */
 "SETTINGS_PAYMENTS_CANNOT_DEACTIVATE_PAYMENTS_NO_BALANCE" = "Nie można dezaktywować płatności, ponieważ nie udało się pobrać informacji o dostępnych środkach. Sprawdź połączenie z internetem i spróbuj ponownie.";
@@ -8474,10 +8474,10 @@
 "SETTINGS_PAYMENTS_CANNOT_SEND_PAYMENT_NO_BALANCE" = "Nie można zrealizować płatności, ponieważ nie udało się pobrać informacji o dostępnych środkach. Sprawdź połączenie z internetem i spróbuj ponownie.";
 
 /* Error message indicating that payments cannot be sent because the feature is not currently available. */
-"SETTINGS_PAYMENTS_CANNOT_SEND_PAYMENTS_KILL_SWITCH" = "Płatności w aplikacji Signal nie są już dostępne. Wciąż możesz przenieść środki do kantoru, ale nie możesz otrzymywać ani wysyłać płatności, jak również dodawać środków.";
+"SETTINGS_PAYMENTS_CANNOT_SEND_PAYMENTS_KILL_SWITCH" = "Płatności w aplikacji Noise nie są już dostępne. Wciąż możesz przenieść środki do kantoru, ale nie możesz otrzymywać ani wysyłać płatności, jak również dodawać środków.";
 
 /* Error message indicating that you cannot transfer into your payments wallet because the feature is not currently available. */
-"SETTINGS_PAYMENTS_CANNOT_TRANSFER_IN_KILL_SWITCH" = "Płatności w aplikacji Signal nie są już dostępne. Wciąż możesz przenieść środki do kantoru, ale nie możesz otrzymywać ani wysyłać płatności, jak również dodawać środków.";
+"SETTINGS_PAYMENTS_CANNOT_TRANSFER_IN_KILL_SWITCH" = "Płatności w aplikacji Noise nie są już dostępne. Wciąż możesz przenieść środki do kantoru, ale nie możesz otrzymywać ani wysyłać płatności, jak również dodawać środków.";
 
 /* Message for the 'currency conversions info' alert. */
 "SETTINGS_PAYMENTS_CURRENCY_CONVERSIONS_INFO_ALERT_MESSAGE" = "Kursy wymiany walut mają szacowane wartości, które mogą nie być dokładne.";
@@ -8495,7 +8495,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS" = "Zdezaktywuj płatności";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Jeśli zdezaktywujesz płatności, nie będziesz już mieć możliwości wysyłania ani otrzymywania waluty MobileCoin w aplikacji Signal.";
+"SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Jeśli zdezaktywujesz płatności, nie będziesz już mieć możliwości wysyłania ani otrzymywania waluty MobileCoin w aplikacji Noise.";
 
 /* Title for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_TITLE" = "Zdezaktywować płatności?";
@@ -8504,10 +8504,10 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Zdezaktywuj płatności";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Przed dezaktywacją płatności zalecamy przeniesienie środków do innego portfela. Jeśli ich teraz nie przeniesiesz, pozostaną w Twoim portfelu powiązanym z aplikacją Signal. Możesz ich użyć, jeśli za jakiś czas reaktywujesz znów płatności.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Przed dezaktywacją płatności zalecamy przeniesienie środków do innego portfela. Jeśli ich teraz nie przeniesiesz, pozostaną w Twoim portfelu powiązanym z aplikacją Noise. Możesz ich użyć, jeśli za jakiś czas reaktywujesz znów płatności.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Środki pozostaną w Twoim portfelu powiązanym z aplikacją Signal. Możesz ich użyć, jeśli za jakiś czas reaktywujesz znów płatności.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Środki pozostaną w Twoim portfelu powiązanym z aplikacją Noise. Możesz ich użyć, jeśli za jakiś czas reaktywujesz znów płatności.";
 
 /* Title for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_TITLE" = "Zdezaktywować bez przenoszenia?";
@@ -8534,7 +8534,7 @@
 "SETTINGS_PAYMENTS_HELP_CARD_ABOUT_MOBILECOIN_TITLE" = "O walucie MobileCoin";
 
 /* Description for the 'Adding to your wallet' help card in the payments settings. */
-"SETTINGS_PAYMENTS_HELP_CARD_ADDING_TO_YOUR_WALLET_DESCRIPTION" = "Aby dodać środki do wykorzystania w aplikacji Signal, wyślij walutę MobileCoin na adres swojego portfela.";
+"SETTINGS_PAYMENTS_HELP_CARD_ADDING_TO_YOUR_WALLET_DESCRIPTION" = "Aby dodać środki do wykorzystania w aplikacji Noise, wyślij walutę MobileCoin na adres swojego portfela.";
 
 /* Title for the 'Adding to your wallet' help card in the payments settings. */
 "SETTINGS_PAYMENTS_HELP_CARD_ADDING_TO_YOUR_WALLET_TITLE" = "Dodawanie środków";
@@ -8609,7 +8609,7 @@
 "SETTINGS_PAYMENTS_PASSPHRASE_DISCARD_CONFIRMATION_TITLE" = "Kontynuować bez zapisywania?";
 
 /* Explanation of the 'payments passphrase' in the 'view payments passphrase' settings. */
-"SETTINGS_PAYMENTS_PASSPHRASE_EXPLANATION" = "Jeśli ponownie zainstalujesz aplikację Signal, środki zostaną automatycznie przywrócone, gdy podasz swój PIN. Możesz też przywrócić środki za pomocą frazy odzyskiwania, która jest Twoim unikalnym hasłem złożonym z 24 wyrazów. Zapisz je i przechowuj w bezpiecznym miejscu.";
+"SETTINGS_PAYMENTS_PASSPHRASE_EXPLANATION" = "Jeśli ponownie zainstalujesz aplikację Noise, środki zostaną automatycznie przywrócone, gdy podasz swój PIN. Możesz też przywrócić środki za pomocą frazy odzyskiwania, która jest Twoim unikalnym hasłem złożonym z 24 wyrazów. Zapisz je i przechowuj w bezpiecznym miejscu.";
 
 /* Explanation of the 'payments passphrase' when there is a balance. */
 "SETTINGS_PAYMENTS_PASSPHRASE_EXPLANATION_FROM_BALANCE" = "W Twoim portfelu są środki. Pora zapisać frazę odzyskiwania, czyli 24-wyrazowy klucz, którego możesz użyć do przywrócenia środków.";
@@ -8714,7 +8714,7 @@
 "SETTINGS_PAYMENTS_PAYMENTS_LOCK_PROMPT_EXPLANATION_TOUCHID" = "Dodatkowo zabezpiecz swoje konto za pomocą Touch ID, co uniemożliwi osobom trzecim używającym Twojego telefonu dostęp do Twoich środków. Możesz wyłączyć tę opcję w ustawieniach.";
 
 /* Button for payments outdated sheet. */
-"SETTINGS_PAYMENTS_PAYMENTS_OUTDATED_BUTTON" = "Zaktualizuj Signal";
+"SETTINGS_PAYMENTS_PAYMENTS_OUTDATED_BUTTON" = "Zaktualizuj Noise";
 
 /* Message for payments outdated sheet. */
 "SETTINGS_PAYMENTS_PAYMENTS_OUTDATED_MESSAGE" = "Aby dalej móc wysyłać i otrzymywać płatności oraz wyświetlać ich saldo, musisz zaktualizować aplikację.";
@@ -8846,7 +8846,7 @@
 "SETTINGS_PAYMENTS_TITLE" = "Płatności";
 
 /* Error indicating that it is not valid to send yourself a payment. */
-"SETTINGS_PAYMENTS_TRANSFER_OUT_CANNOT_SEND_TO_SELF" = "Nie możesz wysłać środków na adres własnego portfela Signal. Podaj adres portfela ze swojego konta w obsługiwanym kantorze.";
+"SETTINGS_PAYMENTS_TRANSFER_OUT_CANNOT_SEND_TO_SELF" = "Nie możesz wysłać środków na adres własnego portfela Noise. Podaj adres portfela ze swojego konta w obsługiwanym kantorze.";
 
 /* Footer of the 'transfer currency out' view in the payment settings. */
 "SETTINGS_PAYMENTS_TRANSFER_OUT_FOOTER" = "Aby przenieść środki w walucie MobileCoin, wyślij je na adres swojego portfela w kantorze. Adres portfela to ciąg cyfr i liter, zwykle znajdujący się pod kodem QR.";
@@ -8930,7 +8930,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Aby zmienić to ustawienie, w sekcji „Kto może wyświetlić mój numer telefonu” wybierz opcję „Nikt”.";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Wybór opcji „Nikt” w ustawieniu „Kto może mnie wyszukać po numerze telefonu” utrudni innym znalezienie Cię w aplikacji Signal.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Wybór opcji „Nikt” w ustawieniu „Kto może mnie wyszukać po numerze telefonu” utrudni innym znalezienie Cię w aplikacji Noise.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Chcesz kontynuować?";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_TITLE" = "Kto może mnie wyszukać po numerze telefonu";
 
 /* Description label for Phone Number Privacy */
-"SETTINGS_PHONE_NUMBER_PRIVACY_DESCRIPTION_LABEL" = "Zdecyduj, kto może wyświetlić Twój numer telefonu lub użyć go do skontaktowania się z Tobą w aplikacji Signal.";
+"SETTINGS_PHONE_NUMBER_PRIVACY_DESCRIPTION_LABEL" = "Zdecyduj, kto może wyświetlić Twój numer telefonu lub użyć go do skontaktowania się z Tobą w aplikacji Noise.";
 
 /* The title for phone number privacy settings. */
 "SETTINGS_PHONE_NUMBER_PRIVACY_TITLE" = "Numer telefonu";
@@ -8951,16 +8951,16 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Wyłącz przypomnienia";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "PIN-u nie można odzyskać, dlatego upewnij się, że go pamiętasz lub przechowujesz w bezpiecznym miejscu. Jeśli zapomnisz swój PIN, przy ponownej rejestracji konta Signal możesz stracić dane.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "PIN-u nie można odzyskać, dlatego upewnij się, że go pamiętasz lub przechowujesz w bezpiecznym miejscu. Jeśli zapomnisz swój PIN, przy ponownej rejestracji konta Noise możesz stracić dane.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Potwierdź swój PIN Signal";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Potwierdź swój PIN Noise";
 
 /* Label for the 'pin reminder' switch of the privacy settings. */
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "Przypomnienia PIN-u";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "Dzięki PIN-owi dane przechowywane w aplikacji Signal są szyfrowane i tylko Ty masz do nich dostęp. PIN-u nie można odzyskać. Pozwoli Ci on przywrócić profil, ustawienia i kontakty, gdy ponownie zainstalujesz Signal.";
+"SETTINGS_PINS_FOOTER" = "Dzięki PIN-owi dane przechowywane w aplikacji Noise są szyfrowane i tylko Ty masz do nich dostęp. PIN-u nie można odzyskać. Pozwoli Ci on przywrócić profil, ustawienia i kontakty, gdy ponownie zainstalujesz Noise.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Zmień PIN";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PINS_ITEM_CREATE" = "Utwórz PIN";
 
 /* Title for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_TITLE" = "PIN Signal";
+"SETTINGS_PINS_TITLE" = "PIN Noise";
 
 /* Footer for table section */
 "SETTINGS_PRIVACY_ADVANCED_FOOTER" = "Ustawienia obchodzenia cenzury, proxy, pośredniczenia w połączeniach i zaszyfrowanego nadawcy.";
@@ -9011,7 +9011,7 @@
 "SETTINGS_REGISTRATION_LOCK_TURN_ON_ERROR_PIN_REQUIRED" = "Aby korzystać z blokady rejestracji, musisz utworzyć PIN.";
 
 /* Body for the alert confirming that the user wants to turn on registration lock. */
-"SETTINGS_REGISTRATION_LOCK_TURN_ON_MESSAGE" = "Jeśli przy ponownej rejestracji w aplikacji Signal nie będziesz pamiętać PIN-u, stracisz dostęp do konta na 7 dni.";
+"SETTINGS_REGISTRATION_LOCK_TURN_ON_MESSAGE" = "Jeśli przy ponownej rejestracji w aplikacji Noise nie będziesz pamiętać PIN-u, stracisz dostęp do konta na 7 dni.";
 
 /* Title for the alert confirming that the user wants to turn on registration lock. */
 "SETTINGS_REGISTRATION_LOCK_TURN_ON_TITLE" = "Włączyć blokadę rejestracji?";
@@ -9041,19 +9041,19 @@
 "SETTINGS_SECTION_TITLE_CALLING" = "Połączenia";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL" = "Aby odblokować Signal, użyj Touch ID, Face ID lub kodu do swojego urządzenia z systemem iOS.";
+"SETTINGS_SECURITY_DETAIL" = "Aby odblokować Noise, użyj Touch ID, Face ID lub kodu do swojego urządzenia z systemem iOS.";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_FACEID" = "Aby odblokować Signal, użyj Face ID.";
+"SETTINGS_SECURITY_DETAIL_FACEID" = "Aby odblokować Noise, użyj Face ID.";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_OPTICID" = "Aby odblokować Signal, użyj Optic ID.";
+"SETTINGS_SECURITY_DETAIL_OPTICID" = "Aby odblokować Noise, użyj Optic ID.";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_PASSCODE" = "Aby odblokować Signal, użyj kodu do swojego urządzenia.";
+"SETTINGS_SECURITY_DETAIL_PASSCODE" = "Aby odblokować Noise, użyj kodu do swojego urządzenia.";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_TOUCHID" = "Aby odblokować Signal, użyj Touch ID.";
+"SETTINGS_SECURITY_DETAIL_TOUCHID" = "Aby odblokować Noise, użyj Touch ID.";
 
 /* Section header */
 "SETTINGS_SECURITY_TITLE" = "Bezpieczeństwo aplikacji";
@@ -9068,13 +9068,13 @@
 "SETTINGS_SHARING_SUGGESTIONS" = "Udostępnij kontakty systemowi iOS";
 
 /* Footer for setting for enabling & disabling contact and notification sharing with iOS. */
-"SETTINGS_SHARING_SUGGESTIONS_NOTIFICATIONS_FOOTER" = "Zezwól systemowi iOS na dostęp do kontaktów i czatów Signal, aby korzystać z takich funkcji jak sugestie udostępniania i powiadomienia.";
+"SETTINGS_SHARING_SUGGESTIONS_NOTIFICATIONS_FOOTER" = "Zezwól systemowi iOS na dostęp do kontaktów i czatów Noise, aby korzystać z takich funkcji jak sugestie udostępniania i powiadomienia.";
 
 /* Label for the 'enable registration lock' switch of the privacy settings. */
 "SETTINGS_TWO_FACTOR_AUTH_SWITCH_LABEL" = "Blokada rejestracji";
 
 /* Footer for the 'two factor auth' section of the privacy settings when Signal PINs are available. */
-"SETTINGS_TWO_FACTOR_PINS_AUTH_FOOTER" = "Wymagaj PIN-u Signal, aby ponownie zarejestrować numer telefonu w aplikacji.";
+"SETTINGS_TWO_FACTOR_PINS_AUTH_FOOTER" = "Wymagaj PIN-u Noise, aby ponownie zarejestrować numer telefonu w aplikacji.";
 
 /* Label for the 'typing indicators' setting. */
 "SETTINGS_TYPING_INDICATORS" = "Wskaźniki pisania";
@@ -9107,7 +9107,7 @@
 "SHARE_EXTENSION_LOADING" = "Wczytywanie…";
 
 /* Message indicating that the share extension cannot be used until the user has registered in the main app. */
-"SHARE_EXTENSION_NOT_REGISTERED_MESSAGE" = "Uruchom aplikację Signal, aby się zarejestrować.";
+"SHARE_EXTENSION_NOT_REGISTERED_MESSAGE" = "Uruchom aplikację Noise, aby się zarejestrować.";
 
 /* Title indicating that the share extension cannot be used until the user has registered in the main app. */
 "SHARE_EXTENSION_NOT_REGISTERED_TITLE" = "Wymagana rejestracja";
@@ -9125,7 +9125,7 @@
 "SHARE_EXTENSION_UNABLE_TO_BUILD_ATTACHMENT_ALERT_TITLE" = "Nie można załączyć pliku";
 
 /* Title for the 'share extension' view. */
-"SHARE_EXTENSION_VIEW_TITLE" = "Udostępnij w aplikacji Signal";
+"SHARE_EXTENSION_VIEW_TITLE" = "Udostępnij w aplikacji Noise";
 
 /* Title of alert indicating sharing suggestions failed to deactivate */
 "SHARING_SUGGESTIONS_DISABLE_ERROR" = "Nie udało się wyłączyć sugestii udostępniania.";
@@ -9134,10 +9134,10 @@
 "SHOW_THREAD_BUTTON_TITLE" = "Pokaż czat";
 
 /* Shown in the header when the user hasn't provided a custom name for a call. */
-"SIGNAL_CALL" = "Połączenie Signal";
+"SIGNAL_CALL" = "Połączenie Noise";
 
 /* body sent to contacts when inviting to Install Signal */
-"SMS_INVITE_BODY" = "Zapraszam Cię do komunikatora Signal! Link do pobrania aplikacji:";
+"SMS_INVITE_BODY" = "Zapraszam Cię do komunikatora Noise! Link do pobrania aplikacji:";
 
 /* An error message generically indicating that something went wrong. */
 "SOMETHING_WENT_WRONG_ERROR" = "Coś poszło nie tak.";
@@ -9161,7 +9161,7 @@
 "SPAM_CAPTCHA_DISMISS_CONFIRMATION_TITLE" = "Kontynuować bez weryfikacji?";
 
 /* Body for action sheet explaining captcha requirement. */
-"SPAM_CAPTCHA_SHEET_BODY" = "Aby pomóc zapobiegać spamowi w aplikacji Signal, przejdź weryfikację.\n\nGdy to zrobisz, możesz dalej wysyłać i otrzymywać wiadomości. Wszystkie wstrzymane wiadomości zostaną automatycznie wysłane.";
+"SPAM_CAPTCHA_SHEET_BODY" = "Aby pomóc zapobiegać spamowi w aplikacji Noise, przejdź weryfikację.\n\nGdy to zrobisz, możesz dalej wysyłać i otrzymywać wiadomości. Wszystkie wstrzymane wiadomości zostaną automatycznie wysłane.";
 
 /* Title for action sheet explaining captcha requirement. */
 "SPAM_CAPTCHA_SHEET_TITLE" = "Zweryfikuj, aby dalej wysyłać i otrzymywać wiadomości";
@@ -9203,7 +9203,7 @@
 "STICKERS_INSTALL_BUTTON" = "Zainstaluj";
 
 /* Title for the 'available built-in stickers' section of the 'manage stickers' view. */
-"STICKERS_MANAGE_VIEW_AVAILABLE_BUILT_IN_PACKS_SECTION_TITLE" = "Sztuka w aplikacji Signal";
+"STICKERS_MANAGE_VIEW_AVAILABLE_BUILT_IN_PACKS_SECTION_TITLE" = "Sztuka w aplikacji Noise";
 
 /* Title for the 'available known stickers' section of the 'manage stickers' view. */
 "STICKERS_MANAGE_VIEW_AVAILABLE_KNOWN_PACKS_SECTION_TITLE" = "Otrzymane naklejki";
@@ -9467,19 +9467,19 @@
 "STORY_SETTINGS_LEARN_MORE_SHEET_FOOTER" = "Kontakty mogą wyświetlić Twoje imię, nazwisko i zdjęcie oraz to, co udostępniasz w swoich relacjach – chyba że je przed tymi osobami ukryjesz.";
 
 /* Header for the explainer sheet for signal connections */
-"STORY_SETTINGS_LEARN_MORE_SHEET_HEADER_FORMAT" = "<bold>Kontakty Signal</bold> to osoby uznane za zaufane z jednego z tych powodów:";
+"STORY_SETTINGS_LEARN_MORE_SHEET_HEADER_FORMAT" = "<bold>Kontakty Noise</bold> to osoby uznane za zaufane z jednego z tych powodów:";
 
 /* Label for the stories section of the settings view */
 "STORY_SETTINGS_TITLE" = "Relacje";
 
 /* Section footer for the 'viewers' section on the 'story settings' view */
-"STORY_SETTINGS_WHO_CAN_VIEW_THIS_FOOTER" = "Zdecyduj, kto spośród kontaktów Signal może wyświetlać Twoje relacje. Zmiany nie wpłyną na już opublikowane relacje.";
+"STORY_SETTINGS_WHO_CAN_VIEW_THIS_FOOTER" = "Zdecyduj, kto spośród kontaktów Noise może wyświetlać Twoje relacje. Zmiany nie wpłyną na już opublikowane relacje.";
 
 /* Section header for the 'viewers' section on the 'story settings' view */
 "STORY_SETTINGS_WHO_CAN_VIEW_THIS_HEADER" = "Kto może wyświetlać te relacje";
 
 /* Header for the 'viewers' section on the 'story settings' bottom sheet */
-"STORY_SETTINGS_WHO_CAN_VIEW_THIS_SHEET_HEADER" = "Zdecyduj, które kontakty Signal mogą wyświetlać Twoje relacje. Zawsze możesz to zmienić w ustawieniach prywatności.";
+"STORY_SETTINGS_WHO_CAN_VIEW_THIS_SHEET_HEADER" = "Zdecyduj, które kontakty Noise mogą wyświetlać Twoje relacje. Zawsze możesz to zmienić w ustawieniach prywatności.";
 
 /* Tooltip text shown when the user selects a story as a destination for a long duration video that will be split into shorter segments. Embeds {{ segment duration in seconds }} */
 "STORY_VIDEO_SEGMENTATION_TOOLTIP_FORMAT" = "Filmy dodane do relacji zostaną podzielone na %1$d-sekundowe klipy i opublikowane jako kilka relacji.";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "Opisz problem: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Wyślij zgłoszenie e-mailem na adres support@signal.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Wyślij zgłoszenie e-mailem na adres support@noise.app";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "Filtr: %1$@";
@@ -9542,7 +9542,7 @@
 "SUPPORT_EMAIL_LOG_URL_LABEL_FORMAT" = "URL dziennika: %1$@";
 
 /* Localized subject for support request emails */
-"SUPPORT_EMAIL_SUBJECT" = "Zgłoszenie do pomocy technicznej Signal iOS";
+"SUPPORT_EMAIL_SUBJECT" = "Zgłoszenie do pomocy technicznej Noise iOS";
 
 /* Header for emoji mood selection */
 "SUPPORT_EMOJI_PROMPT" = "Jak się masz? (opcjonalnie)";
@@ -9614,7 +9614,7 @@
 "SWITCH_ON" = "Wł.";
 
 /* Name to display for the 'system' sender, e.g. for release notes and the onboarding story */
-"SYSTEM_ADDRESS_NAME" = "Signal";
+"SYSTEM_ADDRESS_NAME" = "Noise";
 
 /* Label for button to verify a user's safety number. */
 "SYSTEM_MESSAGE_ACTION_VERIFY_SAFETY_NUMBER" = "Zweryfikuj";
@@ -9761,16 +9761,16 @@
 "TIME_AMOUNT_WEEKS_SHORT_FORMAT" = "%1$@t";
 
 /* Button for bottom sheet shown when device transfer completes on the receiving device. Tapping will terminate the Signal app and trigger a notification to relaunch. */
-"TRANSFER_COMPLETE_SHEET_BUTTON" = "Zamknij Signal";
+"TRANSFER_COMPLETE_SHEET_BUTTON" = "Zamknij Noise";
 
 /* Subtitle for bottom sheet shown when device transfer completes on the receiving device. */
-"TRANSFER_COMPLETE_SHEET_SUBTITLE" = "Aby zacząć korzystać ze swojego konta na tym urządzeniu, zamknij i uruchom Signal ponownie.";
+"TRANSFER_COMPLETE_SHEET_SUBTITLE" = "Aby zacząć korzystać ze swojego konta na tym urządzeniu, zamknij i uruchom Noise ponownie.";
 
 /* Title for bottom sheet shown when device transfer completes on the receiving device. */
 "TRANSFER_COMPLETE_SHEET_TITLE" = "Przenoszenie zakończone";
 
 /* Notification prompting the user to relaunch Signal after a device transfer completed. */
-"TRANSFER_RELAUNCH_NOTIFICATION" = "Otwórz Signal, aby zacząć wysyłać i otrzymywać wiadomości";
+"TRANSFER_RELAUNCH_NOTIFICATION" = "Otwórz Noise, aby zacząć wysyłać i otrzymywać wiadomości";
 
 /* Label for the cancel button in an alert or action sheet. */
 "TXT_CANCEL_TITLE" = "Anuluj";
@@ -9788,25 +9788,25 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Nie masz tej osoby w kontaktach. Czy chcesz ją zablokować?";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Z jednego z Twoich urządzeń wysłano wiadomość, która nie może zostać przetworzona lub wyświetlona, ponieważ wykorzystuje nową funkcję Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Z jednego z Twoich urządzeń wysłano wiadomość, która nie może zostać przetworzona lub wyświetlona, ponieważ wykorzystuje nową funkcję Noise.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "Nie można przetworzyć lub wyświetlić wiadomości, którą przesyła %1$@, ponieważ wykorzystuje ona nową funkcję Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "Nie można przetworzyć lub wyświetlić wiadomości, którą przesyła %1$@, ponieważ wykorzystuje ona nową funkcję Noise.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITHOUT_NAME" = "Otrzymano wiadomość, która nie może zostać przetworzona lub wyświetlona, ponieważ wykorzystuje nową funkcję Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITHOUT_NAME" = "Otrzymano wiadomość, która nie może zostać przetworzona lub wyświetlona, ponieważ wykorzystuje nową funkcję Noise.";
 
 /* Label for button that lets users upgrade the app. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_BUTTON" = "Zaktualizuj Signal";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_BUTTON" = "Zaktualizuj Noise";
 
 /* Info message recorded in conversation history when local user has received an unknown unknown message from a linked device and has upgraded. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_FROM_LINKED_DEVICE" = "Zaktualizowano do najnowszej wersji aplikacji Signal. Teraz możesz otrzymywać wiadomości tego typu na swoim urządzeniu.";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_FROM_LINKED_DEVICE" = "Zaktualizowano do najnowszej wersji aplikacji Noise. Teraz możesz otrzymywać wiadomości tego typu na swoim urządzeniu.";
 
 /* Info message recorded in conversation history when local user has received an unknown message and has upgraded. Embeds {{user's name or phone number}}. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITH_NAME_FORMAT" = "Używasz już aktualnej wersji Signal. Możesz wyświetlić tę wiadomość, gdy %1$@ ponownie Ci ją wyśle.";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITH_NAME_FORMAT" = "Używasz już aktualnej wersji Noise. Możesz wyświetlić tę wiadomość, gdy %1$@ ponownie Ci ją wyśle.";
 
 /* Info message recorded in conversation history when local user has received an unknown message and has upgraded. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITHOUT_NAME" = "Używasz już aktualnej wersji Signal. Możesz wyświetlić tę wiadomość, gdy nadawca ponownie Ci ją wyśle.";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITHOUT_NAME" = "Używasz już aktualnej wersji Noise. Możesz wyświetlić tę wiadomość, gdy nadawca ponownie Ci ją wyśle.";
 
 /* Label indicating an unknown user. */
 "UNKNOWN_USER" = "Nieznana osoba";
@@ -9830,7 +9830,7 @@
 "UNLINK_CONFIRMATION_ALERT_TITLE" = "Odłączyć urządzenie %1$@?";
 
 /* Label warning the user that they have been unlinked from their primary device. */
-"UNLINKED_WARNING" = "To urządzenie nie jest już połączone. Aby dalej wysyłać i otrzymywać wiadomości, połącz swój telefon ponownie z aplikacją Signal.";
+"UNLINKED_WARNING" = "To urządzenie nie jest już połączone. Aby dalej wysyłać i otrzymywać wiadomości, połącz swój telefon ponownie z aplikacją Noise.";
 
 /* If this device has become unlinked from their primary device, they'll see a warning. This is the call to action on that warning. */
 "UNLINKED_WARNING_ACTION_TITLE" = "Połącz urządzenie ponownie";
@@ -9857,7 +9857,7 @@
 "UNSUPPORTED_FEATURE_ERROR" = "Twoje urządzenie nie obsługuje tej funkcji.";
 
 /* Description for the unverified safety number change. Embeds {name of contact with identity change} */
-"UNVERIFIED_SAFETY_NUMBER_CHANGE_DESCRIPTION_FORMAT" = "Ty i %1$@ macie nowy numer bezpieczeństwa, ponieważ ta osoba prawdopodobnie ponownie zainstalowała Signal lub zmieniła urządzenie na inne. Dotknij opcji „Zweryfikuj”, aby potwierdzić nowy numer bezpieczeństwa. Ta czynność jest opcjonalna.";
+"UNVERIFIED_SAFETY_NUMBER_CHANGE_DESCRIPTION_FORMAT" = "Ty i %1$@ macie nowy numer bezpieczeństwa, ponieważ ta osoba prawdopodobnie ponownie zainstalowała Noise lub zmieniła urządzenie na inne. Dotknij opcji „Zweryfikuj”, aby potwierdzić nowy numer bezpieczeństwa. Ta czynność jest opcjonalna.";
 
 /* Action to verify a safety number after it has changed */
 "UNVERIFIED_SAFETY_NUMBER_VERIFY_ACTION" = "Zweryfikuj";
@@ -9875,7 +9875,7 @@
 "USE_PROXY_BUTTON" = "Użyj proxy";
 
 /* Explanation of when you should use a signal proxy */
-"USE_PROXY_EXPLANATION" = "Używaj proxy tylko wtedy, gdy nie możesz połączyć się z usługą Signal przez sieć komórkową ani Wi-Fi.";
+"USE_PROXY_EXPLANATION" = "Używaj proxy tylko wtedy, gdy nie możesz połączyć się z usługą Noise przez sieć komórkową ani Wi-Fi.";
 
 /* Description of username links and QR codes on the username education sheet */
 "USERNAME_EDUCATION_LINK_DESCRIPTION" = "Każda nazwa użytkownika jest powiązana z unikalnym kodem QR i unikalnym linkiem. Udostępnij je znajomym, aby mogli szybko rozpocząć z Tobą czat.";
@@ -9968,13 +9968,13 @@
 "USERNAME_LOOKUP_LINK_NO_LONGER_VALID_MESSAGE" = "Ten link do nazwy użytkownika wygasł.";
 
 /* A message indicating that the given username is not associated with a registered Signal account. Embeds {{ a username }}. */
-"USERNAME_LOOKUP_NOT_FOUND_MESSAGE_FORMAT" = "%1$@ nie jest nazwą użytkownika aplikacji Signal. Upewnij się, że podajesz pełną nazwę użytkownika.";
+"USERNAME_LOOKUP_NOT_FOUND_MESSAGE_FORMAT" = "%1$@ nie jest nazwą użytkownika aplikacji Noise. Upewnij się, że podajesz pełną nazwę użytkownika.";
 
 /* Title for an action sheet indicating that the given username is not associated with a registered Signal account. */
 "USERNAME_LOOKUP_NOT_FOUND_TITLE" = "Nie znaleziono użytkownika";
 
 /* Instructions that appear below the username QR code on a sharable exported image. */
-"USERNAME_QR_CODE_EXPORT_INSTRUCTIONS" = "Zeskanuj ten kod QR swoim telefonem, aby rozpocząć ze mną czat w aplikacji Signal.";
+"USERNAME_QR_CODE_EXPORT_INSTRUCTIONS" = "Zeskanuj ten kod QR swoim telefonem, aby rozpocząć ze mną czat w aplikacji Noise.";
 
 /* A message in a toast informing the user their username, link, and QR code have successfully been reset. Embeds {{ the user's new username }}. */
 "USERNAME_RESET_SUCCESSFUL_TOAST" = "Kod QR i link zostały zresetowane, a Twoja nazwa użytkownika to %1$@";

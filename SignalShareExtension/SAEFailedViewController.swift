@@ -39,7 +39,7 @@ class SAEFailedViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = .cancelButton { [weak self] in
             self?.cancelPressed()
         }
-        self.navigationItem.title = "Signal"
+        self.navigationItem.title = "Noise"
 
         self.view.backgroundColor = Theme.launchScreenBackgroundColor
 

@@ -61,7 +61,7 @@ class RaisedHandsToast: UIView {
     private var collapsedText: String = ""
     private var expandedText: String = ""
 
-    private var call: GroupCall
+    private var call: Noise.GroupCall
     weak var delegate: RaisedHandsToastDelegate?
     var horizontalPinConstraint: NSLayoutConstraint?
 
@@ -77,7 +77,7 @@ class RaisedHandsToast: UIView {
 
     // MARK: Init
 
-    init(call: GroupCall) {
+    init(call: Noise.GroupCall) {
         self.call = call
         super.init(frame: .zero)
 

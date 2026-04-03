@@ -355,7 +355,7 @@ final class CallService: CallServiceStateObserver, CallServiceStateDelegate {
         owsPrecondition(call === callServiceState.currentCall)
 
         switch call.mode {
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             call.ringRtcCall.isOutgoingAudioMuted = isLocalAudioMuted
             call.groupCall(onLocalDeviceStateChanged: call.ringRtcCall)
         case .individual(let individualCall):
@@ -404,7 +404,7 @@ final class CallService: CallServiceStateObserver, CallServiceStateDelegate {
         owsPrecondition(call === callServiceState.currentCall)
 
         switch call.mode {
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             call.ringRtcCall.isOutgoingVideoMuted = isLocalVideoMuted
             call.groupCall(onLocalDeviceStateChanged: call.ringRtcCall)
         case .individual(let individualCall):
@@ -466,7 +466,7 @@ final class CallService: CallServiceStateObserver, CallServiceStateDelegate {
                 shouldResetUI: false,
                 shouldResetRingRTC: true,
             )
-        case .groupThread(let groupCall as GroupCall), .callLink(let groupCall as GroupCall):
+        case .groupThread(let groupCall as Noise.GroupCall), .callLink(let groupCall as Noise.GroupCall):
             leaveAndTerminateGroupCall(failedCall, groupCall: groupCall)
         }
     }
@@ -514,7 +514,7 @@ final class CallService: CallServiceStateObserver, CallServiceStateDelegate {
         switch call.mode {
         case .individual(let individualCall):
             return individualCall.state == .connected && individualCall.hasLocalVideo
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             return !call.ringRtcCall.isOutgoingVideoMuted
         }
     }
@@ -535,7 +535,7 @@ final class CallService: CallServiceStateObserver, CallServiceStateDelegate {
             } else {
                 individualCall.videoCaptureController.stopCapture()
             }
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             if call.shouldTerminateOnEndEvent {
                 call.videoCaptureController.stopCapture()
             } else {
@@ -637,7 +637,7 @@ final class CallService: CallServiceStateObserver, CallServiceStateDelegate {
         }
     }
 
-    private func _buildAndConnectGroupCall<T: GroupCall>(
+    private func _buildAndConnectGroupCall<T: Noise.GroupCall>(
         isOutgoingVideoMuted: Bool,
         createCall: () -> (SignalCall, T)?,
     ) -> (SignalCall, T)? {
@@ -667,7 +667,7 @@ final class CallService: CallServiceStateObserver, CallServiceStateDelegate {
         return (call, groupCall)
     }
 
-    func joinGroupCallIfNecessary(_ call: SignalCall, groupCall: GroupCall) {
+    func joinGroupCallIfNecessary(_ call: SignalCall, groupCall: Noise.GroupCall) {
         guard call === self.callServiceState.currentCall else {
             owsFailDebug("Can't join a group call if it's not the current call")
             return
@@ -695,7 +695,7 @@ final class CallService: CallServiceStateObserver, CallServiceStateDelegate {
         }
     }
 
-    private func connectGroupCallIfNeeded(_ groupCall: GroupCall) -> Bool {
+    private func connectGroupCallIfNeeded(_ groupCall: Noise.GroupCall) -> Bool {
         if groupCall.hasInvokedConnectMethod {
             return true
         }
@@ -718,7 +718,7 @@ final class CallService: CallServiceStateObserver, CallServiceStateDelegate {
     ///
     /// We wait for the call to end before terminating to ensure that observers
     /// have an opportunity to handle the "call ended" event.
-    private func leaveAndTerminateGroupCall(_ call: SignalCall, groupCall: GroupCall) {
+    private func leaveAndTerminateGroupCall(_ call: SignalCall, groupCall: Noise.GroupCall) {
         if groupCall.hasInvokedConnectMethod {
             groupCall.ringRtcCall.disconnect()
             groupCall.shouldTerminateOnEndEvent = true
@@ -898,7 +898,7 @@ extension CallService: IndividualCallObserver {
 }
 
 extension CallService: GroupCallObserver {
-    func groupCallLocalDeviceStateChanged(_ call: GroupCall) {
+    func groupCallLocalDeviceStateChanged(_ call: Noise.GroupCall) {
         let ringRtcCall = call.ringRtcCall
 
         Logger.info("")
@@ -941,7 +941,7 @@ extension CallService: GroupCallObserver {
         }
     }
 
-    func groupCallPeekChanged(_ call: GroupCall) {
+    func groupCallPeekChanged(_ call: Noise.GroupCall) {
         let ringRtcCall = call.ringRtcCall
         guard let peekInfo = ringRtcCall.peekInfo else {
             Logger.warn("No peek info for call: \(call)")
@@ -978,14 +978,14 @@ extension CallService: GroupCallObserver {
         }
     }
 
-    func groupCallEnded(_ groupCall: GroupCall, reason: CallEndReason) {
+    func groupCallEnded(_ groupCall: Noise.GroupCall, reason: CallEndReason) {
         groupCallAccessoryMessageDelegate.localDeviceGroupCallDidEnd()
 
         let call = callServiceState.currentCall
         switch call?.mode {
         case nil, .individual:
             owsFail("Can't receive callback without an active group call")
-        case .groupThread(let currentCall as GroupCall), .callLink(let currentCall as GroupCall):
+        case .groupThread(let currentCall as Noise.GroupCall), .callLink(let currentCall as Noise.GroupCall):
             owsPrecondition(currentCall === groupCall)
             if currentCall.shouldTerminateOnEndEvent {
                 callServiceState.terminateCall(call!)
@@ -993,7 +993,7 @@ extension CallService: GroupCallObserver {
         }
     }
 
-    func groupCallRemoteDeviceStatesChanged(_ call: GroupCall) {
+    func groupCallRemoteDeviceStatesChanged(_ call: Noise.GroupCall) {
         switch call.concreteType {
         case .groupThread(let call):
             if
@@ -1253,7 +1253,7 @@ extension CallService: CallManagerDelegate {
             Logger.warn("The relevant call has already ended.")
         case .individual:
             owsFailDebug("This method isn't implemented for 1:1 calls.")
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             call.handleUntrustedIdentityError()
         }
     }

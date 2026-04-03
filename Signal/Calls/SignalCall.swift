@@ -12,7 +12,7 @@ enum CallMode {
     case groupThread(GroupThreadCall)
     case callLink(CallLinkCall)
 
-    init(groupCall: GroupCall) {
+    init(groupCall: Noise.GroupCall) {
         switch groupCall.concreteType {
         case .groupThread(let call): self = .groupThread(call)
         case .callLink(let call): self = .callLink(call)
@@ -23,7 +23,7 @@ enum CallMode {
         switch self {
         case .individual(let call):
             return call.commonState
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             return call.commonState
         }
     }
@@ -42,7 +42,7 @@ enum CallMode {
         switch self {
         case .individual(let call):
             return call.isMuted
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             return call.ringRtcCall.isOutgoingAudioMuted
         }
     }
@@ -52,7 +52,7 @@ enum CallMode {
         switch self {
         case .individual(let call):
             return !call.hasLocalVideo
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             return call.ringRtcCall.isOutgoingVideoMuted
         }
     }
@@ -86,7 +86,7 @@ enum CallMode {
                  .dialing:
                 return .joined
             }
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             return call.joinState
         }
     }
@@ -95,7 +95,7 @@ enum CallMode {
         switch self {
         case .individual:
             return false
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             return call.ringRtcCall.isFull
         }
     }
@@ -125,7 +125,7 @@ enum CallMode {
         switch self {
         case .individual(let call):
             return call.videoCaptureController
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             return call.videoCaptureController
         }
     }

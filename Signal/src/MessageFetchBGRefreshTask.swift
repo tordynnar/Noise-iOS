@@ -7,12 +7,12 @@ import BackgroundTasks
 public import SignalServiceKit
 
 /**
- * Utility class for managing the BGAppRefreshTask we use as a "keepalive" for
- * registration lock.
+ * Utility class for managing the BGAppRefreshTask used for polling messages.
  *
- * Ensures that while reglock is active, we try to fetch messages every once in a while
- * even if the app or NSE don't launch, so that the server keeps the account active
- * and reglock alive.
+ * Since Noise does not use APNs, this task is the primary mechanism for receiving
+ * messages when the app is in the background. iOS may throttle execution to every
+ * ~15 minutes, so real-time delivery only works via WebSocket when the app is
+ * in the foreground.
  */
 public class MessageFetchBGRefreshTask {
 
@@ -36,8 +36,9 @@ public class MessageFetchBGRefreshTask {
         return value
     }
 
-    // Must be kept in sync with the value in info.plist.
+    // Must be kept in sync with the values in info.plist.
     private static let taskIdentifier = "MessageFetchBGRefreshTask"
+    private static let processingTaskIdentifier = "MessageFetchBGProcessingTask"
 
     private let backgroundMessageFetcherFactory: BackgroundMessageFetcherFactory
     private let dateProvider: DateProvider
@@ -66,6 +67,15 @@ public class MessageFetchBGRefreshTask {
                 }
             },
         )
+        BGTaskScheduler.shared.register(
+            forTaskWithIdentifier: Self.processingTaskIdentifier,
+            using: nil,
+            launchHandler: { task in
+                appReadiness.runNowOrWhenAppDidBecomeReadyAsync {
+                    Self.getShared(appReadiness: appReadiness)!.performProcessingTask(task)
+                }
+            },
+        )
     }
 
     public func scheduleTask() {
@@ -77,29 +87,41 @@ public class MessageFetchBGRefreshTask {
             return
         }
 
-        // Ideally, we would schedule this for N hours _since we last talked to the chat server_.
-        // Without knowing that, we risk scheduling this 24 hours out over and over every time you
-        // launch the app without internet. That scenario is unlikely, so is left unhandled.
-        let refreshInterval: TimeInterval = RemoteConfig.current.backgroundRefreshInterval
+        // Poll frequently since we don't use APNs. iOS may throttle this to
+        // every ~15 minutes at best, but we request every 2 minutes optimistically.
+        let refreshInterval: TimeInterval = 2 * 60 // 2 minutes
         let request = BGAppRefreshTaskRequest(identifier: Self.taskIdentifier)
         request.earliestBeginDate = dateProvider().addingTimeInterval(refreshInterval)
 
         do {
             try BGTaskScheduler.shared.submit(request)
         } catch let error {
-            let errorCode = (error as NSError).code
-            switch errorCode {
-            case BGTaskScheduler.Error.Code.notPermitted.rawValue:
-                Logger.warn("Skipping bg task; user permission required.")
-            case BGTaskScheduler.Error.Code.tooManyPendingTaskRequests.rawValue:
-                // If we reschedule the same identifier, we don't get this error.
-                // This means a task with a different identifier was scheduled (not allowed).
-                Logger.error("Too many pending bg tasks; only one app refresh task identifier is allowed at any time.")
-            case BGTaskScheduler.Error.Code.unavailable.rawValue:
-                Logger.warn("Trying to schedule bg task from an extension or simulator?")
-            default:
-                Logger.error("Unknown error code scheduling bg task: \(errorCode)")
-            }
+            logSchedulingError(error, taskType: "refresh")
+        }
+
+        // Also schedule a processing task for longer background execution.
+        let processingRequest = BGProcessingTaskRequest(identifier: Self.processingTaskIdentifier)
+        processingRequest.earliestBeginDate = dateProvider().addingTimeInterval(5 * 60) // 5 minutes
+        processingRequest.requiresNetworkConnectivity = true
+
+        do {
+            try BGTaskScheduler.shared.submit(processingRequest)
+        } catch let error {
+            logSchedulingError(error, taskType: "processing")
+        }
+    }
+
+    private func logSchedulingError(_ error: Error, taskType: String) {
+        let errorCode = (error as NSError).code
+        switch errorCode {
+        case BGTaskScheduler.Error.Code.notPermitted.rawValue:
+            Logger.warn("Skipping bg \(taskType) task; user permission required.")
+        case BGTaskScheduler.Error.Code.tooManyPendingTaskRequests.rawValue:
+            Logger.error("Too many pending bg \(taskType) tasks.")
+        case BGTaskScheduler.Error.Code.unavailable.rawValue:
+            Logger.warn("Trying to schedule bg \(taskType) task from an extension or simulator?")
+        default:
+            Logger.error("Unknown error code scheduling bg \(taskType) task: \(errorCode)")
         }
     }
 
@@ -122,6 +144,32 @@ public class MessageFetchBGRefreshTask {
                 task.setTaskCompleted(success: true)
             } catch {
                 Logger.error("Failing task; failed to fetch messages")
+                task.setTaskCompleted(success: false)
+            }
+        }
+    }
+
+    /// Processing tasks get more runtime (up to several minutes) and are ideal
+    /// for fetching messages without APNs.
+    private func performProcessingTask(_ task: BGTask) {
+        Logger.info("performing background processing fetch")
+        Task {
+            let backgroundMessageFetcher = self.backgroundMessageFetcherFactory.buildFetcher()
+            let result = await Result {
+                // Processing tasks get more time — use up to 120 seconds.
+                try await withCooperativeTimeout(seconds: 120) {
+                    await backgroundMessageFetcher.start()
+                    try await backgroundMessageFetcher.waitForFetchingProcessingAndSideEffects()
+                }
+            }
+            await backgroundMessageFetcher.stopAndWaitBeforeSuspending()
+            self.scheduleTask()
+            do {
+                try result.get()
+                Logger.info("processing task success")
+                task.setTaskCompleted(success: true)
+            } catch {
+                Logger.error("Processing task failed to fetch messages")
                 task.setTaskCompleted(success: false)
             }
         }

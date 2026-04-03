@@ -344,7 +344,7 @@ private class CallControlsViewModel {
         switch call.mode {
         case .individual(let call):
             call.addObserverAndSyncState(self)
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             call.addObserver(self, syncStateImmediately: true)
         }
         callService.audioService.delegate = self
@@ -405,7 +405,7 @@ private class CallControlsViewModel {
         switch call.mode {
         case .individual:
             return false
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             return !call.hasJoinedOrIsWaitingForAdminApproval
         }
     }
@@ -426,7 +426,7 @@ private class CallControlsViewModel {
         switch call.mode {
         case .individual(let call):
             return ![.idle, .dialing, .remoteRinging, .localRinging_Anticipatory, .localRinging_ReadyToAnswer].contains(call.state)
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             if call.isJustMe {
                 return true
             }
@@ -439,7 +439,7 @@ private class CallControlsViewModel {
         case .individual:
             // TODO: Introduce lobby for starting 1:1 video calls.
             return true
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             return call.hasJoinedOrIsWaitingForAdminApproval
         }
     }
@@ -567,7 +567,7 @@ private class CallControlsViewModel {
         switch call.mode {
         case .individual:
             return true
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             return call.ringRtcCall.localDeviceState.joinState != .joined
         }
     }
@@ -612,11 +612,11 @@ private class CallControlsViewModel {
 }
 
 extension CallControlsViewModel: GroupCallObserver {
-    func groupCallLocalDeviceStateChanged(_ call: GroupCall) {
+    func groupCallLocalDeviceStateChanged(_ call: Noise.GroupCall) {
         refreshView?()
     }
 
-    func groupCallPeekChanged(_ call: GroupCall) {
+    func groupCallPeekChanged(_ call: Noise.GroupCall) {
         // Mute if there's more than 8 people in the call.
         if call.shouldMuteAutomatically(), !didOverrideDefaultMuteState, !muteButtonIsSelected {
             callService.updateIsLocalAudioMuted(isLocalAudioMuted: true)
@@ -624,11 +624,11 @@ extension CallControlsViewModel: GroupCallObserver {
         refreshView?()
     }
 
-    func groupCallRemoteDeviceStatesChanged(_ call: GroupCall) {
+    func groupCallRemoteDeviceStatesChanged(_ call: Noise.GroupCall) {
         refreshView?()
     }
 
-    func groupCallEnded(_ call: GroupCall, reason: CallEndReason) {
+    func groupCallEnded(_ call: Noise.GroupCall, reason: CallEndReason) {
         refreshView?()
     }
 }

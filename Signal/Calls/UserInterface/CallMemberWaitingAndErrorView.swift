@@ -61,7 +61,7 @@ class CallMemberWaitingAndErrorView: UIView, CallMemberComposableView {
             switch call.mode {
             case .individual:
                 owsFail("Can't configure remoteInGroup for individual call.")
-            case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+            case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
                 ringRtcCall = call.ringRtcCall
             }
 

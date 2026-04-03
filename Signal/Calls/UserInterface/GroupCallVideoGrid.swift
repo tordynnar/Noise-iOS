@@ -11,13 +11,13 @@ class GroupCallVideoGrid: UICollectionView, UICollectionViewDelegate, UICollecti
     weak var memberViewErrorPresenter: CallMemberErrorPresenter?
     let layout: GroupCallVideoGridLayout
     let call: SignalCall
-    let groupCall: GroupCall
+    let groupCall: Noise.GroupCall
     let ringRtcCall: SignalRingRTC.GroupCall
 
     private var contactManager: ContactManager { SSKEnvironment.shared.contactManagerRef }
     private var db: DB { DependenciesBridge.shared.db }
 
-    init(call: SignalCall, groupCall: GroupCall) {
+    init(call: SignalCall, groupCall: Noise.GroupCall) {
         self.call = call
         self.groupCall = groupCall
         self.ringRtcCall = groupCall.ringRtcCall
@@ -108,22 +108,22 @@ class GroupCallVideoGrid: UICollectionView, UICollectionViewDelegate, UICollecti
 
     // MARK: - GroupCallObserver
 
-    func groupCallRemoteDeviceStatesChanged(_ call: GroupCall) {
+    func groupCallRemoteDeviceStatesChanged(_ call: Noise.GroupCall) {
         AssertIsOnMainThread()
         reloadData()
     }
 
-    func groupCallPeekChanged(_ call: GroupCall) {
+    func groupCallPeekChanged(_ call: Noise.GroupCall) {
         AssertIsOnMainThread()
         reloadData()
     }
 
-    func groupCallEnded(_ call: GroupCall, reason: CallEndReason) {
+    func groupCallEnded(_ call: Noise.GroupCall, reason: CallEndReason) {
         AssertIsOnMainThread()
         reloadData()
     }
 
-    func groupCallReceivedRaisedHands(_ call: GroupCall, raisedHands: [DemuxId]) {
+    func groupCallReceivedRaisedHands(_ call: Noise.GroupCall, raisedHands: [DemuxId]) {
         AssertIsOnMainThread()
         reloadData()
     }

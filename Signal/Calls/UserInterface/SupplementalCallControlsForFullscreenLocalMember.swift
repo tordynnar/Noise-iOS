@@ -65,7 +65,7 @@ class SupplementalCallControlsForFullscreenLocalMember: UIView {
     }
 
     private let call: SignalCall
-    private let groupCall: GroupCall
+    private let groupCall: Noise.GroupCall
     private let callService: CallService
 
     private enum Constants {
@@ -74,7 +74,7 @@ class SupplementalCallControlsForFullscreenLocalMember: UIView {
 
     init(
         call: SignalCall,
-        groupCall: GroupCall,
+        groupCall: Noise.GroupCall,
         callService: CallService,
     ) {
         self.call = call

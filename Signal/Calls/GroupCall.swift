@@ -12,36 +12,36 @@ import SignalUI
 protocol GroupCallObserver: AnyObject {
 
     @MainActor
-    func groupCallLocalDeviceStateChanged(_ call: GroupCall)
+    func groupCallLocalDeviceStateChanged(_ call: Noise.GroupCall)
 
     @MainActor
-    func groupCallRemoteDeviceStatesChanged(_ call: GroupCall)
+    func groupCallRemoteDeviceStatesChanged(_ call: Noise.GroupCall)
 
     @MainActor
-    func groupCallPeekChanged(_ call: GroupCall)
+    func groupCallPeekChanged(_ call: Noise.GroupCall)
 
     @MainActor
-    func groupCallEnded(_ call: GroupCall, reason: CallEndReason)
-    func groupCallReceivedReactions(_ call: GroupCall, reactions: [SignalRingRTC.Reaction])
-    func groupCallReceivedRaisedHands(_ call: GroupCall, raisedHands: [DemuxId])
-    func groupCallReceivedRemoteMute(_ call: GroupCall, muteSource: Aci)
-    func groupCallObservedRemoteMute(_ call: GroupCall, muteSource: Aci, muteTarget: Aci)
+    func groupCallEnded(_ call: Noise.GroupCall, reason: CallEndReason)
+    func groupCallReceivedReactions(_ call: Noise.GroupCall, reactions: [SignalRingRTC.Reaction])
+    func groupCallReceivedRaisedHands(_ call: Noise.GroupCall, raisedHands: [DemuxId])
+    func groupCallReceivedRemoteMute(_ call: Noise.GroupCall, muteSource: Aci)
+    func groupCallObservedRemoteMute(_ call: Noise.GroupCall, muteSource: Aci, muteTarget: Aci)
 
     /// Invoked if a call message failed to send because of a safety number change
     /// UI observing call state may choose to alert the user (e.g. presenting a SafetyNumberConfirmationSheet)
-    func handleUntrustedIdentityError(_ call: GroupCall)
+    func handleUntrustedIdentityError(_ call: Noise.GroupCall)
 }
 
 extension GroupCallObserver {
-    func groupCallLocalDeviceStateChanged(_ call: GroupCall) {}
-    func groupCallRemoteDeviceStatesChanged(_ call: GroupCall) {}
-    func groupCallPeekChanged(_ call: GroupCall) {}
-    func groupCallEnded(_ call: GroupCall, reason: CallEndReason) {}
-    func groupCallReceivedReactions(_ call: GroupCall, reactions: [SignalRingRTC.Reaction]) {}
-    func groupCallReceivedRaisedHands(_ call: GroupCall, raisedHands: [DemuxId]) {}
-    func groupCallReceivedRemoteMute(_ call: GroupCall, muteSource: Aci) {}
-    func groupCallObservedRemoteMute(_ call: GroupCall, muteSource: Aci, muteTarget: Aci) {}
-    func handleUntrustedIdentityError(_ call: GroupCall) {}
+    func groupCallLocalDeviceStateChanged(_ call: Noise.GroupCall) {}
+    func groupCallRemoteDeviceStatesChanged(_ call: Noise.GroupCall) {}
+    func groupCallPeekChanged(_ call: Noise.GroupCall) {}
+    func groupCallEnded(_ call: Noise.GroupCall, reason: CallEndReason) {}
+    func groupCallReceivedReactions(_ call: Noise.GroupCall, reactions: [SignalRingRTC.Reaction]) {}
+    func groupCallReceivedRaisedHands(_ call: Noise.GroupCall, raisedHands: [DemuxId]) {}
+    func groupCallReceivedRemoteMute(_ call: Noise.GroupCall, muteSource: Aci) {}
+    func groupCallObservedRemoteMute(_ call: Noise.GroupCall, muteSource: Aci, muteTarget: Aci) {}
+    func handleUntrustedIdentityError(_ call: Noise.GroupCall) {}
 }
 
 class GroupCall: SignalRingRTC.GroupCallDelegate {

@@ -38,11 +38,11 @@ class CallHeader: UIView {
     private let callTitleLabel = MarqueeLabel()
     private let callStatusLabel = UILabel()
 
-    private let groupCall: GroupCall
+    private let groupCall: Noise.GroupCall
     private let ringRtcCall: SignalRingRTC.GroupCall
     private weak var delegate: CallHeaderDelegate!
 
-    init(groupCall: GroupCall, delegate: CallHeaderDelegate) {
+    init(groupCall: Noise.GroupCall, delegate: CallHeaderDelegate) {
         self.groupCall = groupCall
         self.ringRtcCall = groupCall.ringRtcCall
         self.delegate = delegate
@@ -489,7 +489,7 @@ class CallHeader: UIView {
 }
 
 extension CallHeader: GroupCallObserver {
-    func groupCallLocalDeviceStateChanged(_ call: GroupCall) {
+    func groupCallLocalDeviceStateChanged(_ call: Noise.GroupCall) {
         if call.hasJoinedOrIsWaitingForAdminApproval {
             gradientView.isHidden = false
             avatarView?.isHidden = true // hide the container
@@ -501,16 +501,16 @@ extension CallHeader: GroupCallObserver {
         updateCallStatusLabel()
     }
 
-    func groupCallPeekChanged(_ call: GroupCall) {
+    func groupCallPeekChanged(_ call: Noise.GroupCall) {
         updateCallStatusLabel()
     }
 
-    func groupCallRemoteDeviceStatesChanged(_ call: GroupCall) {
+    func groupCallRemoteDeviceStatesChanged(_ call: Noise.GroupCall) {
         updateCallTitleLabel()
         updateCallStatusLabel()
     }
 
-    func groupCallEnded(_ call: GroupCall, reason: CallEndReason) {
+    func groupCallEnded(_ call: Noise.GroupCall, reason: CallEndReason) {
         updateCallStatusLabel()
     }
 }

@@ -17,7 +17,7 @@ enum GroupCallVideoContextMenuConfiguration {
 
     static func build(
         call: SignalCall,
-        groupCall: GroupCall,
+        groupCall: Noise.GroupCall,
         ringRtcCall: SignalRingRTC.GroupCall,
         remoteDevice: RemoteDeviceState,
         interactionProvider: @escaping () -> UIContextMenuInteraction?,
@@ -35,7 +35,7 @@ enum GroupCallVideoContextMenuConfiguration {
 
     static func build(
         call: SignalCall,
-        groupCall: GroupCall,
+        groupCall: Noise.GroupCall,
         ringRtcCall: SignalRingRTC.GroupCall,
         demuxId: DemuxId,
         aci: Aci,
@@ -86,7 +86,7 @@ enum GroupCallVideoContextMenuConfiguration {
         aci: Aci,
         displayName: String,
         isAudioMuted: Bool,
-        groupCall: GroupCall,
+        groupCall: Noise.GroupCall,
         ringRtcGroupCall: SignalRingRTC.GroupCall,
     ) -> [UIAction] {
         var contextMenuActions: [UIAction] = []
@@ -234,7 +234,7 @@ private class GroupCallVideoContextMenuPreviewController: UIViewController, Grou
     private let interactionProvider: () -> UIContextMenuInteraction?
 
     private weak var call: SignalCall?
-    private weak var groupCall: GroupCall?
+    private weak var groupCall: Noise.GroupCall?
 
     private lazy var callMemberView = CallMemberView(type: .remoteInGroup(.contextMenuPreview))
 
@@ -243,7 +243,7 @@ private class GroupCallVideoContextMenuPreviewController: UIViewController, Grou
         aci: Aci,
         displayName: String,
         call: SignalCall,
-        groupCall: GroupCall,
+        groupCall: Noise.GroupCall,
         interactionProvider: @escaping () -> UIContextMenuInteraction?,
     ) {
         self.demuxId = demuxId
@@ -271,19 +271,19 @@ private class GroupCallVideoContextMenuPreviewController: UIViewController, Grou
 
     // MARK: - GroupCallObserver
 
-    func groupCallRemoteDeviceStatesChanged(_ call: GroupCall) {
+    func groupCallRemoteDeviceStatesChanged(_ call: Noise.GroupCall) {
         reconfigureCallMemberView()
     }
 
-    func groupCallPeekChanged(_ call: GroupCall) {
+    func groupCallPeekChanged(_ call: Noise.GroupCall) {
         reconfigureCallMemberView()
     }
 
-    func groupCallEnded(_ call: GroupCall, reason: CallEndReason) {
+    func groupCallEnded(_ call: Noise.GroupCall, reason: CallEndReason) {
         reconfigureCallMemberView()
     }
 
-    func groupCallReceivedRaisedHands(_ call: GroupCall, raisedHands: [DemuxId]) {
+    func groupCallReceivedRaisedHands(_ call: Noise.GroupCall, raisedHands: [DemuxId]) {
         reconfigureCallMemberView()
     }
 

@@ -21,7 +21,7 @@ class GroupCallRemoteVideoManager {
             return nil
         case .individual:
             return nil
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             return call.ringRtcCall
         }
     }
@@ -114,20 +114,20 @@ extension GroupCallRemoteVideoManager: CallServiceStateObserver {
         switch oldValue?.mode {
         case nil, .individual:
             break
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             call.removeObserver(self)
         }
         switch newValue?.mode {
         case nil, .individual:
             break
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             call.addObserver(self, syncStateImmediately: true)
         }
     }
 }
 
 extension GroupCallRemoteVideoManager: GroupCallObserver {
-    func groupCallRemoteDeviceStatesChanged(_ call: GroupCall) {
+    func groupCallRemoteDeviceStatesChanged(_ call: Noise.GroupCall) {
         for (demuxId, videoViews) in videoViews {
             guard let device = call.ringRtcCall.remoteDeviceStates[demuxId] else {
                 destroyRemoteVideoView(for: demuxId)
@@ -137,7 +137,7 @@ extension GroupCallRemoteVideoManager: GroupCallObserver {
         }
     }
 
-    func groupCallEnded(_ call: GroupCall, reason: CallEndReason) {
+    func groupCallEnded(_ call: Noise.GroupCall, reason: CallEndReason) {
         videoViews.keys.forEach { destroyRemoteVideoView(for: $0) }
     }
 }

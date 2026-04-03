@@ -232,7 +232,7 @@ public class CallUIAdapter: NSObject {
         switch call.mode {
         case .individual(let individualCall):
             callViewController = IndividualCallViewController(call: call, individualCall: individualCall)
-        case .groupThread(let groupCall as GroupCall), .callLink(let groupCall as GroupCall):
+        case .groupThread(let groupCall as Noise.GroupCall), .callLink(let groupCall as Noise.GroupCall):
             callViewController = SSKEnvironment.shared.databaseStorageRef.read { tx in
                 return GroupCallViewController.load(call: call, groupCall: groupCall, tx: tx)
             }

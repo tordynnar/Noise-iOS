@@ -724,7 +724,7 @@ class CallDrawerSheet: InteractiveSheetViewController, UITableViewDelegate, Call
                 return nil
             }
 
-            let groupCall: GroupCall
+            let groupCall: Noise.GroupCall
             switch call.mode {
             case .individual:
                 return nil
@@ -753,7 +753,7 @@ class CallDrawerSheet: InteractiveSheetViewController, UITableViewDelegate, Call
     // MARK: - CallMemberCellDelegate
 
     fileprivate func overflowButtonContextMenuActions(demuxId: DemuxId, aci: Aci, displayName: String, isAudioMuted: Bool) -> [UIAction] {
-        let groupCall: Signal.GroupCall
+        let groupCall: Noise.GroupCall
         switch call.mode {
         case .individual:
             owsFailDebug("Individual call with demux ID?")
@@ -775,7 +775,7 @@ class CallDrawerSheet: InteractiveSheetViewController, UITableViewDelegate, Call
     }
 
     fileprivate func raiseHand(raise: Bool) {
-        let groupCall: Signal.GroupCall
+        let groupCall: Noise.GroupCall
         switch call.mode {
         case .individual:
             owsFailDebug("Raising hand in 1:1 call?")

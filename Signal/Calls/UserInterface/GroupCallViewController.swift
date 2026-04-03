@@ -20,7 +20,7 @@ final class GroupCallViewController: UIViewController {
     // MARK: Properties
 
     private let call: SignalCall
-    private let groupCall: GroupCall
+    private let groupCall: Noise.GroupCall
     private let ringRtcCall: SignalRingRTC.GroupCall
     private lazy var callControlsConfirmationToastManager = CallControlsConfirmationToastManager(
         presentingContainerView: callControlsConfirmationToastContainerView,
@@ -271,7 +271,7 @@ final class GroupCallViewController: UIViewController {
     private var callControlsOverflowBottomConstraint: NSLayoutConstraint?
     private var callControlsConfirmationToastContainerViewBottomConstraint: NSLayoutConstraint?
 
-    static func load(call: SignalCall, groupCall: GroupCall, tx: DBReadTransaction) -> GroupCallViewController {
+    static func load(call: SignalCall, groupCall: Noise.GroupCall, tx: DBReadTransaction) -> GroupCallViewController {
         let didUserEverSwipeToSpeakerView = keyValueStore.getBool(
             didUserSwipeToSpeakerViewKey,
             defaultValue: false,
@@ -296,7 +296,7 @@ final class GroupCallViewController: UIViewController {
 
     init(
         call: SignalCall,
-        groupCall: GroupCall,
+        groupCall: Noise.GroupCall,
         didUserEverSwipeToSpeakerView: Bool,
         didUserEverSwipeToScreenShare: Bool,
         phoneNumberSharingMode: PhoneNumberSharingMode,
@@ -411,7 +411,7 @@ final class GroupCallViewController: UIViewController {
         from viewController: UIViewController,
         modalViewController: UIViewController,
         shouldAskForCameraPermission: Bool,
-        buildAndStartConnecting: () async throws -> (SignalCall, GroupCall)?,
+        buildAndStartConnecting: () async throws -> (SignalCall, Noise.GroupCall)?,
     ) async rethrows -> (() -> Void)? {
         do throws(CallStarter.PrepareToStartCallError) {
             _ = try await CallStarter.prepareToStartCall(
@@ -1694,7 +1694,7 @@ extension GroupCallViewController: CallViewControllerWindowReference {
 // MARK: CallObserver
 
 extension GroupCallViewController: GroupCallObserver {
-    func groupCallLocalDeviceStateChanged(_ call: GroupCall) {
+    func groupCallLocalDeviceStateChanged(_ call: Noise.GroupCall) {
         AssertIsOnMainThread()
         owsPrecondition(self.groupCall === call)
         guard self.isReadyToHandleObserver else {
@@ -1732,7 +1732,7 @@ extension GroupCallViewController: GroupCallObserver {
         }
     }
 
-    func groupCallRemoteDeviceStatesChanged(_ call: GroupCall) {
+    func groupCallRemoteDeviceStatesChanged(_ call: Noise.GroupCall) {
         AssertIsOnMainThread()
         owsPrecondition(self.groupCall === call)
         guard self.isReadyToHandleObserver else {
@@ -1747,7 +1747,7 @@ extension GroupCallViewController: GroupCallObserver {
         scheduleBottomSheetTimeoutIfNecessary()
     }
 
-    func groupCallPeekChanged(_ call: GroupCall) {
+    func groupCallPeekChanged(_ call: Noise.GroupCall) {
         AssertIsOnMainThread()
         owsPrecondition(self.groupCall === call)
         guard self.isReadyToHandleObserver else {
@@ -1765,7 +1765,7 @@ extension GroupCallViewController: GroupCallObserver {
         updateCallUI()
     }
 
-    func groupCallEnded(_ call: GroupCall, reason: CallEndReason) {
+    func groupCallEnded(_ call: Noise.GroupCall, reason: CallEndReason) {
         AssertIsOnMainThread()
         owsPrecondition(self.groupCall === call)
 
@@ -1876,7 +1876,7 @@ extension GroupCallViewController: GroupCallObserver {
         presenter.presentActionSheet(actionSheet)
     }
 
-    func groupCallReceivedReactions(_ call: GroupCall, reactions: [SignalRingRTC.Reaction]) {
+    func groupCallReceivedReactions(_ call: Noise.GroupCall, reactions: [SignalRingRTC.Reaction]) {
         AssertIsOnMainThread()
         owsPrecondition(self.groupCall === call)
         guard self.isReadyToHandleObserver else {
@@ -1914,7 +1914,7 @@ extension GroupCallViewController: GroupCallObserver {
         self.reactionsSink.addReactions(reactions: mappedReactions)
     }
 
-    func groupCallReceivedRaisedHands(_ call: GroupCall, raisedHands: [DemuxId]) {
+    func groupCallReceivedRaisedHands(_ call: Noise.GroupCall, raisedHands: [DemuxId]) {
         AssertIsOnMainThread()
         owsPrecondition(self.groupCall === call)
         guard self.isReadyToHandleObserver else {
@@ -1924,7 +1924,7 @@ extension GroupCallViewController: GroupCallObserver {
         self.updateCallUI(shouldAnimateViewFrames: true)
     }
 
-    func groupCallReceivedRemoteMute(_ call: GroupCall, muteSource: Aci) {
+    func groupCallReceivedRemoteMute(_ call: Noise.GroupCall, muteSource: Aci) {
         AssertIsOnMainThread()
         owsPrecondition(self.groupCall === call)
         guard self.isReadyToHandleObserver else {
@@ -1935,7 +1935,7 @@ extension GroupCallViewController: GroupCallObserver {
         self.updateCallUI(shouldAnimateViewFrames: true)
     }
 
-    func groupCallObservedRemoteMute(_ call: GroupCall, muteSource: Aci, muteTarget: Aci) {
+    func groupCallObservedRemoteMute(_ call: Noise.GroupCall, muteSource: Aci, muteTarget: Aci) {
         AssertIsOnMainThread()
         owsPrecondition(self.groupCall === call)
         guard self.isReadyToHandleObserver else {
@@ -1945,7 +1945,7 @@ extension GroupCallViewController: GroupCallObserver {
         self.updateCallUI(shouldAnimateViewFrames: true)
     }
 
-    func handleUntrustedIdentityError(_ call: GroupCall) {
+    func handleUntrustedIdentityError(_ call: Noise.GroupCall) {
         AssertIsOnMainThread()
         owsPrecondition(self.groupCall === call)
         guard self.isReadyToHandleObserver else {

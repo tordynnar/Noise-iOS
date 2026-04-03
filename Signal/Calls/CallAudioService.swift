@@ -116,11 +116,11 @@ class CallAudioService: IndividualCallObserver, GroupCallObserver {
         ensureProperAudioSession(call: call)
     }
 
-    func groupCallLocalDeviceStateChanged(_ call: GroupCall) {
+    func groupCallLocalDeviceStateChanged(_ call: Noise.GroupCall) {
         ensureProperAudioSession(call: call)
     }
 
-    func groupCallPeekChanged(_ call: GroupCall) {
+    func groupCallPeekChanged(_ call: Noise.GroupCall) {
         // This is a bit weird, so buckle up.
         //
         // Without this hack, if a user is in a group call, everyone else leaves, 8 minutes pass, and then another
@@ -163,13 +163,13 @@ class CallAudioService: IndividualCallObserver, GroupCallObserver {
 
     }
 
-    func groupCallEnded(_ call: GroupCall, reason: CallEndReason) {
+    func groupCallEnded(_ call: Noise.GroupCall, reason: CallEndReason) {
         stopPlayingAnySounds()
         ensureProperAudioSession(call: call)
     }
 
     private var oldRaisedHands: [UInt32] = []
-    func groupCallReceivedRaisedHands(_ call: GroupCall, raisedHands: [DemuxId]) {
+    func groupCallReceivedRaisedHands(_ call: Noise.GroupCall, raisedHands: [DemuxId]) {
         if oldRaisedHands.isEmpty, !raisedHands.isEmpty {
             self.playRaiseHandSound()
         }
@@ -197,7 +197,7 @@ class CallAudioService: IndividualCallObserver, GroupCallObserver {
     }
 
     @MainActor
-    private func requestSpeakerphone(call: GroupCall, isEnabled: Bool) {
+    private func requestSpeakerphone(call: Noise.GroupCall, isEnabled: Bool) {
         // If toggled for an group call, save the enablement state and
         // update the AudioSession.
         self.isSpeakerEnabled = isEnabled
@@ -217,7 +217,7 @@ class CallAudioService: IndividualCallObserver, GroupCallObserver {
         switch call.mode {
         case .individual(let individualCall):
             requestSpeakerphone(call: individualCall, isEnabled: isEnabled)
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             requestSpeakerphone(call: call, isEnabled: isEnabled)
         }
     }
@@ -238,13 +238,13 @@ class CallAudioService: IndividualCallObserver, GroupCallObserver {
         switch call.mode {
         case .individual(let call):
             ensureProperAudioSession(call: call)
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             ensureProperAudioSession(call: call)
         }
     }
 
     @MainActor
-    private func ensureProperAudioSession(call: GroupCall) {
+    private func ensureProperAudioSession(call: Noise.GroupCall) {
         guard call.ringRtcCall.localDeviceState.joinState != .notJoined else {
             // Revert to ambient audio.
             setAudioSession(category: .ambient, mode: .default)
@@ -541,7 +541,7 @@ extension CallAudioService: CallServiceStateObserver {
             break
         case .individual(let call):
             call.removeObserver(self)
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             call.removeObserver(self)
         }
         switch newValue?.mode {
@@ -549,7 +549,7 @@ extension CallAudioService: CallServiceStateObserver {
             break
         case .individual(let call):
             call.addObserverAndSyncState(self)
-        case .groupThread(let call as GroupCall), .callLink(let call as GroupCall):
+        case .groupThread(let call as Noise.GroupCall), .callLink(let call as Noise.GroupCall):
             call.addObserver(self, syncStateImmediately: true)
         }
     }

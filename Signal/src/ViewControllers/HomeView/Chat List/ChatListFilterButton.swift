@@ -124,11 +124,11 @@ struct ChatListFilterButtonPreviews: PreviewProvider {
         var title: String
         var showsClearIcon: Bool = false
 
-        func makeUIView(context: Context) -> Signal.ChatListFilterButton {
-            Signal.ChatListFilterButton()
+        func makeUIView(context: Context) -> Noise.ChatListFilterButton {
+            Noise.ChatListFilterButton()
         }
 
-        func updateUIView(_ button: Signal.ChatListFilterButton, context: Context) {
+        func updateUIView(_ button: Noise.ChatListFilterButton, context: Context) {
             button.configuration?.title = title
             button.showsClearIcon = showsClearIcon
         }
